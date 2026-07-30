@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq030-20260729-130859",
+  "created_at": "2026-07-29T13:19:14.081671+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq030",
+  "question": "How have text-to-SQL systems evolved from schema-aware neural parsers to large-language-model-based approaches, and which challenges remain on cross-domain benchmarks?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 869,
+  "elapsed_seconds": 614.558079,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq030-20260729-130859",
+  "trace": [
+    "Ingested 10 papers. Indexed 869 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-11b564499332b9da",
+      "source_id": "arXiv:2410.01066",
+      "title": "From Natural Language to SQL: Review of LLM-based Text-to-SQL Systems",
+      "pdf_path": "data\\pdfs\\arxiv-11b564499332b9da.pdf",
+      "pdf_bytes": 3295595,
+      "page_count": 15
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-8827ec2dffa0c108",
+      "source_id": "arXiv:1905.08205",
+      "title": "Towards Complex Text-to-SQL in Cross-Domain Database with Intermediate Representation",
+      "pdf_path": "data\\pdfs\\arxiv-8827ec2dffa0c108.pdf",
+      "pdf_bytes": 2970020,
+      "page_count": 16
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-1389fe6c44410ec8",
+      "source_id": "arXiv:2412.05208",
+      "title": "A Survey of Large Language Model-Based Generative AI for Text-to-SQL: Benchmarks, Applications, Use Cases, and Challenges",
+      "pdf_path": "data\\pdfs\\arxiv-1389fe6c44410ec8.pdf",
+      "pdf_bytes": 406307,
+      "page_count": 7
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-130d5d5aa27994e9",
+      "source_id": "arXiv:2305.16265",
+      "title": "UNITE: A Unified Benchmark for Text-to-SQL Evaluation",
+      "pdf_path": "data\\pdfs\\arxiv-130d5d5aa27994e9.pdf",
+      "pdf_bytes": 201833,
+      "page_count": 8
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-351da4b2720c223a",
+      "source_id": "arXiv:2406.08426",
+      "title": "Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL",
+      "pdf_path": "data\\pdfs\\arxiv-351da4b2720c223a.pdf",
+      "pdf_bytes": 4477738,
+      "page_count": 20
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-a2c82ee57982c57c",
+      "source_id": "arXiv:2408.05109",
+      "title": "A Survey of Text-to-SQL in the Era of LLMs: Where are we, and where are we going?",
+      "pdf_path": "data\\pdfs\\arxiv-a2c82ee57982c57c.pdf",
+      "pdf_bytes": 7103475,
+      "page_count": 20
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-e35c18a51fcd72f2",
+      "source_id": "arXiv:2409.15907",
+      "title": "Enhancing Text-to-SQL Capabilities of Large Language Models via Domain Database Knowledge Injection",
+      "pdf_path": "data\\pdfs\\arxiv-e35c18a51fcd72f2.pdf",
+      "pdf_bytes": 2305409,
+      "page_count": 8
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-98c9d70eb70ec83b",
+      "source_id": "arXiv:2508.14056",
+      "title": "Confidence Estimation for Text-to-SQL in Large Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-98c9d70eb70ec83b.pdf",
+      "pdf_bytes": 2339999,
+      "page_count": 16
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-36c12d886a484f41",
+      "source_id": "arXiv:2310.18538",
+      "title": "Evaluating Cross-Domain Text-to-SQL Models and Benchmarks",
+      "pdf_path": "data\\pdfs\\arxiv-36c12d886a484f41.pdf",
+      "pdf_bytes": 1233000,
+      "page_count": 11
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-44cc62e254ec586c",
+      "source_id": "arXiv:2504.09824",
+      "title": "Abacus-SQL: A Text-to-SQL System Empowering Cross-Domain and Open-Domain Database Retrieval",
+      "pdf_path": "data\\pdfs\\arxiv-44cc62e254ec586c.pdf",
+      "pdf_bytes": 1057925,
+      "page_count": 11
+    }
+  ]
+}

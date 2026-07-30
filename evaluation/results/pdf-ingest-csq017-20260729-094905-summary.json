@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq017-20260729-094905",
+  "created_at": "2026-07-29T09:57:48.850183+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq017",
+  "question": "Which workloads, metrics, and experimental methodologies are used to evaluate datacenter cluster schedulers?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 857,
+  "elapsed_seconds": 522.957359,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq017-20260729-094905",
+  "trace": [
+    "Ingested 10 papers. Indexed 857 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-9c3b44c4838b93c0",
+      "source_id": "arXiv:2102.07199",
+      "title": "Hugo: A Cluster Scheduler that Efficiently Learns to Select Complementary Data-Parallel Jobs",
+      "pdf_path": "data\\pdfs\\arxiv-9c3b44c4838b93c0.pdf",
+      "pdf_bytes": 449804,
+      "page_count": 13
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-8e409877b99a8ad7",
+      "source_id": "arXiv:2401.16492",
+      "title": "GPU Cluster Scheduling for Network-Sensitive Deep Learning",
+      "pdf_path": "data\\pdfs\\arxiv-8e409877b99a8ad7.pdf",
+      "pdf_bytes": 1350205,
+      "page_count": 15
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-025b718844bf4bbe",
+      "source_id": "arXiv:1808.04224",
+      "title": "A Reference Architecture for Datacenter Scheduling: Extended Technical Report",
+      "pdf_path": "data\\pdfs\\arxiv-025b718844bf4bbe.pdf",
+      "pdf_bytes": 1516687,
+      "page_count": 18
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-29eedc9343909e4b",
+      "source_id": "arXiv:1909.07820",
+      "title": "Data Centers Job Scheduling with Deep Reinforcement Learning",
+      "pdf_path": "data\\pdfs\\arxiv-29eedc9343909e4b.pdf",
+      "pdf_bytes": 3190514,
+      "page_count": 13
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-052b4df61aa4fc66",
+      "source_id": "arXiv:2401.09706",
+      "title": "A HPC Co-Scheduler with Reinforcement Learning",
+      "pdf_path": "data\\pdfs\\arxiv-052b4df61aa4fc66.pdf",
+      "pdf_bytes": 823794,
+      "page_count": 23
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-23594d26b1e1fa4e",
+      "source_id": "arXiv:2403.16298",
+      "title": "MRSch: Multi-Resource Scheduling for HPC",
+      "pdf_path": "data\\pdfs\\arxiv-23594d26b1e1fa4e.pdf",
+      "pdf_bytes": 1165564,
+      "page_count": 11
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-89fcf3b4bc72de91",
+      "source_id": "arXiv:2112.13354",
+      "title": "Large-scale Machine Learning Cluster Scheduling via Multi-agent Graph Reinforcement Learning",
+      "pdf_path": "data\\pdfs\\arxiv-89fcf3b4bc72de91.pdf",
+      "pdf_bytes": 2444447,
+      "page_count": 12
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-c1bf52fade8a2607",
+      "source_id": "arXiv:2210.00093",
+      "title": "Shockwave: Fair and Efficient Cluster Scheduling for Dynamic Adaptation in Machine Learning",
+      "pdf_path": "data\\pdfs\\arxiv-c1bf52fade8a2607.pdf",
+      "pdf_bytes": 6239573,
+      "page_count": 21
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-84f053230b582ac8",
+      "source_id": "arXiv:2512.18894",
+      "title": "A Real-Time Digital Twin for Adaptive Scheduling",
+      "pdf_path": "data\\pdfs\\arxiv-84f053230b582ac8.pdf",
+      "pdf_bytes": 1480877,
+      "page_count": 5
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-90195bab54bbfea6",
+      "source_id": "arXiv:1912.03523",
+      "title": "BoPF: Mitigating the Burstiness-Fairness Tradeoff in Multi-Resource Clusters",
+      "pdf_path": "data\\pdfs\\arxiv-90195bab54bbfea6.pdf",
+      "pdf_bytes": 1206193,
+      "page_count": 16
+    }
+  ]
+}

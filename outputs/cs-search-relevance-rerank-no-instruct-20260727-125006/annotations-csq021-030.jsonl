@@ -1,0 +1,200 @@
+{"item_id":"csq021-r01","question_id":"csq021","rank":1,"label":"2","rationale":"《QUT-DV25: A Dataset for Dynamic Analysis of Next-Gen Software Supply Chain Attacks》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r02","question_id":"csq021","rank":2,"label":"2","rationale":"《Towards Robust Detection of Open Source Software Supply Chain Poisoning Attacks in Industry Environments》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r03","question_id":"csq021","rank":3,"label":"1","rationale":"《OmniBOR: A System for Automatic, Verifiable Artifact Resolution across Software Supply Chains》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r04","question_id":"csq021","rank":4,"label":"2","rationale":"《Understanding the Supply Chain and Risks of Large Language Model Applications》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r05","question_id":"csq021","rank":5,"label":"2","rationale":"《Propagation-Based Vulnerability Impact Assessment for Software Supply Chains》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r06","question_id":"csq021","rank":6,"label":"0","rationale":"《Graph Neural Networks in Supply Chain Analytics and Optimization: Concepts, Perspectives, Dataset and Benchmarks》研究的是实体供应链、智能合约或其他任务，无法支持软件供应链检测评测。"}
+{"item_id":"csq021-r07","question_id":"csq021","rank":7,"label":"2","rationale":"《Backstabber's Knife Collection: A Review of Open Source Software Supply Chain Attacks》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r08","question_id":"csq021","rank":8,"label":"1","rationale":"《Lexo: Eliminating Stealthy Supply-Chain Attacks via LLM-Assisted Program Regeneration》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r09","question_id":"csq021","rank":9,"label":"1","rationale":"《Importing Phantoms: Measuring LLM Package Hallucination Vulnerabilities》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r10","question_id":"csq021","rank":10,"label":"2","rationale":"《An Empirical Study of Vulnerabilities in Python Packages and Their Detection》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r11","question_id":"csq021","rank":11,"label":"1","rationale":"《A Comprehensive Study on the Impact of Vulnerable Dependencies on Open-Source Software》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r12","question_id":"csq021","rank":12,"label":"2","rationale":"《Exploring the Vulnerabilities of Machine Learning and Quantum Machine Learning to Adversarial Attacks using a Malware Dataset: A Comparative Analysis》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r13","question_id":"csq021","rank":13,"label":"1","rationale":"《Package Dashboard: A Cross-Ecosystem Framework for Dual-Perspective Analysis of Software Packages》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r14","question_id":"csq021","rank":14,"label":"1","rationale":"《Supply Chain Insecurity: The Lack of Integrity Protection in SBOM Solutions》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r15","question_id":"csq021","rank":15,"label":"1","rationale":"《Malice in Agentland: Down the Rabbit Hole of Backdoors in the AI Supply Chain》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r16","question_id":"csq021","rank":16,"label":"2","rationale":"《Leveraging Code Cohesion Analysis to Identify Source Code Supply Chain Attacks》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r17","question_id":"csq021","rank":17,"label":"1","rationale":"《GoSurf: Identifying Software Supply Chain Attack Vectors in Go》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id":"csq021-r18","question_id":"csq021","rank":18,"label":"0","rationale":"《Vulnerability Detection in Ethereum Smart Contracts via Machine Learning: A Qualitative Analysis》研究的是实体供应链、智能合约或其他任务，无法支持软件供应链检测评测。"}
+{"item_id":"csq021-r19","question_id":"csq021","rank":19,"label":"2","rationale":"《Characterizing Build Compromises Through Vulnerability Disclosure Analysis》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id":"csq021-r20","question_id":"csq021","rank":20,"label":"0","rationale":"《SENS: Semantic Synthetic Benchmarking Model for integrated supply chain simulation and analysis》研究的是实体供应链、智能合约或其他任务，无法支持软件供应链检测评测。"}
+{"item_id":"csq022-r01","question_id":"csq022","rank":1,"label":"2","rationale":"《Hammer and Anvil: Toward a Theory of Backdoors in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r02","question_id":"csq022","rank":2,"label":"2","rationale":"《Avoid Adversarial Adaption in Federated Learning by Multi-Metric Investigations》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r03","question_id":"csq022","rank":3,"label":"2","rationale":"《Meta Stackelberg Game: Robust Federated Learning against Adaptive and Mixed Poisoning Attacks》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r04","question_id":"csq022","rank":4,"label":"2","rationale":"《Learning to Invert: Simple Adaptive Attacks for Gradient Inversion in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r05","question_id":"csq022","rank":5,"label":"2","rationale":"《Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r06","question_id":"csq022","rank":6,"label":"2","rationale":"《A First Order Meta Stackelberg Method for Robust Federated Learning (Technical Report)》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r07","question_id":"csq022","rank":7,"label":"2","rationale":"《FLARE: Adaptive Multi-Dimensional Reputation for Robust Client Reliability in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r08","question_id":"csq022","rank":8,"label":"2","rationale":"《Defending the Edge: Representative-Attention Defense against Backdoor Attacks in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r09","question_id":"csq022","rank":9,"label":"2","rationale":"《CrowdGuard: Federated Backdoor Detection in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r10","question_id":"csq022","rank":10,"label":"2","rationale":"《Integrating Identity-Based Identification against Adaptive Adversaries in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r11","question_id":"csq022","rank":11,"label":"2","rationale":"《On Evaluating the Poisoning Robustness of Federated Learning under Local Differential Privacy》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r12","question_id":"csq022","rank":12,"label":"2","rationale":"《Krum Federated Chain (KFC): Using blockchain to defend against adversarial attacks in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r13","question_id":"csq022","rank":13,"label":"2","rationale":"《Can You Really Backdoor Federated Learning?》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r14","question_id":"csq022","rank":14,"label":"2","rationale":"《Concealing Sensitive Samples against Gradient Leakage in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r15","question_id":"csq022","rank":15,"label":"2","rationale":"《RECESS Vaccine for Federated Learning: Proactive Defense Against Model Poisoning Attacks》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r16","question_id":"csq022","rank":16,"label":"2","rationale":"《RAB$^2$-DEF: Dynamic and explainable defense against adversarial attacks in Federated Learning to fair poor clients》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r17","question_id":"csq022","rank":17,"label":"2","rationale":"《STDLens: Model Hijacking-Resilient Federated Learning for Object Detection》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r18","question_id":"csq022","rank":18,"label":"2","rationale":"《Privacy Attack in Federated Learning is Not Easy: An Experimental Study》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r19","question_id":"csq022","rank":19,"label":"2","rationale":"《BaFFLe: Backdoor detection via Feedback-based Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq022-r20","question_id":"csq022","rank":20,"label":"2","rationale":"《On the Efficiency of Privacy Attacks in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id":"csq023-r01","question_id":"csq023","rank":1,"label":"2","rationale":"《Conversational Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r02","question_id":"csq023","rank":2,"label":"2","rationale":"《Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r03","question_id":"csq023","rank":3,"label":"2","rationale":"《Towards Practical and Useful Automated Program Repair for Debugging》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r04","question_id":"csq023","rank":4,"label":"2","rationale":"《Copiloting the Copilots: Fusing Large Language Models with Completion Engines for Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r05","question_id":"csq023","rank":5,"label":"2","rationale":"《PSearch: Search-based Patch Generation in the Era of LLM-based Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r06","question_id":"csq023","rank":6,"label":"2","rationale":"《Assessing the Latent Automated Program Repair Capabilities of Large Language Models using Round-Trip Translation》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r07","question_id":"csq023","rank":7,"label":"2","rationale":"《Enhancing Automated Program Repair via Faulty Token Localization and Quality-Aware Patch Refinement》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r08","question_id":"csq023","rank":8,"label":"1","rationale":"《Boosting Redundancy-based Automated Program Repair by Fine-grained Pattern Mining》属于程序修复，但主要是传统非神经路线，可作方法对照。"}
+{"item_id":"csq023-r09","question_id":"csq023","rank":9,"label":"2","rationale":"《A Survey of Learning-based Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r10","question_id":"csq023","rank":10,"label":"2","rationale":"《InferFix: End-to-End Program Repair with LLMs》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r11","question_id":"csq023","rank":11,"label":"2","rationale":"《Abstain and Validate: A Dual-LLM Policy for Reducing Noise in Agentic Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r12","question_id":"csq023","rank":12,"label":"2","rationale":"《ThinkRepair: Self-Directed Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r13","question_id":"csq023","rank":13,"label":"2","rationale":"《Neural Program Repair with Execution-based Backpropagation》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r14","question_id":"csq023","rank":14,"label":"2","rationale":"《REFINE: Enhancing Program Repair Agents through Context-Aware Patch Refinement》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r15","question_id":"csq023","rank":15,"label":"2","rationale":"《RelRepair: Enhancing Automated Program Repair by Retrieving Relevant Code》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r16","question_id":"csq023","rank":16,"label":"2","rationale":"《CURE: Code-Aware Neural Machine Translation for Automatic Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r17","question_id":"csq023","rank":17,"label":"2","rationale":"《Understanding Automated Program Repair Agents Through the Lens of Traceability: An Empirical Study》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r18","question_id":"csq023","rank":18,"label":"2","rationale":"《Agentic Program Repair from Test Failures at Scale: A Neuro-symbolic approach with static analysis and test execution feedback》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r19","question_id":"csq023","rank":19,"label":"2","rationale":"《A Survey on Automated Program Repair Techniques》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq023-r20","question_id":"csq023","rank":20,"label":"2","rationale":"《Revisiting Unnaturalness for Automated Program Repair in the Era of Large Language Models》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id":"csq024-r01","question_id":"csq024","rank":1,"label":"2","rationale":"《Execution-based Evaluation for Data Science Code Generation Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r02","question_id":"csq024","rank":2,"label":"2","rationale":"《DOCE: Finding the Sweet Spot for Execution-Based Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r03","question_id":"csq024","rank":3,"label":"2","rationale":"《CodeBenchGen: Creating Scalable Execution-based Code Generation Benchmarks》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r04","question_id":"csq024","rank":4,"label":"2","rationale":"《Execution-Based Evaluation for Open-Domain Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r05","question_id":"csq024","rank":5,"label":"0","rationale":"《Code Generation Tools (Almost) for Free? A Study of Few-Shot, Pre-Trained Language Models on Code》研究目标不是代码生成评价方法，无法回答三类评价比较。"}
+{"item_id":"csq024-r06","question_id":"csq024","rank":6,"label":"2","rationale":"《CodeScore: Evaluating Code Generation by Learning Code Execution》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r07","question_id":"csq024","rank":7,"label":"1","rationale":"《Execution Guided Line-by-Line Code Generation》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id":"csq024-r08","question_id":"csq024","rank":8,"label":"2","rationale":"《COFFE: A Code Efficiency Benchmark for Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r09","question_id":"csq024","rank":9,"label":"2","rationale":"《LEVER: Learning to Verify Language-to-Code Generation with Execution》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r10","question_id":"csq024","rank":10,"label":"2","rationale":"《HumanEvo: An Evolution-aware Benchmark for More Realistic Evaluation of Repository-level Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r11","question_id":"csq024","rank":11,"label":"2","rationale":"《COMPASS: A Multi-Dimensional Benchmark for Evaluating Code Generation in Large Language Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r12","question_id":"csq024","rank":12,"label":"2","rationale":"《BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r13","question_id":"csq024","rank":13,"label":"2","rationale":"《ReCode: Robustness Evaluation of Code Generation Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r14","question_id":"csq024","rank":14,"label":"1","rationale":"《Enhancing LLM Code Generation: A Systematic Evaluation of Multi-Agent Collaboration and Runtime Debugging for Improved Accuracy, Reliability, and Latency》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id":"csq024-r15","question_id":"csq024","rank":15,"label":"0","rationale":"《From Provable Correctness to Probabilistic Generation: A Comparative Review of Program Synthesis Paradigms》研究目标不是代码生成评价方法，无法回答三类评价比较。"}
+{"item_id":"csq024-r16","question_id":"csq024","rank":16,"label":"1","rationale":"《CodeRL+: Improving Code Generation via Reinforcement with Execution Semantics Alignment》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id":"csq024-r17","question_id":"csq024","rank":17,"label":"2","rationale":"《CoderEval: A Benchmark of Pragmatic Code Generation with Generative Pre-trained Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq024-r18","question_id":"csq024","rank":18,"label":"0","rationale":"《Code Generation for Machine Learning using Model-Driven Engineering and SysML》研究目标不是代码生成评价方法，无法回答三类评价比较。"}
+{"item_id":"csq024-r19","question_id":"csq024","rank":19,"label":"1","rationale":"《OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id":"csq024-r20","question_id":"csq024","rank":20,"label":"2","rationale":"《ContractEval: A Benchmark for Evaluating Contract-Satisfying Assertions in Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id":"csq025-r01","question_id":"csq025","rank":1,"label":"2","rationale":"《Vulnerability Detection with Code Language Models: How Far Are We?》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r02","question_id":"csq025","rank":2,"label":"2","rationale":"《Automated Vulnerability Detection in Source Code Using Quantum Natural Language Processing》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r03","question_id":"csq025","rank":3,"label":"2","rationale":"《Automated Vulnerability Detection in Source Code Using Deep Representation Learning》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r04","question_id":"csq025","rank":4,"label":"2","rationale":"《VulBERTa: Simplified Source Code Pre-Training for Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r05","question_id":"csq025","rank":5,"label":"2","rationale":"《Feature Engineering-Based Detection of Buffer Overflow Vulnerability in Source Code Using Neural Networks》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r06","question_id":"csq025","rank":6,"label":"2","rationale":"《A Survey on Automated Software Vulnerability Detection Using Machine Learning and Deep Learning》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r07","question_id":"csq025","rank":7,"label":"2","rationale":"《Machine Learning Techniques for Python Source Code Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r08","question_id":"csq025","rank":8,"label":"2","rationale":"《Leveraging Self-Paced Learning for Software Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r09","question_id":"csq025","rank":9,"label":"2","rationale":"《Sequential Graph Neural Networks for Source Code Vulnerability Identification》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r10","question_id":"csq025","rank":10,"label":"2","rationale":"《SoK: Understanding (New) Security Issues Across AI4Code Use Cases》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r11","question_id":"csq025","rank":11,"label":"2","rationale":"《DiverseVul: A New Vulnerable Source Code Dataset for Deep Learning Based Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r12","question_id":"csq025","rank":12,"label":"2","rationale":"《SCoPE: Evaluating LLMs for Software Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r13","question_id":"csq025","rank":13,"label":"2","rationale":"《Revisiting Pre-trained Language Models for Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r14","question_id":"csq025","rank":14,"label":"2","rationale":"《Reasoning with LLMs for Zero-Shot Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r15","question_id":"csq025","rank":15,"label":"2","rationale":"《Enhancing Software Vulnerability Detection Using Code Property Graphs and Convolutional Neural Networks》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r16","question_id":"csq025","rank":16,"label":"2","rationale":"《Llama-based source code vulnerability detection: Prompt engineering vs Fine tuning》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r17","question_id":"csq025","rank":17,"label":"2","rationale":"《A Qualitative Study on Using ChatGPT for Software Security: Perception vs. Practicality》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r18","question_id":"csq025","rank":18,"label":"2","rationale":"《Benchmarking Software Vulnerability Detection Techniques: A Survey》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r19","question_id":"csq025","rank":19,"label":"2","rationale":"《AIBugHunter: A Practical Tool for Predicting, Classifying and Repairing Software Vulnerabilities》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq025-r20","question_id":"csq025","rank":20,"label":"2","rationale":"《Similar but Patched Code Considered Harmful -- The Impact of Similar but Patched Code on Recurring Vulnerability Detection and How to Remove Them》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id":"csq026-r01","question_id":"csq026","rank":1,"label":"2","rationale":"《Unified Software Engineering Agent as AI Software Engineer》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r02","question_id":"csq026","rank":2,"label":"2","rationale":"《SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r03","question_id":"csq026","rank":3,"label":"2","rationale":"《ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r04","question_id":"csq026","rank":4,"label":"2","rationale":"《InfCode-C++: Intent-Guided Semantic Retrieval and AST-Structured Search for C++ Issue Resolution》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r05","question_id":"csq026","rank":5,"label":"2","rationale":"《SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r06","question_id":"csq026","rank":6,"label":"2","rationale":"《One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r07","question_id":"csq026","rank":7,"label":"2","rationale":"《RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r08","question_id":"csq026","rank":8,"label":"2","rationale":"《TENET: One Step Toward Test-Driven Development for Repository-Level Code Generation》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r09","question_id":"csq026","rank":9,"label":"2","rationale":"《AInsteinBench: Benchmarking Coding Agents on Scientific Repositories》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r10","question_id":"csq026","rank":10,"label":"1","rationale":"《PAGENT: Learning to Patch Software Engineering Agents》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id":"csq026-r11","question_id":"csq026","rank":11,"label":"2","rationale":"《LocAgent: Graph-Guided LLM Agents for Code Localization》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r12","question_id":"csq026","rank":12,"label":"1","rationale":"《Self-collaboration Code Generation via ChatGPT》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id":"csq026-r13","question_id":"csq026","rank":13,"label":"2","rationale":"《Meta-RAG on Large Codebases Using Code Summarization》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r14","question_id":"csq026","rank":14,"label":"2","rationale":"《SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r15","question_id":"csq026","rank":15,"label":"1","rationale":"《L2MAC: Large Language Model Automatic Computer for Extensive Code Generation》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id":"csq026-r16","question_id":"csq026","rank":16,"label":"0","rationale":"《Open Source Planning & Control System with Language Agents for Autonomous Scientific Discovery》不是仓库级软件工程代理能力或局限研究。"}
+{"item_id":"csq026-r17","question_id":"csq026","rank":17,"label":"1","rationale":"《Self-Organized Agents: A LLM Multi-Agent Framework toward Ultra Large-Scale Code Generation and Optimization》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id":"csq026-r18","question_id":"csq026","rank":18,"label":"2","rationale":"《Toward Training Superintelligent Software Agents through Self-Play SWE-RL》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id":"csq026-r19","question_id":"csq026","rank":19,"label":"1","rationale":"《Async Control: Stress-testing Asynchronous Control Measures for LLM Agents》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id":"csq026-r20","question_id":"csq026","rank":20,"label":"1","rationale":"《MANTRA: Enhancing Automated Method-Level Refactoring with Contextual RAG and Multi-Agent LLM Collaboration》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id":"csq027-r01","question_id":"csq027","rank":1,"label":"2","rationale":"《Updatable Learned Indexes Meet Disk-Resident DBMS -- From Evaluations to Design Choices》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r02","question_id":"csq027","rank":2,"label":"2","rationale":"《Benchmarking Learned Indexes》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r03","question_id":"csq027","rank":3,"label":"2","rationale":"《Updatable Learned Index with Precise Positions》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r04","question_id":"csq027","rank":4,"label":"2","rationale":"《Learned Indexes for Dynamic Workloads》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r05","question_id":"csq027","rank":5,"label":"2","rationale":"《Micro-architectural Analysis of a Learned Index》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r06","question_id":"csq027","rank":6,"label":"2","rationale":"《SOSD: A Benchmark for Learned Indexes》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r07","question_id":"csq027","rank":7,"label":"2","rationale":"《A Learned Index for Exact Similarity Search in Metric Spaces》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r08","question_id":"csq027","rank":8,"label":"2","rationale":"《ALEX: An Updatable Adaptive Learned Index》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r09","question_id":"csq027","rank":9,"label":"2","rationale":"《DILI: A Distribution-Driven Learned Index (Extended version)》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r10","question_id":"csq027","rank":10,"label":"2","rationale":"《A Simple Yet High-Performing On-disk Learned Index: Can We Have Our Cake and Eat it Too?》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r11","question_id":"csq027","rank":11,"label":"2","rationale":"《Shift-Table: A Low-latency Learned Index for Range Queries using Model Correction》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r12","question_id":"csq027","rank":12,"label":"2","rationale":"《LITS: An Optimized Learned Index for Strings (An Extended Version)》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r13","question_id":"csq027","rank":13,"label":"2","rationale":"《A Scalable Learned Index Scheme in Storage Systems》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r14","question_id":"csq027","rank":14,"label":"2","rationale":"《UpLIF: An Updatable Self-Tuning Learned Index Framework》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r15","question_id":"csq027","rank":15,"label":"2","rationale":"《NFL: Robust Learned Index via Distribution Transformation》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r16","question_id":"csq027","rank":16,"label":"2","rationale":"《Are Updatable Learned Indexes Ready?》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r17","question_id":"csq027","rank":17,"label":"2","rationale":"《On Distribution Dependent Sub-Logarithmic Query Time of Learned Indexing》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r18","question_id":"csq027","rank":18,"label":"2","rationale":"《LMG Index: A Robust and Efficient Learned Index Framework for Multi-Dimensional Performance Balance》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r19","question_id":"csq027","rank":19,"label":"2","rationale":"《DobLIX: A Dual-Objective Learned Index for Log-Structured Merge Trees》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq027-r20","question_id":"csq027","rank":20,"label":"2","rationale":"《The Price of Tailoring the Index to Your Data: Poisoning Attacks on Learned Index Structures》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id":"csq028-r01","question_id":"csq028","rank":1,"label":"1","rationale":"《Relative NN-Descent: A Fast Index Construction for Graph-Based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r02","question_id":"csq028","rank":2,"label":"1","rationale":"《Revisiting the Index Construction of Proximity Graph-Based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r03","question_id":"csq028","rank":3,"label":"1","rationale":"《A Comprehensive Survey and Experimental Comparison of Graph-Based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r04","question_id":"csq028","rank":4,"label":"2","rationale":"《Routing-Guided Learned Product Quantization for Graph-Based Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r05","question_id":"csq028","rank":5,"label":"1","rationale":"《VSAG: An Optimized Search Framework for Graph-based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r06","question_id":"csq028","rank":6,"label":"2","rationale":"《Lossless Compression of Vector IDs for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r07","question_id":"csq028","rank":7,"label":"2","rationale":"《SPANN: Highly-efficient Billion-scale Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r08","question_id":"csq028","rank":8,"label":"1","rationale":"《Fast Approximate Nearest Neighbor Search With The Navigating Spreading-out Graph》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r09","question_id":"csq028","rank":9,"label":"2","rationale":"《LoRANN: Low-Rank Matrix Factorization for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r10","question_id":"csq028","rank":10,"label":"1","rationale":"《Scalable Disk-Based Approximate Nearest Neighbor Search with Page-Aligned Graph》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r11","question_id":"csq028","rank":11,"label":"2","rationale":"《SymphonyQG: Towards Symphonious Integration of Quantization and Graph for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r12","question_id":"csq028","rank":12,"label":"1","rationale":"《EFANNA : An Extremely Fast Approximate Nearest Neighbor Search Algorithm Based on kNN Graph》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r13","question_id":"csq028","rank":13,"label":"1","rationale":"《Fast Approximate Nearest Neighbor Search with a Dynamic Exploration Graph using Continuous Refinement》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r14","question_id":"csq028","rank":14,"label":"1","rationale":"《δ-EMG: A Monotonic Graph Index for Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r15","question_id":"csq028","rank":15,"label":"2","rationale":"《ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate Nearest Neighbor Search Algorithms》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r16","question_id":"csq028","rank":16,"label":"1","rationale":"《Experimental comparison of graph-based approximate nearest neighbor search algorithms on edge devices》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r17","question_id":"csq028","rank":17,"label":"2","rationale":"《Falconn++: A Locality-sensitive Filtering Approach for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id":"csq028-r18","question_id":"csq028","rank":18,"label":"1","rationale":"《HENN: A Hierarchical Epsilon Net Navigation Graph for Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r19","question_id":"csq028","rank":19,"label":"1","rationale":"《CAGRA: Highly Parallel Graph Construction and Approximate Nearest Neighbor Search for GPUs》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq028-r20","question_id":"csq028","rank":20,"label":"1","rationale":"《Approximate Nearest Neighbor Search of Large Scale Vectors on Distributed Storage》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id":"csq029-r01","question_id":"csq029","rank":1,"label":"2","rationale":"《BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r02","question_id":"csq029","rank":2,"label":"2","rationale":"《Scaling Sparse and Dense Retrieval in Decoder-Only LLMs》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r03","question_id":"csq029","rank":3,"label":"2","rationale":"《Robust Neural Information Retrieval: An Adversarial and Out-of-distribution Perspective》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r04","question_id":"csq029","rank":4,"label":"2","rationale":"《Mr. TyDi: A Multi-lingual Benchmark for Dense Retrieval》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r05","question_id":"csq029","rank":5,"label":"1","rationale":"《On the Robustness of Generative Information Retrieval Models》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r06","question_id":"csq029","rank":6,"label":"2","rationale":"《A Study on the Efficiency and Generalization of Light Hybrid Retrievers》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r07","question_id":"csq029","rank":7,"label":"2","rationale":"《Match Your Words! A Study of Lexical Matching in Neural Information Retrieval》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r08","question_id":"csq029","rank":8,"label":"2","rationale":"《Hybrid Retrieval for Hallucination Mitigation in Large Language Models: A Comparative Analysis》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r09","question_id":"csq029","rank":9,"label":"2","rationale":"《Predicting Efficiency/Effectiveness Trade-offs for Dense vs. Sparse Retrieval Strategy Selection》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r10","question_id":"csq029","rank":10,"label":"2","rationale":"《Assessing the Performance Gap Between Lexical and Semantic Models for Information Retrieval With Formulaic Legal Language》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r11","question_id":"csq029","rank":11,"label":"2","rationale":"《DAT: Dynamic Alpha Tuning for Hybrid Retrieval in Retrieval-Augmented Generation》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r12","question_id":"csq029","rank":12,"label":"2","rationale":"《DESIRE-ME: Domain-Enhanced Supervised Information REtrieval using Mixture-of-Experts》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r13","question_id":"csq029","rank":13,"label":"1","rationale":"《Anserini Gets Dense Retrieval: Integration of Lucene's HNSW Indexes》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r14","question_id":"csq029","rank":14,"label":"1","rationale":"《Improving Biomedical Information Retrieval with Neural Retrievers》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r15","question_id":"csq029","rank":15,"label":"2","rationale":"《A Thorough Examination on Zero-shot Dense Retrieval》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id":"csq029-r16","question_id":"csq029","rank":16,"label":"1","rationale":"《PairDistill: Pairwise Relevance Distillation for Dense Retrieval》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r17","question_id":"csq029","rank":17,"label":"1","rationale":"《Open-Source Agentic Hybrid RAG Framework for Scientific Literature Review》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r18","question_id":"csq029","rank":18,"label":"1","rationale":"《UniIR: Training and Benchmarking Universal Multimodal Information Retrievers》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r19","question_id":"csq029","rank":19,"label":"1","rationale":"《Augmenting Document Representations for Dense Retrieval with Interpolation and Perturbation》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id":"csq029-r20","question_id":"csq029","rank":20,"label":"0","rationale":"《A Hybrid Retrieval-Generation Neural Conversation Model》研究任务偏离文本神经信息检索的基准与鲁棒性评价。"}
+{"item_id":"csq030-r01","question_id":"csq030","rank":1,"label":"2","rationale":"《From Natural Language to SQL: Review of LLM-based Text-to-SQL Systems》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r02","question_id":"csq030","rank":2,"label":"2","rationale":"《Towards Complex Text-to-SQL in Cross-Domain Database with Intermediate Representation》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r03","question_id":"csq030","rank":3,"label":"2","rationale":"《A Survey of Large Language Model-Based Generative AI for Text-to-SQL: Benchmarks, Applications, Use Cases, and Challenges》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r04","question_id":"csq030","rank":4,"label":"2","rationale":"《UNITE: A Unified Benchmark for Text-to-SQL Evaluation》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r05","question_id":"csq030","rank":5,"label":"2","rationale":"《Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r06","question_id":"csq030","rank":6,"label":"2","rationale":"《A Survey of Text-to-SQL in the Era of LLMs: Where are we, and where are we going?》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r07","question_id":"csq030","rank":7,"label":"2","rationale":"《Enhancing Text-to-SQL Capabilities of Large Language Models via Domain Database Knowledge Injection》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r08","question_id":"csq030","rank":8,"label":"2","rationale":"《Confidence Estimation for Text-to-SQL in Large Language Models》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r09","question_id":"csq030","rank":9,"label":"2","rationale":"《Evaluating Cross-Domain Text-to-SQL Models and Benchmarks》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r10","question_id":"csq030","rank":10,"label":"2","rationale":"《Abacus-SQL: A Text-to-SQL System Empowering Cross-Domain and Open-Domain Database Retrieval》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r11","question_id":"csq030","rank":11,"label":"2","rationale":"《Meta-aware Learning in text-to-SQL Large Language Model》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r12","question_id":"csq030","rank":12,"label":"2","rationale":"《KaggleDBQA: Realistic Evaluation of Text-to-SQL Parsers》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r13","question_id":"csq030","rank":13,"label":"2","rationale":"《Taming SQL Complexity: LLM-Based Equivalence Evaluation for Text-to-SQL》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r14","question_id":"csq030","rank":14,"label":"2","rationale":"《Did You Ask a Good Question? A Cross-Domain Question Intention Classification Benchmark for Text-to-SQL》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r15","question_id":"csq030","rank":15,"label":"2","rationale":"《Exploring Underexplored Limitations of Cross-Domain Text-to-SQL Generalization》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r16","question_id":"csq030","rank":16,"label":"2","rationale":"《Large Language Model Enhanced Text-to-SQL Generation: A Survey》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r17","question_id":"csq030","rank":17,"label":"2","rationale":"《FLEX: Expert-level False-Less EXecution Metric for Reliable Text-to-SQL Benchmark》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r18","question_id":"csq030","rank":18,"label":"2","rationale":"《A Survey on Employing Large Language Models for Text-to-SQL Tasks》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r19","question_id":"csq030","rank":19,"label":"2","rationale":"《RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id":"csq030-r20","question_id":"csq030","rank":20,"label":"2","rationale":"《SQLBench: A Comprehensive Evaluation for Text-to-SQL Capabilities of Large Language Models》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}

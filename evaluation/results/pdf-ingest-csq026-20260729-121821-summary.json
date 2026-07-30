@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq026-20260729-121821",
+  "created_at": "2026-07-29T12:29:46.858863+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq026",
+  "question": "What limitations have been reported for large-language-model agents on repository-level software engineering tasks, especially in localization, long-context reasoning, testing, and reproducibility?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1375,
+  "elapsed_seconds": 683.065155,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq026-20260729-121821",
+  "trace": [
+    "Ingested 10 papers. Indexed 1375 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-bbf3bcf27b3920c6",
+      "source_id": "arXiv:2506.14683",
+      "title": "Unified Software Engineering Agent as AI Software Engineer",
+      "pdf_path": "data\\pdfs\\arxiv-bbf3bcf27b3920c6.pdf",
+      "pdf_bytes": 1468650,
+      "page_count": 12
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-e6e85ab2772b8192",
+      "source_id": "arXiv:2504.14757",
+      "title": "SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs",
+      "pdf_path": "data\\pdfs\\arxiv-e6e85ab2772b8192.pdf",
+      "pdf_bytes": 966402,
+      "page_count": 27
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-3fcbc1116ebdb1f2",
+      "source_id": "arXiv:2311.09835",
+      "title": "ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code",
+      "pdf_path": "data\\pdfs\\arxiv-3fcbc1116ebdb1f2.pdf",
+      "pdf_bytes": 8488192,
+      "page_count": 46
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-f18e9089fbd9a7af",
+      "source_id": "arXiv:2511.16005",
+      "title": "InfCode-C++: Intent-Guided Semantic Retrieval and AST-Structured Search for C++ Issue Resolution",
+      "pdf_path": "data\\pdfs\\arxiv-f18e9089fbd9a7af.pdf",
+      "pdf_bytes": 1169488,
+      "page_count": 17
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-a3e1ab7e7a263e71",
+      "source_id": "arXiv:2502.06994",
+      "title": "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering",
+      "pdf_path": "data\\pdfs\\arxiv-a3e1ab7e7a263e71.pdf",
+      "pdf_bytes": 5664371,
+      "page_count": 75
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-bd6b7513b1cceaf1",
+      "source_id": "arXiv:2512.20957",
+      "title": "One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents",
+      "pdf_path": "data\\pdfs\\arxiv-bd6b7513b1cceaf1.pdf",
+      "pdf_bytes": 3068932,
+      "page_count": 27
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-b1ed3edcc2054301",
+      "source_id": "arXiv:2501.18160",
+      "title": "RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing",
+      "pdf_path": "data\\pdfs\\arxiv-b1ed3edcc2054301.pdf",
+      "pdf_bytes": 1061105,
+      "page_count": 18
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-6f6e46bc463bbd0c",
+      "source_id": "arXiv:2509.24148",
+      "title": "TENET: One Step Toward Test-Driven Development for Repository-Level Code Generation",
+      "pdf_path": "data\\pdfs\\arxiv-6f6e46bc463bbd0c.pdf",
+      "pdf_bytes": 985514,
+      "page_count": 13
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-45b0b9fc91843be7",
+      "source_id": "arXiv:2512.21373",
+      "title": "AInsteinBench: Benchmarking Coding Agents on Scientific Repositories",
+      "pdf_path": "data\\pdfs\\arxiv-45b0b9fc91843be7.pdf",
+      "pdf_bytes": 3565235,
+      "page_count": 35
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-97812c37f75039f8",
+      "source_id": "arXiv:2506.17772",
+      "title": "PAGENT: Learning to Patch Software Engineering Agents",
+      "pdf_path": "data\\pdfs\\arxiv-97812c37f75039f8.pdf",
+      "pdf_bytes": 1836174,
+      "page_count": 12
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq027-20260729-123647",
+  "created_at": "2026-07-29T12:46:43.695754+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq027",
+  "question": "What learned index structures have been proposed, and under which data distributions and update workloads do they outperform or underperform traditional indexes?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 959,
+  "elapsed_seconds": 595.845593,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq027-20260729-123647",
+  "trace": [
+    "Ingested 10 papers. Indexed 959 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-4fa36096599e05b1",
+      "source_id": "arXiv:2305.01237",
+      "title": "Updatable Learned Indexes Meet Disk-Resident DBMS -- From Evaluations to Design Choices",
+      "pdf_path": "data\\pdfs\\arxiv-4fa36096599e05b1.pdf",
+      "pdf_bytes": 3865575,
+      "page_count": 22
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-5be22c69aa1f33ae",
+      "source_id": "arXiv:2006.12804",
+      "title": "Benchmarking Learned Indexes",
+      "pdf_path": "data\\pdfs\\arxiv-5be22c69aa1f33ae.pdf",
+      "pdf_bytes": 780547,
+      "page_count": 14
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-e6ea016dfdb0dbbe",
+      "source_id": "arXiv:2104.05520",
+      "title": "Updatable Learned Index with Precise Positions",
+      "pdf_path": "data\\pdfs\\arxiv-e6ea016dfdb0dbbe.pdf",
+      "pdf_bytes": 1701031,
+      "page_count": 16
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-348b71591deefdd7",
+      "source_id": "arXiv:1902.00655",
+      "title": "Learned Indexes for Dynamic Workloads",
+      "pdf_path": "data\\pdfs\\arxiv-348b71591deefdd7.pdf",
+      "pdf_bytes": 364649,
+      "page_count": 8
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-949840bac73a014f",
+      "source_id": "arXiv:2109.08495",
+      "title": "Micro-architectural Analysis of a Learned Index",
+      "pdf_path": "data\\pdfs\\arxiv-949840bac73a014f.pdf",
+      "pdf_bytes": 882595,
+      "page_count": 13
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-69bc3bb69cf28d9b",
+      "source_id": "arXiv:1911.13014",
+      "title": "SOSD: A Benchmark for Learned Indexes",
+      "pdf_path": "data\\pdfs\\arxiv-69bc3bb69cf28d9b.pdf",
+      "pdf_bytes": 254788,
+      "page_count": 5
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-e4d8825270c8c808",
+      "source_id": "arXiv:2204.10028",
+      "title": "A Learned Index for Exact Similarity Search in Metric Spaces",
+      "pdf_path": "data\\pdfs\\arxiv-e4d8825270c8c808.pdf",
+      "pdf_bytes": 3133751,
+      "page_count": 14
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-0f6c47196cc6a5b1",
+      "source_id": "arXiv:1905.08898",
+      "title": "ALEX: An Updatable Adaptive Learned Index",
+      "pdf_path": "data\\pdfs\\arxiv-0f6c47196cc6a5b1.pdf",
+      "pdf_bytes": 4135206,
+      "page_count": 21
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-2b5ec34cfcae4662",
+      "source_id": "arXiv:2304.08817",
+      "title": "DILI: A Distribution-Driven Learned Index (Extended version)",
+      "pdf_path": "data\\pdfs\\arxiv-2b5ec34cfcae4662.pdf",
+      "pdf_bytes": 1633581,
+      "page_count": 17
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-63415876ce5c7f9a",
+      "source_id": "arXiv:2306.02604",
+      "title": "A Simple Yet High-Performing On-disk Learned Index: Can We Have Our Cake and Eat it Too?",
+      "pdf_path": "data\\pdfs\\arxiv-63415876ce5c7f9a.pdf",
+      "pdf_bytes": 3431318,
+      "page_count": 14
+    }
+  ]
+}

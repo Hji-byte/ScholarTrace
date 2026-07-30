@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq024-20260729-112712",
+  "created_at": "2026-07-29T11:44:33.441274+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq024",
+  "question": "How do execution-based, test-based, and model-based evaluation approaches for code generation compare?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1022,
+  "elapsed_seconds": 1040.608138,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq024-20260729-112712",
+  "trace": [
+    "Ingested 10 papers. Indexed 1022 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-7004b525494ab078",
+      "source_id": "arXiv:2211.09374",
+      "title": "Execution-based Evaluation for Data Science Code Generation Models",
+      "pdf_path": "data\\pdfs\\arxiv-7004b525494ab078.pdf",
+      "pdf_bytes": 885903,
+      "page_count": 9
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-28b6fe3025a82585",
+      "source_id": "arXiv:2408.13745",
+      "title": "DOCE: Finding the Sweet Spot for Execution-Based Code Generation",
+      "pdf_path": "data\\pdfs\\arxiv-28b6fe3025a82585.pdf",
+      "pdf_bytes": 11758213,
+      "page_count": 21
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-34763880f7c092e4",
+      "source_id": "arXiv:2404.00566",
+      "title": "CodeBenchGen: Creating Scalable Execution-based Code Generation Benchmarks",
+      "pdf_path": "data\\pdfs\\arxiv-34763880f7c092e4.pdf",
+      "pdf_bytes": 2791995,
+      "page_count": 34
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-5bdfd99fdd0f0e6a",
+      "source_id": "arXiv:2212.10481",
+      "title": "Execution-Based Evaluation for Open-Domain Code Generation",
+      "pdf_path": "data\\pdfs\\arxiv-5bdfd99fdd0f0e6a.pdf",
+      "pdf_bytes": 4476479,
+      "page_count": 19
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-70357797b72209f5",
+      "source_id": "arXiv:2206.01335",
+      "title": "Code Generation Tools (Almost) for Free? A Study of Few-Shot, Pre-Trained Language Models on Code",
+      "pdf_path": "data\\pdfs\\arxiv-70357797b72209f5.pdf",
+      "pdf_bytes": 603407,
+      "page_count": 12
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-44474a02b67035e1",
+      "source_id": "arXiv:2301.09043",
+      "title": "CodeScore: Evaluating Code Generation by Learning Code Execution",
+      "pdf_path": "data\\pdfs\\arxiv-44474a02b67035e1.pdf",
+      "pdf_bytes": 4599405,
+      "page_count": 22
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-35738ccd6cb9fb9e",
+      "source_id": "arXiv:2506.10948",
+      "title": "Execution Guided Line-by-Line Code Generation",
+      "pdf_path": "data\\pdfs\\arxiv-35738ccd6cb9fb9e.pdf",
+      "pdf_bytes": 1068825,
+      "page_count": 19
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-33216f6f0870e014",
+      "source_id": "arXiv:2502.02827",
+      "title": "COFFE: A Code Efficiency Benchmark for Code Generation",
+      "pdf_path": "data\\pdfs\\arxiv-33216f6f0870e014.pdf",
+      "pdf_bytes": 1212913,
+      "page_count": 24
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-b2ca79a51ba28567",
+      "source_id": "arXiv:2302.08468",
+      "title": "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+      "pdf_path": "data\\pdfs\\arxiv-b2ca79a51ba28567.pdf",
+      "pdf_bytes": 1891989,
+      "page_count": 23
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-dd3c5223c7a10fc6",
+      "source_id": "arXiv:2406.06918",
+      "title": "HumanEvo: An Evolution-aware Benchmark for More Realistic Evaluation of Repository-level Code Generation",
+      "pdf_path": "data\\pdfs\\arxiv-dd3c5223c7a10fc6.pdf",
+      "pdf_bytes": 631401,
+      "page_count": 13
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq001-20260727-132706",
+  "created_at": "2026-07-27T13:32:24.725321+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq001",
+  "question": "What are the main methods for evaluating retrieval-augmented generation systems, and which retrieval and generation dimensions do they measure?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 654,
+  "elapsed_seconds": 317.843776,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq001-20260727-132706",
+  "trace": [
+    "Ingested 10 papers. Indexed 654 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-cba94fe759b1629e",
+      "source_id": "arXiv:2309.15217",
+      "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+      "pdf_path": "data\\pdfs\\arxiv-cba94fe759b1629e.pdf",
+      "pdf_bytes": 231984,
+      "page_count": 8
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-098bd4d6ee4c6be7",
+      "source_id": "arXiv:2508.05650",
+      "title": "OmniBench-RAG: A Multi-Domain Evaluation Platform for Retrieval-Augmented Generation Tools",
+      "pdf_path": "data\\pdfs\\arxiv-098bd4d6ee4c6be7.pdf",
+      "pdf_bytes": 622220,
+      "page_count": 4
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-f1a5e9edd2c6885e",
+      "source_id": "arXiv:2510.08945",
+      "title": "FATHOMS-RAG: A Framework for the Assessment of Thinking and Observation in Multimodal Systems that use Retrieval Augmented Generation",
+      "pdf_path": "data\\pdfs\\arxiv-f1a5e9edd2c6885e.pdf",
+      "pdf_bytes": 3564884,
+      "page_count": 9
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-5be6be7fb5f26c9b",
+      "source_id": "arXiv:2409.08479",
+      "title": "Exploring Information Retrieval Landscapes: An Investigation of a Novel Evaluation Techniques and Comparative Document Splitting Methods",
+      "pdf_path": "data\\pdfs\\arxiv-5be6be7fb5f26c9b.pdf",
+      "pdf_bytes": 434050,
+      "page_count": 19
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-7ec4f50e3fb7e718",
+      "source_id": "arXiv:2501.03995",
+      "title": "RAG-Check: Evaluating Multimodal Retrieval Augmented Generation Performance",
+      "pdf_path": "data\\pdfs\\arxiv-7ec4f50e3fb7e718.pdf",
+      "pdf_bytes": 2905955,
+      "page_count": 8
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-e2a2b846ac5dd6a1",
+      "source_id": "arXiv:2502.16636",
+      "title": "Visual-RAG: Benchmarking Text-to-Image Retrieval Augmented Generation for Visual Knowledge Intensive Queries",
+      "pdf_path": "data\\pdfs\\arxiv-e2a2b846ac5dd6a1.pdf",
+      "pdf_bytes": 2989270,
+      "page_count": 21
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-6e284bd9eb73570b",
+      "source_id": "arXiv:2504.19754",
+      "title": "Reconstructing Context: Evaluating Advanced Chunking Strategies for Retrieval-Augmented Generation",
+      "pdf_path": "data\\pdfs\\arxiv-6e284bd9eb73570b.pdf",
+      "pdf_bytes": 831506,
+      "page_count": 15
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-46e930d6c9391796",
+      "source_id": "arXiv:2410.12812",
+      "title": "Optimizing and Evaluating Enterprise Retrieval-Augmented Generation (RAG): A Content Design Perspective",
+      "pdf_path": "data\\pdfs\\arxiv-46e930d6c9391796.pdf",
+      "pdf_bytes": 1213692,
+      "page_count": 6
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-025a7c2ead5ec48b",
+      "source_id": "arXiv:2506.06962",
+      "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+      "pdf_path": "data\\pdfs\\arxiv-025a7c2ead5ec48b.pdf",
+      "pdf_bytes": 8870231,
+      "page_count": 18
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-35d6b38627a62902",
+      "source_id": "arXiv:2402.13178",
+      "title": "Benchmarking Retrieval-Augmented Generation for Medicine",
+      "pdf_path": "data\\pdfs\\arxiv-35d6b38627a62902.pdf",
+      "pdf_bytes": 884447,
+      "page_count": 19
+    }
+  ]
+}

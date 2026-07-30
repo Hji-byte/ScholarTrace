@@ -1,0 +1,600 @@
+{"item_id": "csq001-r01", "question_id": "csq001", "rank": 1, "label": "2", "rationale": "提出RAG无参考评估套件，覆盖检索相关聚焦、利用忠实性和生成质量。"}
+{"item_id": "csq001-r02", "question_id": "csq001", "rank": 2, "label": "2", "rationale": "标准化评估RAG准确性增益与效率变化，并支持跨领域比较。"}
+{"item_id": "csq001-r03", "question_id": "csq001", "rank": 3, "label": "2", "rationale": "整体评估多模态RAG摄取、检索、推理、正确性和幻觉。"}
+{"item_id": "csq001-r04", "question_id": "csq001", "rank": 4, "label": "2", "rationale": "提出RAG检索评估协议及多种准确性、相关性指标。"}
+{"item_id": "csq001-r05", "question_id": "csq001", "rank": 5, "label": "2", "rationale": "分别以相关性分数和正确性分数测量检索与生成。"}
+{"item_id": "csq001-r06", "question_id": "csq001", "rank": 6, "label": "2", "rationale": "基准隔离评估图像检索及生成阶段的视觉证据利用。"}
+{"item_id": "csq001-r07", "question_id": "csq001", "rank": 7, "label": "2", "rationale": "比较分块方法对检索相关完整性、生成连贯性和效率的影响。"}
+{"item_id": "csq001-r08", "question_id": "csq001", "rank": 8, "label": "2", "rationale": "讨论企业RAG监控评估及基准失效时的人主导方法。"}
+{"item_id": "csq001-r09", "question_id": "csq001", "rank": 9, "label": "0", "rationale": "核心是图像生成的逐步检索增强方法，不研究RAG评估方法。"}
+{"item_id": "csq001-r10", "question_id": "csq001", "rank": 10, "label": "2", "rationale": "医疗RAG基准系统比较语料、检索器和生成模型组合。"}
+{"item_id": "csq001-r11", "question_id": "csq001", "rank": 11, "label": "2", "rationale": "提供文档检索与生成评估工具及准确性、真实性基准。"}
+{"item_id": "csq001-r12", "question_id": "csq001", "rank": 12, "label": "2", "rationale": "DIG直接量化检索文档对正确生成的贡献，属于检索评估维度。"}
+{"item_id": "csq001-r13", "question_id": "csq001", "rank": 13, "label": "2", "rationale": "RAG系统综述明确包含量化评估与信任框架。"}
+{"item_id": "csq001-r14", "question_id": "csq001", "rank": 14, "label": "1", "rationale": "主要提出金融RAG架构，仅用检索精度、相关性和延迟验证。"}
+{"item_id": "csq001-r15", "question_id": "csq001", "rank": 15, "label": "2", "rationale": "区分事实性与检索证据忠实性，并评估RAG输出幻觉检测。"}
+{"item_id": "csq001-r16", "question_id": "csq001", "rank": 16, "label": "1", "rationale": "以相关性、多样性和答案裁判优化RAG，评价是内部优化信号。"}
+{"item_id": "csq001-r17", "question_id": "csq001", "rank": 17, "label": "0", "rationale": "只用ROUGE比较自动文献综述系统，未评估RAG检索或生成维度。"}
+{"item_id": "csq001-r18", "question_id": "csq001", "rank": 18, "label": "1", "rationale": "视频RAG应用附带自动评估流程，但摘要未说明具体维度。"}
+{"item_id": "csq001-r19", "question_id": "csq001", "rank": 19, "label": "1", "rationale": "结构化证据评估用于迭代控制，并非外部RAG评价框架。"}
+{"item_id": "csq001-r20", "question_id": "csq001", "rank": 20, "label": "0", "rationale": "核心是异构数据多代理RAG架构，没有评估方法贡献。"}
+{"item_id": "csq002-r01", "question_id": "csq002", "rank": 1, "label": "2", "rationale": "结合分层量化KV缓存与自推测解码，直接比较内存和速度。"}
+{"item_id": "csq002-r02", "question_id": "csq002", "rank": 2, "label": "2", "rationale": "用低精度草稿与高精度验证融合量化和推测解码。"}
+{"item_id": "csq002-r03", "question_id": "csq002", "rank": 3, "label": "2", "rationale": "自推测解码是问题所列核心无损加速路线。"}
+{"item_id": "csq002-r04", "question_id": "csq002", "rank": 4, "label": "2", "rationale": "以量化替代层构造草稿模型加速卸载LLM推理。"}
+{"item_id": "csq002-r05", "question_id": "csq002", "rank": 5, "label": "2", "rationale": "研究异构LLM草稿选择和任务检测的推测解码。"}
+{"item_id": "csq002-r06", "question_id": "csq002", "rank": 6, "label": "2", "rationale": "分阶段推测解码直接属于LLM推理加速方法。"}
+{"item_id": "csq002-r07", "question_id": "csq002", "rank": 7, "label": "1", "rationale": "提供推理服务瓶颈实证背景，但不专门比较三类加速机制。"}
+{"item_id": "csq002-r08", "question_id": "csq002", "rank": 8, "label": "2", "rationale": "解析推测解码机制、性能来源和限制。"}
+{"item_id": "csq002-r09", "question_id": "csq002", "rank": 9, "label": "2", "rationale": "联合KV跳过、token融合和自适应量化等推理加速策略。"}
+{"item_id": "csq002-r10", "question_id": "csq002", "rank": 10, "label": "2", "rationale": "改进推测解码的拒绝采样效率和接受过程。"}
+{"item_id": "csq002-r11", "question_id": "csq002", "rank": 11, "label": "2", "rationale": "在线适配草稿模型以提高推测解码效率。"}
+{"item_id": "csq002-r12", "question_id": "csq002", "rank": 12, "label": "2", "rationale": "系统综述推测解码加速方法及效率权衡。"}
+{"item_id": "csq002-r13", "question_id": "csq002", "rank": 13, "label": "2", "rationale": "评估多模态LLM使用语言或视觉草稿的推测解码。"}
+{"item_id": "csq002-r14", "question_id": "csq002", "rank": 14, "label": "2", "rationale": "面向长上下文优化草稿KV缓存和并行验证。"}
+{"item_id": "csq002-r15", "question_id": "csq002", "rank": 15, "label": "2", "rationale": "CTC草稿提高候选接受率以加速推测解码。"}
+{"item_id": "csq002-r16", "question_id": "csq002", "rank": 16, "label": "2", "rationale": "排序式推测解码用于嵌套模型高效部署。"}
+{"item_id": "csq002-r17", "question_id": "csq002", "rank": 17, "label": "2", "rationale": "重新设计多模态LLM推测解码，直接覆盖核心方法。"}
+{"item_id": "csq002-r18", "question_id": "csq002", "rank": 18, "label": "2", "rationale": "自适应推测长度和服务目标以优化推理延迟。"}
+{"item_id": "csq002-r19", "question_id": "csq002", "rank": 19, "label": "2", "rationale": "资源感知并行推测解码直接研究部署加速。"}
+{"item_id": "csq002-r20", "question_id": "csq002", "rank": 20, "label": "2", "rationale": "综述KV缓存选择、量化和注意力压缩及其内存速度权衡。"}
+{"item_id": "csq003-r01", "question_id": "csq003", "rank": 1, "label": "1", "rationale": "元评估通用自动指标可靠性，但并非事实性或幻觉专门研究。"}
+{"item_id": "csq003-r02", "question_id": "csq003", "rank": 2, "label": "1", "rationale": "分析通用LLM裁判设计对可靠性的影响，可作自动评估背景。"}
+{"item_id": "csq003-r03", "question_id": "csq003", "rank": 3, "label": "2", "rationale": "以人工核验摘要构建并验证事实一致性基准。"}
+{"item_id": "csq003-r04", "question_id": "csq003", "rank": 4, "label": "1", "rationale": "研究用户基线与代理指标的一致性，事实性焦点不明确。"}
+{"item_id": "csq003-r05", "question_id": "csq003", "rank": 5, "label": "2", "rationale": "专门评估主题聚焦对话摘要的LLM幻觉。"}
+{"item_id": "csq003-r06", "question_id": "csq003", "rank": 6, "label": "1", "rationale": "改进LLM人工评价样本效率，但不专门测量事实性。"}
+{"item_id": "csq003-r07", "question_id": "csq003", "rank": 7, "label": "2", "rationale": "比较LLM事实性裁判、传统指标和人工标注的相关性。"}
+{"item_id": "csq003-r08", "question_id": "csq003", "rank": 8, "label": "2", "rationale": "提出生物医学简明摘要事实一致性自动指标及人工数据。"}
+{"item_id": "csq003-r09", "question_id": "csq003", "rank": 9, "label": "2", "rationale": "构建并分析LLM幻觉能力与缺陷的评测基准。"}
+{"item_id": "csq003-r10", "question_id": "csq003", "rank": 10, "label": "1", "rationale": "核心是自反思缓解幻觉，自动和人评仅用于验证效果。"}
+{"item_id": "csq003-r11", "question_id": "csq003", "rank": 11, "label": "2", "rationale": "直接改进并检验事实一致性自动评价方法。"}
+{"item_id": "csq003-r12", "question_id": "csq003", "rank": 12, "label": "2", "rationale": "HaluEval是大规模LLM幻觉评价基准。"}
+{"item_id": "csq003-r13", "question_id": "csq003", "rank": 13, "label": "2", "rationale": "以跨人口角色回答差异测量LLM事实一致性。"}
+{"item_id": "csq003-r14", "question_id": "csq003", "rank": 14, "label": "1", "rationale": "评估LLM评价器自身一致性，非事实一致性专门指标。"}
+{"item_id": "csq003-r15", "question_id": "csq003", "rank": 15, "label": "2", "rationale": "以检索增强方法直接检测LLM事实性幻觉。"}
+{"item_id": "csq003-r16", "question_id": "csq003", "rank": 16, "label": "2", "rationale": "提出意图幻觉基准、自动约束分数及人工验证。"}
+{"item_id": "csq003-r17", "question_id": "csq003", "rank": 17, "label": "2", "rationale": "联合自动指标与人工评估系统研究数据到文本事实一致性。"}
+{"item_id": "csq003-r18", "question_id": "csq003", "rank": 18, "label": "1", "rationale": "提出通用人评可靠性框架，可支持事实性人评设计。"}
+{"item_id": "csq003-r19", "question_id": "csq003", "rank": 19, "label": "2", "rationale": "提出搜索增强长文本事实性评估并与众包人工比较。"}
+{"item_id": "csq003-r20", "question_id": "csq003", "rank": 20, "label": "2", "rationale": "用LLM生成监督训练事实一致性评价器。"}
+{"item_id": "csq004-r01", "question_id": "csq004", "rank": 1, "label": "2", "rationale": "识别LLM裁判不一致并提出针对性缓解。"}
+{"item_id": "csq004-r02", "question_id": "csq004", "rank": 2, "label": "2", "rationale": "批判LLM裁判局限并提出程序化评价替代方案。"}
+{"item_id": "csq004-r03", "question_id": "csq004", "rank": 3, "label": "2", "rationale": "系统量化多类LLM裁判偏差并给出应用建议。"}
+{"item_id": "csq004-r04", "question_id": "csq004", "rank": 4, "label": "2", "rationale": "揭示情境偏好和一致性问题并评估准则、面板等缓解。"}
+{"item_id": "csq004-r05", "question_id": "csq004", "rank": 5, "label": "2", "rationale": "研究十一类裁判偏差并提出四类缓解策略。"}
+{"item_id": "csq004-r06", "question_id": "csq004", "rank": 6, "label": "2", "rationale": "识别教师偏好偏差并提出助手参与的三阶段去偏。"}
+{"item_id": "csq004-r07", "question_id": "csq004", "rank": 7, "label": "2", "rationale": "系统评估对齐任务裁判的提示敏感性和可解释指标。"}
+{"item_id": "csq004-r08", "question_id": "csq004", "rank": 8, "label": "2", "rationale": "用MT-Bench和Chatbot Arena验证LLM裁判可靠性。"}
+{"item_id": "csq004-r09", "question_id": "csq004", "rank": 9, "label": "2", "rationale": "直接比较人类和LLM裁判的多种判断偏差。"}
+{"item_id": "csq004-r10", "question_id": "csq004", "rank": 10, "label": "1", "rationale": "使用LLM裁判评测被测模型偏见，重点不是裁判自身偏差。"}
+{"item_id": "csq004-r11", "question_id": "csq004", "rank": 11, "label": "2", "rationale": "分析评分不确定性导致的验证偏差并提出多标签协议。"}
+{"item_id": "csq004-r12", "question_id": "csq004", "rank": 12, "label": "2", "rationale": "诊断LLM裁判过度自信并提出置信驱动方案。"}
+{"item_id": "csq004-r13", "question_id": "csq004", "rank": 13, "label": "2", "rationale": "识别评分提示造成的顺序、ID和参考分数偏差。"}
+{"item_id": "csq004-r14", "question_id": "csq004", "rank": 14, "label": "2", "rationale": "揭示LLM裁判未被承认的捷径偏差。"}
+{"item_id": "csq004-r15", "question_id": "csq004", "rank": 15, "label": "2", "rationale": "证明无人工参考时裁判受自身答题能力限制并给出缓解。"}
+{"item_id": "csq004-r16", "question_id": "csq004", "rank": 16, "label": "2", "rationale": "揭示LLM裁判后门脆弱性并提出模型合并防御。"}
+{"item_id": "csq004-r17", "question_id": "csq004", "rank": 17, "label": "2", "rationale": "以细粒度准则和强化学习缓解科学问答裁判乐观偏差。"}
+{"item_id": "csq004-r18", "question_id": "csq004", "rank": 18, "label": "2", "rationale": "分析答案类型、提示变化和自偏好对QA裁判的影响。"}
+{"item_id": "csq004-r19", "question_id": "csq004", "rank": 19, "label": "2", "rationale": "以回归感知微调和思维链提升LLM裁判可靠性。"}
+{"item_id": "csq004-r20", "question_id": "csq004", "rank": 20, "label": "2", "rationale": "通过响应自适应参考缓解无参考裁判判断缺陷。"}
+{"item_id": "csq005-r01", "question_id": "csq005", "rank": 1, "label": "2", "rationale": "以连续注意记忆实现理论无限上下文。"}
+{"item_id": "csq005-r02", "question_id": "csq005", "rank": 2, "label": "2", "rationale": "演化式Transformer记忆直接扩展长期信息保留。"}
+{"item_id": "csq005-r03", "question_id": "csq005", "rank": 3, "label": "2", "rationale": "通过小序列卸载降低长上下文推理内存。"}
+{"item_id": "csq005-r04", "question_id": "csq005", "rank": 4, "label": "2", "rationale": "提出可扩展嵌入直接放大LLM上下文长度。"}
+{"item_id": "csq005-r05", "question_id": "csq005", "rank": 5, "label": "2", "rationale": "系统探索位置扩展等LLM上下文窗口扩大方法。"}
+{"item_id": "csq005-r06", "question_id": "csq005", "rank": 6, "label": "2", "rationale": "压缩上下文记忆支持在线长交互并降低存储。"}
+{"item_id": "csq005-r07", "question_id": "csq005", "rank": 7, "label": "2", "rationale": "无分块检索嵌入连接RAG与长上下文，影响检索质量。"}
+{"item_id": "csq005-r08", "question_id": "csq005", "rank": 8, "label": "2", "rationale": "系统分类KV缓存压缩及其性能和延迟权衡。"}
+{"item_id": "csq005-r09", "question_id": "csq005", "rank": 9, "label": "2", "rationale": "连续位置编码尺度实现长度外推且几乎不增延迟。"}
+{"item_id": "csq005-r10", "question_id": "csq005", "rank": 10, "label": "2", "rationale": "异构知识源的记忆增强Transformer直接支持长期信息利用。"}
+{"item_id": "csq005-r11", "question_id": "csq005", "rank": 11, "label": "2", "rationale": "学习选择性记忆策略以权衡长上下文质量与成本。"}
+{"item_id": "csq005-r12", "question_id": "csq005", "rank": 12, "label": "2", "rationale": "层次记忆和分段递归降低长上下文参数与推理内存。"}
+{"item_id": "csq005-r13", "question_id": "csq005", "rank": 13, "label": "2", "rationale": "概率位置先验显著扩展长度并保持检索准确性。"}
+{"item_id": "csq005-r14", "question_id": "csq005", "rank": 14, "label": "2", "rationale": "理论分析长上下文Transformer部署的内存和性能上限。"}
+{"item_id": "csq005-r15", "question_id": "csq005", "rank": 15, "label": "2", "rationale": "低秩注意空间压缩KV缓存以降低长上下文开销。"}
+{"item_id": "csq005-r16", "question_id": "csq005", "rank": 16, "label": "2", "rationale": "分析位置向量并提出两种免训练窗口扩展方法。"}
+{"item_id": "csq005-r17", "question_id": "csq005", "rank": 17, "label": "2", "rationale": "直接研究检索与长上下文模型的互补及质量权衡。"}
+{"item_id": "csq005-r18", "question_id": "csq005", "rank": 18, "label": "2", "rationale": "层次上下文缓存用于降低长上下文服务成本和延迟。"}
+{"item_id": "csq005-r19", "question_id": "csq005", "rank": 19, "label": "2", "rationale": "可逆KV压缩通过token重构权衡内存与信息保真。"}
+{"item_id": "csq005-r20", "question_id": "csq005", "rank": 20, "label": "2", "rationale": "外部记忆支持超训练长度检索并验证针检索质量。"}
+{"item_id": "csq006-r01", "question_id": "csq006", "rank": 1, "label": "2", "rationale": "通过神经元激活选择减少PEFT训练参数并保持适配能力。"}
+{"item_id": "csq006-r02", "question_id": "csq006", "rank": 2, "label": "2", "rationale": "涵盖适配器、前缀、BitFit和LoRA并探索统一设计空间。"}
+{"item_id": "csq006-r03", "question_id": "csq006", "rank": 3, "label": "2", "rationale": "分组激活共享参数化直接提升PEFT参数效率与稳健推理。"}
+{"item_id": "csq006-r04", "question_id": "csq006", "rank": 4, "label": "2", "rationale": "适配器是冻结主干、仅训练新增小模块的代表PEFT方法。"}
+{"item_id": "csq006-r05", "question_id": "csq006", "rank": 5, "label": "2", "rationale": "以Hessian信息选择最有影响的极小参数子集。"}
+{"item_id": "csq006-r06", "question_id": "csq006", "rank": 6, "label": "2", "rationale": "按敏感度选择视觉模型调优参数以保持下游性能。"}
+{"item_id": "csq006-r07", "question_id": "csq006", "rank": 7, "label": "2", "rationale": "量子酉参数化使训练参数随维度对数增长。"}
+{"item_id": "csq006-r08", "question_id": "csq006", "rank": 8, "label": "2", "rationale": "统一比较七类PEFT及参数、内存、速度和任务表现。"}
+{"item_id": "csq006-r09", "question_id": "csq006", "rank": 9, "label": "2", "rationale": "用主列空间梯度投影和权重共享提升小预算性能。"}
+{"item_id": "csq006-r10", "question_id": "csq006", "rank": 10, "label": "2", "rationale": "早期剪枝主干和PEFT模块进一步减少训练参数。"}
+{"item_id": "csq006-r11", "question_id": "csq006", "rank": 11, "label": "2", "rationale": "随机掩码寻找少量可训练中奖子网络以高效适配。"}
+{"item_id": "csq006-r12", "question_id": "csq006", "rank": 12, "label": "2", "rationale": "低秩注意力侧调优是典型新增小模块PEFT路线。"}
+{"item_id": "csq006-r13", "question_id": "csq006", "rank": 13, "label": "2", "rationale": "低秩正则梯度投影兼顾少参数适配和鲁棒性。"}
+{"item_id": "csq006-r14", "question_id": "csq006", "rank": 14, "label": "2", "rationale": "冻结三维主干，仅训练提示和适配器即保持下游表现。"}
+{"item_id": "csq006-r15", "question_id": "csq006", "rank": 15, "label": "2", "rationale": "自适应低秩LoRA直接研究参数缩减与性能保持。"}
+{"item_id": "csq006-r16", "question_id": "csq006", "rank": 16, "label": "2", "rationale": "用紧凑二值掩码复用适配器，大幅降低每配置参数。"}
+{"item_id": "csq006-r17", "question_id": "csq006", "rank": 17, "label": "2", "rationale": "提出生成式PEFT方法以少量可训练参数适配基础模型。"}
+{"item_id": "csq006-r18", "question_id": "csq006", "rank": 18, "label": "2", "rationale": "统一比较视觉PEFT的参数效率、准确率和分布鲁棒性。"}
+{"item_id": "csq006-r19", "question_id": "csq006", "rank": 19, "label": "2", "rationale": "提示依赖表征修改是针对输入自适应的PEFT方法。"}
+{"item_id": "csq006-r20", "question_id": "csq006", "rank": 20, "label": "2", "rationale": "动态提示和Fisher参数选择以少参数达到全量调优表现。"}
+{"item_id": "csq007-r01", "question_id": "csq007", "rank": 1, "label": "2", "rationale": "用联盟形成博弈优化层次联邦学习的非IID训练。"}
+{"item_id": "csq007-r02", "question_id": "csq007", "rank": 2, "label": "2", "rationale": "自适应双模蒸馏和激励处理异质客户端非IID数据。"}
+{"item_id": "csq007-r03", "question_id": "csq007", "rank": 3, "label": "2", "rationale": "以同步相位加权更新缓解统计异质性的客户端漂移。"}
+{"item_id": "csq007-r04", "question_id": "csq007", "rank": 4, "label": "2", "rationale": "直接研究半监督联邦在非IID数据下的算法与系统。"}
+{"item_id": "csq007-r05", "question_id": "csq007", "rank": 5, "label": "2", "rationale": "弹性联邦学习针对不同客户端模型或资源能力。"}
+{"item_id": "csq007-r06", "question_id": "csq007", "rank": 6, "label": "2", "rationale": "分析本地多步和随机重排在一般非凸联邦优化中的假设。"}
+{"item_id": "csq007-r07", "question_id": "csq007", "rank": 7, "label": "2", "rationale": "可信度加权自蒸馏约束非IID本地更新并给出收敛保证。"}
+{"item_id": "csq007-r08", "question_id": "csq007", "rank": 8, "label": "2", "rationale": "FedBN针对特征偏移保留本地批归一化并分析收敛。"}
+{"item_id": "csq007-r09", "question_id": "csq007", "rank": 9, "label": "1", "rationale": "主要是拜占庭鲁棒聚合，非IID仅是防御条件而非核心异质性问题。"}
+{"item_id": "csq007-r10", "question_id": "csq007", "rank": 10, "label": "2", "rationale": "个性化聚合处理非IID，并以异步训练应对客户端差异。"}
+{"item_id": "csq007-r11", "question_id": "csq007", "rank": 11, "label": "2", "rationale": "聚类式个性化联邦直接按非IID客户端分组。"}
+{"item_id": "csq007-r12", "question_id": "csq007", "rank": 12, "label": "2", "rationale": "异步在线联邦针对边缘客户端非IID与时序参与。"}
+{"item_id": "csq007-r13", "question_id": "csq007", "rank": 13, "label": "2", "rationale": "联邦Adagrad、Adam和Yogi分析异质非凸数据收敛。"}
+{"item_id": "csq007-r14", "question_id": "csq007", "rank": 14, "label": "2", "rationale": "动态克隆删除模型以聚合相似分布客户端。"}
+{"item_id": "csq007-r15", "question_id": "csq007", "rank": 15, "label": "2", "rationale": "自适应聚类框架专门应对异质客户端数据。"}
+{"item_id": "csq007-r16", "question_id": "csq007", "rank": 16, "label": "2", "rationale": "联合数据异质性与网络延迟选择客户端，覆盖统计和系统假设。"}
+{"item_id": "csq007-r17", "question_id": "csq007", "rank": 17, "label": "2", "rationale": "实证预训练初始化如何减轻数据和系统异质性。"}
+{"item_id": "csq007-r18", "question_id": "csq007", "rank": 18, "label": "2", "rationale": "综述聚类联邦的分类、假设和非IID应用。"}
+{"item_id": "csq007-r19", "question_id": "csq007", "rank": 19, "label": "2", "rationale": "系统分类数据、统计、系统和模型异质性及其方法。"}
+{"item_id": "csq007-r20", "question_id": "csq007", "rank": 20, "label": "2", "rationale": "系统给出非IID类型、度量、方法、框架和优缺点。"}
+{"item_id": "csq008-r01", "question_id": "csq008", "rank": 1, "label": "2", "rationale": "证明常用校准误差估计有偏不一致并提出proper-score框架。"}
+{"item_id": "csq008-r02", "question_id": "csq008", "rank": 2, "label": "2", "rationale": "揭示ECE、AUSE、UCS和UCE不一致及无法唯一确定校准。"}
+{"item_id": "csq008-r03", "question_id": "csq008", "rank": 3, "label": "1", "rationale": "提出集成与后处理校准法，仅用既有指标验证。"}
+{"item_id": "csq008-r04", "question_id": "csq008", "rank": 4, "label": "2", "rationale": "为目标检测提出校准定义、三种指标和稳健实验协议。"}
+{"item_id": "csq008-r05", "question_id": "csq008", "rank": 5, "label": "2", "rationale": "跨数据集、分布偏移和多种指标评估测试时增强校准。"}
+{"item_id": "csq008-r06", "question_id": "csq008", "rank": 6, "label": "2", "rationale": "综述预训练目标检测器校准方法、指标与评估设置。"}
+{"item_id": "csq008-r07", "question_id": "csq008", "rank": 7, "label": "2", "rationale": "直接研究深度学习模型不确定性何时可称为校准。"}
+{"item_id": "csq008-r08", "question_id": "csq008", "rank": 8, "label": "1", "rationale": "比较音频模型校准方法，但指标盲点不是核心。"}
+{"item_id": "csq008-r09", "question_id": "csq008", "rank": 9, "label": "1", "rationale": "提出参数化温度缩放，未研究评估指标失效。"}
+{"item_id": "csq008-r10", "question_id": "csq008", "rank": 10, "label": "2", "rationale": "以全局、数据集级、类别级ECE和MCS揭示聚合差异。"}
+{"item_id": "csq008-r11", "question_id": "csq008", "rank": 11, "label": "1", "rationale": "研究深度预测不确定性，是否涵盖通用校准指标并不明确。"}
+{"item_id": "csq008-r12", "question_id": "csq008", "rank": 12, "label": "2", "rationale": "理论分析ECE和ENCE在等变与对称失配下的界限。"}
+{"item_id": "csq008-r13", "question_id": "csq008", "rank": 13, "label": "1", "rationale": "针对OOD提出能量缩放校准器，重点不是指标遗漏。"}
+{"item_id": "csq008-r14", "question_id": "csq008", "rank": 14, "label": "2", "rationale": "直接评估域漂移下后处理校准的失效模式。"}
+{"item_id": "csq008-r15", "question_id": "csq008", "rank": 15, "label": "2", "rationale": "明确使用ECE和MCE并揭示高准确模型仍失校准。"}
+{"item_id": "csq008-r16", "question_id": "csq008", "rank": 16, "label": "1", "rationale": "以新激活函数改善OOD校准，指标分析并非主要贡献。"}
+{"item_id": "csq008-r17", "question_id": "csq008", "rank": 17, "label": "1", "rationale": "提出噪声一致正则改善鲁棒和校准，未分析评价协议。"}
+{"item_id": "csq008-r18", "question_id": "csq008", "rank": 18, "label": "1", "rationale": "提出前序网络组合校准方法，非指标或benchmark研究。"}
+{"item_id": "csq008-r19", "question_id": "csq008", "rank": 19, "label": "1", "rationale": "提出随机推理的单次校准训练法，未说明指标盲点。"}
+{"item_id": "csq008-r20", "question_id": "csq008", "rank": 20, "label": "1", "rationale": "动态证据学习校准方法为相关方法背景，非评价协议核心。"}
+{"item_id": "csq009-r01", "question_id": "csq009", "rank": 1, "label": "2", "rationale": "以Forman-Ricci曲率增广同时缓解过平滑和过挤压。"}
+{"item_id": "csq009-r02", "question_id": "csq009", "rank": 2, "label": "2", "rationale": "用梯度消失统一解释两种现象并提供理论实证缓解。"}
+{"item_id": "csq009-r03", "question_id": "csq009", "rank": 3, "label": "2", "rationale": "直接分析深层GNN中过平滑与过挤压的权衡。"}
+{"item_id": "csq009-r04", "question_id": "csq009", "rank": 4, "label": "2", "rationale": "以Ollivier-Ricci曲率重新解释并连接两种失效。"}
+{"item_id": "csq009-r05", "question_id": "csq009", "rank": 5, "label": "2", "rationale": "保持谱的稀疏重连平衡过挤压、过平滑和开销。"}
+{"item_id": "csq009-r06", "question_id": "csq009", "rank": 6, "label": "2", "rationale": "研究黎曼GNN中的过挤压机制与几何缓解。"}
+{"item_id": "csq009-r07", "question_id": "csq009", "rank": 7, "label": "2", "rationale": "证明残差连接降低或避免过平滑并有数值实验支持。"}
+{"item_id": "csq009-r08", "question_id": "csq009", "rank": 8, "label": "2", "rationale": "以通道容量解释累积压缩并联合选择宽度和深度。"}
+{"item_id": "csq009-r09", "question_id": "csq009", "rank": 9, "label": "2", "rationale": "用有符号图视角解释并缓解GNN过平滑。"}
+{"item_id": "csq009-r10", "question_id": "csq009", "rank": 10, "label": "2", "rationale": "以混合与去噪效应非渐近刻画过平滑机制。"}
+{"item_id": "csq009-r11", "question_id": "csq009", "rank": 11, "label": "2", "rationale": "用有效电阻界定过挤压并以重连算法缓解。"}
+{"item_id": "csq009-r12", "question_id": "csq009", "rank": 12, "label": "2", "rationale": "从拓扑角度度量过平滑并提出缓解方法。"}
+{"item_id": "csq009-r13", "question_id": "csq009", "rank": 13, "label": "2", "rationale": "将秩坍塌识别为过平滑和过相关的成因。"}
+{"item_id": "csq009-r14", "question_id": "csq009", "rank": 14, "label": "2", "rationale": "识别梯度过平滑和残差梯度扩张并提出归一化。"}
+{"item_id": "csq009-r15", "question_id": "csq009", "rank": 15, "label": "2", "rationale": "动力系统分析结合反Hebbian注意力剪枝打破过平滑收敛。"}
+{"item_id": "csq009-r16", "question_id": "csq009", "rank": 16, "label": "2", "rationale": "利用节点嵌入关系缓解深层GNN过平滑。"}
+{"item_id": "csq009-r17", "question_id": "csq009", "rank": 17, "label": "2", "rationale": "Kuramoto耦合振子方法直接用于减少过平滑。"}
+{"item_id": "csq009-r18", "question_id": "csq009", "rank": 18, "label": "2", "rationale": "区分过平滑与深层GNN可训练性问题，澄清成因。"}
+{"item_id": "csq009-r19", "question_id": "csq009", "rank": 19, "label": "2", "rationale": "以直接指标和因果设计评估重连缓解过挤压的条件。"}
+{"item_id": "csq009-r20", "question_id": "csq009", "rank": 20, "label": "2", "rationale": "局部虚拟节点绕过结构瓶颈并实证改善过挤压。"}
+{"item_id": "csq010-r01", "question_id": "csq010", "rank": 1, "label": "2", "rationale": "自蒸馏是免负样本的非对比自监督路线。"}
+{"item_id": "csq010-r02", "question_id": "csq010", "rank": 2, "label": "2", "rationale": "融合对比和掩码自编码目标，直接连接两类范式。"}
+{"item_id": "csq010-r03", "question_id": "csq010", "rank": 3, "label": "2", "rationale": "综述从视觉对比学习到掩码自编码器的发展。"}
+{"item_id": "csq010-r04", "question_id": "csq010", "rank": 4, "label": "2", "rationale": "理论和实验统一对比与协方差非对比目标。"}
+{"item_id": "csq010-r05", "question_id": "csq010", "rank": 5, "label": "2", "rationale": "以谱嵌入视角比较对比与非对比自监督。"}
+{"item_id": "csq010-r06", "question_id": "csq010", "rank": 6, "label": "2", "rationale": "设计可证明防坍塌的非对比损失和投影头。"}
+{"item_id": "csq010-r07", "question_id": "csq010", "rank": 7, "label": "2", "rationale": "解释BYOL式非对比预测头如何避免坍塌。"}
+{"item_id": "csq010-r08", "question_id": "csq010", "rank": 8, "label": "2", "rationale": "系统综述掩码图像建模目标与发展。"}
+{"item_id": "csq010-r09", "question_id": "csq010", "rank": 9, "label": "2", "rationale": "从核理论分析联合嵌入非对比自监督。"}
+{"item_id": "csq010-r10", "question_id": "csq010", "rank": 10, "label": "2", "rationale": "用对齐与均匀性重新解释图掩码自编码器。"}
+{"item_id": "csq010-r11", "question_id": "csq010", "rank": 11, "label": "2", "rationale": "将免负样本非对比学习用于语音表征。"}
+{"item_id": "csq010-r12", "question_id": "csq010", "rank": 12, "label": "2", "rationale": "维度级对比损失是对比目标的直接演进。"}
+{"item_id": "csq010-r13", "question_id": "csq010", "rank": 13, "label": "2", "rationale": "从局部对比视角解析掩码自编码目标。"}
+{"item_id": "csq010-r14", "question_id": "csq010", "rank": 14, "label": "2", "rationale": "从优化和动力系统解释非对比停止梯度与EMA。"}
+{"item_id": "csq010-r15", "question_id": "csq010", "rank": 15, "label": "2", "rationale": "融合掩码和对比预测学习点云视频表征。"}
+{"item_id": "csq010-r16", "question_id": "csq010", "rank": 16, "label": "2", "rationale": "直接比较医学影像对比与掩码自编码预训练。"}
+{"item_id": "csq010-r17", "question_id": "csq010", "rank": 17, "label": "2", "rationale": "曲率对齐提出新的自监督表征目标。"}
+{"item_id": "csq010-r18", "question_id": "csq010", "rank": 18, "label": "2", "rationale": "Mix-up对比学习是对比目标及样本构造的演进。"}
+{"item_id": "csq010-r19", "question_id": "csq010", "rank": 19, "label": "2", "rationale": "提出带置信度的概率对比损失。"}
+{"item_id": "csq010-r20", "question_id": "csq010", "rank": 20, "label": "2", "rationale": "以语义相似度软化负样本的对比学习目标。"}
+{"item_id": "csq011-r01", "question_id": "csq011", "rank": 1, "label": "2", "rationale": "混合高斯与神经场，直接权衡内存、质量和实时性。"}
+{"item_id": "csq011-r02", "question_id": "csq011", "rank": 2, "label": "2", "rationale": "直接研究少视图3DGS质量与计算成本。"}
+{"item_id": "csq011-r03", "question_id": "csq011", "rank": 3, "label": "2", "rationale": "比较NeRF与3DGS并压缩高斯表示。"}
+{"item_id": "csq011-r04", "question_id": "csq011", "rank": 4, "label": "2", "rationale": "改进高斯颜色表示以提升新视角合成。"}
+{"item_id": "csq011-r05", "question_id": "csq011", "rank": 5, "label": "2", "rationale": "以体素表示动态神经辐射场。"}
+{"item_id": "csq011-r06", "question_id": "csq011", "rank": 6, "label": "2", "rationale": "以3DGS替代高成本体渲染并处理模糊输入。"}
+{"item_id": "csq011-r07", "question_id": "csq011", "rank": 7, "label": "2", "rationale": "综述3DGS与NeRF表示及渲染差异。"}
+{"item_id": "csq011-r08", "question_id": "csq011", "rank": 8, "label": "2", "rationale": "分析高斯渲染计算瓶颈并提出加速。"}
+{"item_id": "csq011-r09", "question_id": "csq011", "rank": 9, "label": "2", "rationale": "提出平面专家与神经辐射场混合表示。"}
+{"item_id": "csq011-r10", "question_id": "csq011", "rank": 10, "label": "2", "rationale": "4D高斯新视角合成并比较NeRF效率。"}
+{"item_id": "csq011-r11", "question_id": "csq011", "rank": 11, "label": "2", "rationale": "量化3DGS压缩、质量和渲染速度权衡。"}
+{"item_id": "csq011-r12", "question_id": "csq011", "rank": 12, "label": "2", "rationale": "针对X射线提出高效高斯新视角表示。"}
+{"item_id": "csq011-r13", "question_id": "csq011", "rank": 13, "label": "1", "rationale": "主要贡献是SLAM，3DGS合成仅为组件。"}
+{"item_id": "csq011-r14", "question_id": "csq011", "rank": 14, "label": "2", "rationale": "联合优化NeRF与3DGS并分析表示差异。"}
+{"item_id": "csq011-r15", "question_id": "csq011", "rank": 15, "label": "2", "rationale": "提出Transformer条件化的可泛化NeRF。"}
+{"item_id": "csq011-r16", "question_id": "csq011", "rank": 16, "label": "2", "rationale": "比较扩散与回归式NVS的质量计算权衡。"}
+{"item_id": "csq011-r17", "question_id": "csq011", "rank": 17, "label": "2", "rationale": "金字塔3DGS处理大场景表示与渲染成本。"}
+{"item_id": "csq011-r18", "question_id": "csq011", "rank": 18, "label": "2", "rationale": "综述NeRF、混合神经场及高斯泼溅。"}
+{"item_id": "csq011-r19", "question_id": "csq011", "rank": 19, "label": "2", "rationale": "综述NeRF表示及其性能扩展。"}
+{"item_id": "csq011-r20", "question_id": "csq011", "rank": 20, "label": "2", "rationale": "改进NeRF射线密度表示以支持稀疏输入。"}
+{"item_id": "csq012-r01", "question_id": "csq012", "rank": 1, "label": "2", "rationale": "比较自回归与ControlNet的控制、效率和质量。"}
+{"item_id": "csq012-r02", "question_id": "csq012", "rank": 2, "label": "2", "rationale": "直接对比扩散与自回归可控视觉生成。"}
+{"item_id": "csq012-r03", "question_id": "csq012", "rank": 3, "label": "2", "rationale": "降低混合自回归扩散的图像采样成本。"}
+{"item_id": "csq012-r04", "question_id": "csq012", "rank": 4, "label": "2", "rationale": "将图像扩散重写为下一词元自回归。"}
+{"item_id": "csq012-r05", "question_id": "csq012", "rank": 5, "label": "2", "rationale": "连续图像词元AR兼顾训练目标和采样效率。"}
+{"item_id": "csq012-r06", "question_id": "csq012", "rank": 6, "label": "0", "rationale": "研究扩散语言模型而非图像生成。"}
+{"item_id": "csq012-r07", "question_id": "csq012", "rank": 7, "label": "1", "rationale": "离散扩散目标可作背景，但重点并非图像生成。"}
+{"item_id": "csq012-r08", "question_id": "csq012", "rank": 8, "label": "2", "rationale": "离散扩散覆盖图像控制、质量与快速采样。"}
+{"item_id": "csq012-r09", "question_id": "csq012", "rank": 9, "label": "0", "rationale": "研究语言模型而非图像生成。"}
+{"item_id": "csq012-r10", "question_id": "csq012", "rank": 10, "label": "2", "rationale": "提出AR训练目标并与扩散图像质量比较。"}
+{"item_id": "csq012-r11", "question_id": "csq012", "rank": 11, "label": "2", "rationale": "比较扩散图像生成的慢采样并提出AR方案。"}
+{"item_id": "csq012-r12", "question_id": "csq012", "rank": 12, "label": "2", "rationale": "直接比较视觉AR与扩散推理扩展和质量。"}
+{"item_id": "csq012-r13", "question_id": "csq012", "rank": 13, "label": "2", "rationale": "标准下一词元图像生成与扩散质量对比。"}
+{"item_id": "csq012-r14", "question_id": "csq012", "rank": 14, "label": "0", "rationale": "研究视觉语言模型解码，不是图像生成。"}
+{"item_id": "csq012-r15", "question_id": "csq012", "rank": 15, "label": "2", "rationale": "讨论AR图像编辑的条件控制与扩散差异。"}
+{"item_id": "csq012-r16", "question_id": "csq012", "rank": 16, "label": "2", "rationale": "融合AR Transformer与扩散并比较图像质量。"}
+{"item_id": "csq012-r17", "question_id": "csq012", "rank": 17, "label": "2", "rationale": "下一尺度AR训练并明确超越扩散图像模型。"}
+{"item_id": "csq012-r18", "question_id": "csq012", "rank": 18, "label": "2", "rationale": "离散扩散采样覆盖图像质量和计算扩展。"}
+{"item_id": "csq012-r19", "question_id": "csq012", "rank": 19, "label": "1", "rationale": "研究自回归视频扩散，模态相邻但非图像。"}
+{"item_id": "csq012-r20", "question_id": "csq012", "rank": 20, "label": "2", "rationale": "AR图像生成直接比较扩散的控制和效率。"}
+{"item_id": "csq013-r01", "question_id": "csq013", "rank": 1, "label": "2", "rationale": "提出前后变化式VLM幻觉评测。"}
+{"item_id": "csq013-r02", "question_id": "csq013", "rank": 2, "label": "2", "rationale": "提出想象任务幻觉评测基准VOPE。"}
+{"item_id": "csq013-r03", "question_id": "csq013", "rank": 3, "label": "2", "rationale": "统一评测对象和关系三元组幻觉。"}
+{"item_id": "csq013-r04", "question_id": "csq013", "rank": 4, "label": "2", "rationale": "提出多对象幻觉基准及评测协议。"}
+{"item_id": "csq013-r05", "question_id": "csq013", "rank": 5, "label": "2", "rationale": "提出VQA幻觉检测和不确定性指标。"}
+{"item_id": "csq013-r06", "question_id": "csq013", "rank": 6, "label": "2", "rationale": "提出关系幻觉R-Bench。"}
+{"item_id": "csq013-r07", "question_id": "csq013", "rank": 7, "label": "2", "rationale": "提出细粒度无参考FaithScore指标。"}
+{"item_id": "csq013-r08", "question_id": "csq013", "rank": 8, "label": "2", "rationale": "提出医疗LVLM幻觉检测评测基准。"}
+{"item_id": "csq013-r09", "question_id": "csq013", "rank": 9, "label": "1", "rationale": "主要分析对象幻觉成因，评测为研究手段。"}
+{"item_id": "csq013-r10", "question_id": "csq013", "rank": 10, "label": "2", "rationale": "医疗VLM幻觉评测与缓解基准。"}
+{"item_id": "csq013-r11", "question_id": "csq013", "rank": 11, "label": "2", "rationale": "自动生成VLM幻觉测试案例。"}
+{"item_id": "csq013-r12", "question_id": "csq013", "rank": 12, "label": "2", "rationale": "以不确定性作为内在幻觉检测指标。"}
+{"item_id": "csq013-r13", "question_id": "csq013", "rank": 13, "label": "1", "rationale": "主要研究检索增强缓解幻觉。"}
+{"item_id": "csq013-r14", "question_id": "csq013", "rank": 14, "label": "2", "rationale": "提出注意力式对象幻觉检测分数。"}
+{"item_id": "csq013-r15", "question_id": "csq013", "rank": 15, "label": "1", "rationale": "主要提出潜空间干预缓解幻觉。"}
+{"item_id": "csq013-r16", "question_id": "csq013", "rank": 16, "label": "1", "rationale": "主要预测并缓解幻觉，非系统基准研究。"}
+{"item_id": "csq013-r17", "question_id": "csq013", "rank": 17, "label": "2", "rationale": "首批系统对象幻觉评测研究。"}
+{"item_id": "csq013-r18", "question_id": "csq013", "rank": 18, "label": "2", "rationale": "提出逻辑闭环发现对象幻觉的方法。"}
+{"item_id": "csq013-r19", "question_id": "csq013", "rank": 19, "label": "2", "rationale": "评测知识冲突下的VLM幻觉鲁棒性。"}
+{"item_id": "csq013-r20", "question_id": "csq013", "rank": 20, "label": "1", "rationale": "主要从架构角度分析对象幻觉成因。"}
+{"item_id": "csq014-r01", "question_id": "csq014", "rank": 1, "label": "2", "rationale": "明确指出AT对未见威胁泛化不足。"}
+{"item_id": "csq014-r02", "question_id": "csq014", "rank": 2, "label": "2", "rationale": "以缩放律量化鲁棒准确率和训练效率极限。"}
+{"item_id": "csq014-r03", "question_id": "csq014", "rank": 3, "label": "2", "rationale": "证明AT对未见物理攻击效果有限。"}
+{"item_id": "csq014-r04", "question_id": "csq014", "rank": 4, "label": "2", "rationale": "新局部攻击揭示分类器局限并专门训练防御。"}
+{"item_id": "csq014-r05", "question_id": "csq014", "rank": 5, "label": "2", "rationale": "直接讨论AT数据成本和增强泛化失败。"}
+{"item_id": "csq014-r06", "question_id": "csq014", "rank": 6, "label": "2", "rationale": "处理AT训练振荡和鲁棒过拟合。"}
+{"item_id": "csq014-r07", "question_id": "csq014", "rank": 7, "label": "2", "rationale": "指出经验AT常被更强攻击击破。"}
+{"item_id": "csq014-r08", "question_id": "csq014", "rank": 8, "label": "1", "rationale": "混合净化防御间接说明单独AT不足。"}
+{"item_id": "csq014-r09", "question_id": "csq014", "rank": 9, "label": "1", "rationale": "研究AT的OOD鲁棒和可解释性收益。"}
+{"item_id": "csq014-r10", "question_id": "csq014", "rank": 10, "label": "1", "rationale": "联邦环境下AT受隐私和边缘计算约束。"}
+{"item_id": "csq014-r11", "question_id": "csq014", "rank": 11, "label": "1", "rationale": "持续学习中特定AT问题，范围较窄。"}
+{"item_id": "csq014-r12", "question_id": "csq014", "rank": 12, "label": "2", "rationale": "直接权衡图像鲁棒准确率与计算成本。"}
+{"item_id": "csq014-r13", "question_id": "csq014", "rank": 13, "label": "2", "rationale": "直接研究图像分类AT的全局泛化。"}
+{"item_id": "csq014-r14", "question_id": "csq014", "rank": 14, "label": "0", "rationale": "研究噪声一致性而非对抗训练。"}
+{"item_id": "csq014-r15", "question_id": "csq014", "rank": 15, "label": "1", "rationale": "指出AT难泛化到未见故障，但范围不限图像。"}
+{"item_id": "csq014-r16", "question_id": "csq014", "rank": 16, "label": "0", "rationale": "用对抗训练学习视点不变性，非对抗攻击防御。"}
+{"item_id": "csq014-r17", "question_id": "csq014", "rank": 17, "label": "0", "rationale": "研究语义分割而非图像分类。"}
+{"item_id": "csq014-r18", "question_id": "csq014", "rank": 18, "label": "2", "rationale": "明确分析鲁棒准确率模型的训练和内存成本。"}
+{"item_id": "csq014-r19", "question_id": "csq014", "rank": 19, "label": "1", "rationale": "图像鲁棒防御综述性实验，AT仅为一类方法。"}
+{"item_id": "csq014-r20", "question_id": "csq014", "rank": 20, "label": "1", "rationale": "论证AT改善OOD泛化，可作反向权衡证据。"}
+{"item_id": "csq015-r01", "question_id": "csq015", "rank": 1, "label": "2", "rationale": "窗口式BFT直接降低二次广播复杂度。"}
+{"item_id": "csq015-r02", "question_id": "csq015", "rank": 2, "label": "2", "rationale": "分解共识以降低地理分布通信成本。"}
+{"item_id": "csq015-r03", "question_id": "csq015", "rank": 3, "label": "2", "rationale": "以预提交和PVSS平衡BFT延迟与安全。"}
+{"item_id": "csq015-r04", "question_id": "csq015", "rank": 4, "label": "2", "rationale": "直接处理线性通信下的吞吐延迟牺牲。"}
+{"item_id": "csq015-r05", "question_id": "csq015", "rank": 5, "label": "2", "rationale": "概率化BFT权衡消息复杂度与通信轮次。"}
+{"item_id": "csq015-r06", "question_id": "csq015", "rank": 6, "label": "2", "rationale": "两轮终局和线性开销直接降低延迟通信。"}
+{"item_id": "csq015-r07", "question_id": "csq015", "rank": 7, "label": "2", "rationale": "多领导者、流水线和两步通信提升吞吐。"}
+{"item_id": "csq015-r08", "question_id": "csq015", "rank": 8, "label": "2", "rationale": "针对DAG-BFT高吞吐的延迟代价优化。"}
+{"item_id": "csq015-r09", "question_id": "csq015", "rank": 9, "label": "2", "rationale": "会话缓冲与批量提交降低交互延迟。"}
+{"item_id": "csq015-r10", "question_id": "csq015", "rank": 10, "label": "1", "rationale": "重点是广义法定人数活性而非性能优化。"}
+{"item_id": "csq015-r11", "question_id": "csq015", "rank": 11, "label": "2", "rationale": "HotStuff实现响应性和线性通信。"}
+{"item_id": "csq015-r12", "question_id": "csq015", "rank": 12, "label": "2", "rationale": "综述BFT算法的吞吐、延迟和通信设计。"}
+{"item_id": "csq015-r13", "question_id": "csq015", "rank": 13, "label": "2", "rationale": "旋转领导者以单轮往返和低开销确认。"}
+{"item_id": "csq015-r14", "question_id": "csq015", "rank": 14, "label": "2", "rationale": "DAG广播原语实现低延迟且无额外通信。"}
+{"item_id": "csq015-r15", "question_id": "csq015", "rank": 15, "label": "2", "rationale": "无认证DAG减少消息和证书计算开销。"}
+{"item_id": "csq015-r16", "question_id": "csq015", "rank": 16, "label": "1", "rationale": "主要解决BFT数据可用性和审查抵抗。"}
+{"item_id": "csq015-r17", "question_id": "csq015", "rank": 17, "label": "2", "rationale": "针对无线异步BFT高消息复杂度。"}
+{"item_id": "csq015-r18", "question_id": "csq015", "rank": 18, "label": "2", "rationale": "可调委员会混合共识面向真实网络性能。"}
+{"item_id": "csq015-r19", "question_id": "csq015", "rank": 19, "label": "2", "rationale": "优化异步BFT子协议以降低延迟提升吞吐。"}
+{"item_id": "csq015-r20", "question_id": "csq015", "rank": 20, "label": "2", "rationale": "门限签名等技巧实现线性通信。"}
+{"item_id": "csq016-r01", "question_id": "csq016", "rank": 1, "label": "2", "rationale": "直接评测多种快照冷启动方法。"}
+{"item_id": "csq016-r02", "question_id": "csq016", "rank": 2, "label": "2", "rationale": "以预测控制预调度和预热函数。"}
+{"item_id": "csq016-r03", "question_id": "csq016", "rank": 3, "label": "2", "rationale": "基准分析并优化无服务器快照。"}
+{"item_id": "csq016-r04", "question_id": "csq016", "rank": 4, "label": "2", "rationale": "轻量多语言运行时直接降低实例启动成本。"}
+{"item_id": "csq016-r05", "question_id": "csq016", "rank": 5, "label": "2", "rationale": "以时间序列预测调用并预防冷启动。"}
+{"item_id": "csq016-r06", "question_id": "csq016", "rank": 6, "label": "2", "rationale": "分析快照恢复瓶颈并协同优化操作系统。"}
+{"item_id": "csq016-r07", "question_id": "csq016", "rank": 7, "label": "2", "rationale": "以实例池直接缓解容器冷启动。"}
+{"item_id": "csq016-r08", "question_id": "csq016", "rank": 8, "label": "2", "rationale": "解决MicroVM快照恢复的唯一性与安全。"}
+{"item_id": "csq016-r09", "question_id": "csq016", "rank": 9, "label": "2", "rationale": "跨函数实时共享依赖以降低冷启动。"}
+{"item_id": "csq016-r10", "question_id": "csq016", "rank": 10, "label": "2", "rationale": "总结冷启动反模式与重构缓解策略。"}
+{"item_id": "csq016-r11", "question_id": "csq016", "rank": 11, "label": "2", "rationale": "按调用模式调度，权衡预加载资源与延迟。"}
+{"item_id": "csq016-r12", "question_id": "csq016", "rank": 12, "label": "2", "rationale": "LSTM预测并动态预热函数实例。"}
+{"item_id": "csq016-r13", "question_id": "csq016", "rank": 13, "label": "2", "rationale": "比较预热局限并提出通用工作器。"}
+{"item_id": "csq016-r14", "question_id": "csq016", "rank": 14, "label": "2", "rationale": "综述LLM无服务器推理的快照加载方案。"}
+{"item_id": "csq016-r15", "question_id": "csq016", "rank": 15, "label": "2", "rationale": "系统综述冷启动方法、分类与权衡。"}
+{"item_id": "csq016-r16", "question_id": "csq016", "rank": 16, "label": "2", "rationale": "系统分析不同快照技术性能极限。"}
+{"item_id": "csq016-r17", "question_id": "csq016", "rank": 17, "label": "1", "rationale": "主要优化资源利用，冷启动仅是相关性能因素。"}
+{"item_id": "csq016-r18", "question_id": "csq016", "rank": 18, "label": "2", "rationale": "以Transformer预测调用进行冷启动缓解。"}
+{"item_id": "csq016-r19", "question_id": "csq016", "rank": 19, "label": "2", "rationale": "比较预热的延迟、资源和碳排权衡。"}
+{"item_id": "csq016-r20", "question_id": "csq016", "rank": 20, "label": "2", "rationale": "以时序卷积预测策略管理冷启动。"}
+{"item_id": "csq017-r01", "question_id": "csq017", "rank": 1, "label": "2", "rationale": "数据处理负载以利用率、吞吐和共置干扰评测。"}
+{"item_id": "csq017-r02", "question_id": "csq017", "rank": 2, "label": "2", "rationale": "GPU调度含DL负载、网络延迟和模拟方法。"}
+{"item_id": "csq017-r03", "question_id": "csq017", "rank": 3, "label": "2", "rationale": "参考架构专用于调度器设计和比较。"}
+{"item_id": "csq017-r04", "question_id": "csq017", "rank": 4, "label": "2", "rationale": "数据中心作业调度直接评估资源配置。"}
+{"item_id": "csq017-r05", "question_id": "csq017", "rank": 5, "label": "2", "rationale": "HPC协同调度覆盖工作流与利用率。"}
+{"item_id": "csq017-r06", "question_id": "csq017", "rank": 6, "label": "2", "rationale": "HPC多资源负载和长期调度性能评估。"}
+{"item_id": "csq017-r07", "question_id": "csq017", "rank": 7, "label": "2", "rationale": "大规模GPU调度覆盖DL作业、干扰和扩展性。"}
+{"item_id": "csq017-r08", "question_id": "csq017", "rank": 8, "label": "2", "rationale": "动态ML负载以公平性和系统效率评测。"}
+{"item_id": "csq017-r09", "question_id": "csq017", "rank": 9, "label": "2", "rationale": "数字孪生用预测仿真评估调度决策。"}
+{"item_id": "csq017-r10", "question_id": "csq017", "rank": 10, "label": "2", "rationale": "多资源集群直接评估突发性、公平和延迟。"}
+{"item_id": "csq017-r11", "question_id": "csq017", "rank": 11, "label": "2", "rationale": "提供HPC调度仿真环境和策略评估。"}
+{"item_id": "csq017-r12", "question_id": "csq017", "rank": 12, "label": "2", "rationale": "云集群调度以批负载、成本和干扰评测。"}
+{"item_id": "csq017-r13", "question_id": "csq017", "rank": 13, "label": "2", "rationale": "训练推理GPU集群以利用率和排队时间评测。"}
+{"item_id": "csq017-r14", "question_id": "csq017", "rank": 14, "label": "2", "rationale": "DL集群以goodput和资源效率优化评测。"}
+{"item_id": "csq017-r15", "question_id": "csq017", "rank": 15, "label": "2", "rationale": "通信异构DL负载以网络争用和吞吐评测。"}
+{"item_id": "csq017-r16", "question_id": "csq017", "rank": 16, "label": "2", "rationale": "研究作业属性估计和任务采样实验方法。"}
+{"item_id": "csq017-r17", "question_id": "csq017", "rank": 17, "label": "1", "rationale": "LLM训练仿真可作方法背景，但非集群调度器评测。"}
+{"item_id": "csq017-r18", "question_id": "csq017", "rank": 18, "label": "2", "rationale": "DL可重配置作业和多资源调度评估。"}
+{"item_id": "csq017-r19", "question_id": "csq017", "rank": 19, "label": "2", "rationale": "综述HPC作业调度负载和系统效率指标。"}
+{"item_id": "csq017-r20", "question_id": "csq017", "rank": 20, "label": "2", "rationale": "混合实验与尽力作业以延迟和抢占评测。"}
+{"item_id": "csq018-r01", "question_id": "csq018", "rank": 1, "label": "2", "rationale": "路线图直接梳理网内计算数据平面演进。"}
+{"item_id": "csq018-r02", "question_id": "csq018", "rank": 2, "label": "2", "rationale": "综述网内AI系统和可编程架构演进。"}
+{"item_id": "csq018-r03", "question_id": "csq018", "rank": 3, "label": "2", "rationale": "系统综述P4交换机应用与挑战。"}
+{"item_id": "csq018-r04", "question_id": "csq018", "rank": 4, "label": "2", "rationale": "综述可编程数据平面架构、算法和应用。"}
+{"item_id": "csq018-r05", "question_id": "csq018", "rank": 5, "label": "2", "rationale": "综述可重配置数据平面应用优化。"}
+{"item_id": "csq018-r06", "question_id": "csq018", "rank": 6, "label": "2", "rationale": "综述P4基础、进展与应用研究。"}
+{"item_id": "csq018-r07", "question_id": "csq018", "rank": 7, "label": "2", "rationale": "直接研究网内计算对HPC科学负载的收益。"}
+{"item_id": "csq018-r08", "question_id": "csq018", "rank": 8, "label": "2", "rationale": "以可编程数据平面和AI实现入侵检测。"}
+{"item_id": "csq018-r09", "question_id": "csq018", "rank": 9, "label": "2", "rationale": "可编程交换机直接加速分布式聚合。"}
+{"item_id": "csq018-r10", "question_id": "csq018", "rank": 10, "label": "2", "rationale": "浮点支持扩展可编程交换机应用范围。"}
+{"item_id": "csq018-r11", "question_id": "csq018", "rank": 11, "label": "2", "rationale": "网内计算用于大数据和分布式学习。"}
+{"item_id": "csq018-r12", "question_id": "csq018", "rank": 12, "label": "2", "rationale": "网内加速器使数据平面支持深度学习。"}
+{"item_id": "csq018-r13", "question_id": "csq018", "rank": 13, "label": "2", "rationale": "研究边缘FaaS形式的网内计算。"}
+{"item_id": "csq018-r14", "question_id": "csq018", "rank": 14, "label": "2", "rationale": "网内计算切片服务全息低延迟应用。"}
+{"item_id": "csq018-r15", "question_id": "csq018", "rank": 15, "label": "2", "rationale": "综述网内计算在云边连续体中的角色。"}
+{"item_id": "csq018-r16", "question_id": "csq018", "rank": 16, "label": "0", "rationale": "任务运行于网络化计算节点，并非数据平面内计算。"}
+{"item_id": "csq018-r17", "question_id": "csq018", "rank": 17, "label": "2", "rationale": "P4数据平面用于CPS攻击检测。"}
+{"item_id": "csq018-r18", "question_id": "csq018", "rank": 18, "label": "2", "rationale": "在可编程交换机实现多队列带内遥测。"}
+{"item_id": "csq018-r19", "question_id": "csq018", "rank": 19, "label": "2", "rationale": "提出高性能低功耗灵活网内计算架构。"}
+{"item_id": "csq018-r20", "question_id": "csq018", "rank": 20, "label": "2", "rationale": "在交换机内运行网络协调算法。"}
+{"item_id": "csq019-r01", "question_id": "csq019", "rank": 1, "label": "2", "rationale": "改进DP-SGD噪声策略以缓解效用损失。"}
+{"item_id": "csq019-r02", "question_id": "csq019", "rank": 2, "label": "2", "rationale": "梯度编码和去噪改善DP训练准确率。"}
+{"item_id": "csq019-r03", "question_id": "csq019", "rank": 3, "label": "1", "rationale": "自动发现一般DP算法隐私效用前沿，可作方法背景。"}
+{"item_id": "csq019-r04", "question_id": "csq019", "rank": 4, "label": "2", "rationale": "联邦语言模型DP训练及隐私效用权衡。"}
+{"item_id": "csq019-r05", "question_id": "csq019", "rank": 5, "label": "2", "rationale": "权衡多方学习隐私、准确率和通信效率。"}
+{"item_id": "csq019-r06", "question_id": "csq019", "rank": 6, "label": "2", "rationale": "专为DP训练选择激活和架构。"}
+{"item_id": "csq019-r07", "question_id": "csq019", "rank": 7, "label": "2", "rationale": "隐状态DP拓展到两层ReLU网络。"}
+{"item_id": "csq019-r08", "question_id": "csq019", "rank": 8, "label": "2", "rationale": "前向学习利用内在噪声实现DP训练。"}
+{"item_id": "csq019-r09", "question_id": "csq019", "rank": 9, "label": "2", "rationale": "二值联邦学习改善客户端级DP效用。"}
+{"item_id": "csq019-r10", "question_id": "csq019", "rank": 10, "label": "2", "rationale": "解耦GNN实现节点级DP训练。"}
+{"item_id": "csq019-r11", "question_id": "csq019", "rank": 11, "label": "2", "rationale": "频域扰动和过滤降低DP噪声。"}
+{"item_id": "csq019-r12", "question_id": "csq019", "rank": 12, "label": "2", "rationale": "神经架构搜索改善私有深度学习效用。"}
+{"item_id": "csq019-r13", "question_id": "csq019", "rank": 13, "label": "2", "rationale": "系统综述集中式DP深度学习方法和权衡。"}
+{"item_id": "csq019-r14", "question_id": "csq019", "rank": 14, "label": "2", "rationale": "实证比较DP训练保护与准确率代价。"}
+{"item_id": "csq019-r15", "question_id": "csq019", "rank": 15, "label": "2", "rationale": "文本神经网络DP训练的隐私效用权衡。"}
+{"item_id": "csq019-r16", "question_id": "csq019", "rank": 16, "label": "2", "rationale": "视觉提示提升DP分类器效率与效用。"}
+{"item_id": "csq019-r17", "question_id": "csq019", "rank": 17, "label": "2", "rationale": "稀疏等变模型权衡DP效用和计算。"}
+{"item_id": "csq019-r18", "question_id": "csq019", "rank": 18, "label": "2", "rationale": "专门研究DP-SGD高效可扩展实现。"}
+{"item_id": "csq019-r19", "question_id": "csq019", "rank": 19, "label": "2", "rationale": "联邦深度学习用Skellam噪声实现DP。"}
+{"item_id": "csq019-r20", "question_id": "csq019", "rank": 20, "label": "1", "rationale": "标签DP回归相关，但未明确聚焦深度学习。"}
+{"item_id": "csq020-r01", "question_id": "csq020", "rank": 1, "label": "2", "rationale": "直接推导比较最优黑盒与白盒MIA。"}
+{"item_id": "csq020-r02", "question_id": "csq020", "rank": 2, "label": "2", "rationale": "分析黑盒MIA强假设并提出替代。"}
+{"item_id": "csq020-r03", "question_id": "csq020", "rank": 3, "label": "2", "rationale": "直接检验白盒参数是否优于黑盒损失。"}
+{"item_id": "csq020-r04", "question_id": "csq020", "rank": 4, "label": "2", "rationale": "比较白盒参数访问与黑盒查询及错位影响。"}
+{"item_id": "csq020-r05", "question_id": "csq020", "rank": 5, "label": "2", "rationale": "提出白盒MIA并与黑盒行为比较。"}
+{"item_id": "csq020-r06", "question_id": "csq020", "rank": 6, "label": "2", "rationale": "全面设计并评估白盒成员推断。"}
+{"item_id": "csq020-r07", "question_id": "csq020", "rank": 7, "label": "2", "rationale": "提出文档级DocVQA成员推断攻击。"}
+{"item_id": "csq020-r08", "question_id": "csq020", "rank": 8, "label": "2", "rationale": "放宽完整特征访问假设的MIA。"}
+{"item_id": "csq020-r09", "question_id": "csq020", "rank": 9, "label": "2", "rationale": "仅API访问的N-gram覆盖黑盒攻击。"}
+{"item_id": "csq020-r10", "question_id": "csq020", "rank": 10, "label": "2", "rationale": "仅输出访问的黑盒LVLM成员推断。"}
+{"item_id": "csq020-r11", "question_id": "csq020", "rank": 11, "label": "2", "rationale": "基于模型输出和对抗迭代的MIA。"}
+{"item_id": "csq020-r12", "question_id": "csq020", "rank": 12, "label": "2", "rationale": "分析扩散模型黑白盒特征并提出白盒攻击。"}
+{"item_id": "csq020-r13", "question_id": "csq020", "rank": 13, "label": "2", "rationale": "移除影子模型MIA的辅助数据假设。"}
+{"item_id": "csq020-r14", "question_id": "csq020", "rank": 14, "label": "2", "rationale": "研究词嵌入层访问下的成员推断。"}
+{"item_id": "csq020-r15", "question_id": "csq020", "rank": 15, "label": "1", "rationale": "主要用MIA评估DP训练，攻击比较非核心。"}
+{"item_id": "csq020-r16", "question_id": "csq020", "rank": 16, "label": "2", "rationale": "单次标签查询的黑盒MIA。"}
+{"item_id": "csq020-r17", "question_id": "csq020", "rank": 17, "label": "2", "rationale": "神经影像回归模型成员推断评测。"}
+{"item_id": "csq020-r18", "question_id": "csq020", "rank": 18, "label": "2", "rationale": "表格数据生成模型MIA实证研究。"}
+{"item_id": "csq020-r19", "question_id": "csq020", "rank": 19, "label": "2", "rationale": "以泛化差距构造并评估黑盒MIA。"}
+{"item_id": "csq020-r20", "question_id": "csq020", "rank": 20, "label": "2", "rationale": "提出视网膜分类模型白盒成员攻击。"}
+{"item_id": "csq021-r01", "question_id": "csq021", "rank": 1, "label": "2", "rationale": "《QUT-DV25: A Dataset for Dynamic Analysis of Next-Gen Software Supply Chain Attacks》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r02", "question_id": "csq021", "rank": 2, "label": "2", "rationale": "《Towards Robust Detection of Open Source Software Supply Chain Poisoning Attacks in Industry Environments》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r03", "question_id": "csq021", "rank": 3, "label": "1", "rationale": "《OmniBOR: A System for Automatic, Verifiable Artifact Resolution across Software Supply Chains》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r04", "question_id": "csq021", "rank": 4, "label": "2", "rationale": "《Understanding the Supply Chain and Risks of Large Language Model Applications》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r05", "question_id": "csq021", "rank": 5, "label": "2", "rationale": "《Propagation-Based Vulnerability Impact Assessment for Software Supply Chains》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r06", "question_id": "csq021", "rank": 6, "label": "0", "rationale": "《Graph Neural Networks in Supply Chain Analytics and Optimization: Concepts, Perspectives, Dataset and Benchmarks》研究的是实体供应链、智能合约或其他任务，无法支持软件供应链检测评测。"}
+{"item_id": "csq021-r07", "question_id": "csq021", "rank": 7, "label": "2", "rationale": "《Backstabber's Knife Collection: A Review of Open Source Software Supply Chain Attacks》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r08", "question_id": "csq021", "rank": 8, "label": "1", "rationale": "《Lexo: Eliminating Stealthy Supply-Chain Attacks via LLM-Assisted Program Regeneration》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r09", "question_id": "csq021", "rank": 9, "label": "1", "rationale": "《Importing Phantoms: Measuring LLM Package Hallucination Vulnerabilities》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r10", "question_id": "csq021", "rank": 10, "label": "2", "rationale": "《An Empirical Study of Vulnerabilities in Python Packages and Their Detection》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r11", "question_id": "csq021", "rank": 11, "label": "1", "rationale": "《A Comprehensive Study on the Impact of Vulnerable Dependencies on Open-Source Software》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r12", "question_id": "csq021", "rank": 12, "label": "2", "rationale": "《Exploring the Vulnerabilities of Machine Learning and Quantum Machine Learning to Adversarial Attacks using a Malware Dataset: A Comparative Analysis》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r13", "question_id": "csq021", "rank": 13, "label": "1", "rationale": "《Package Dashboard: A Cross-Ecosystem Framework for Dual-Perspective Analysis of Software Packages》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r14", "question_id": "csq021", "rank": 14, "label": "1", "rationale": "《Supply Chain Insecurity: The Lack of Integrity Protection in SBOM Solutions》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r15", "question_id": "csq021", "rank": 15, "label": "1", "rationale": "《Malice in Agentland: Down the Rabbit Hole of Backdoors in the AI Supply Chain》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r16", "question_id": "csq021", "rank": 16, "label": "2", "rationale": "《Leveraging Code Cohesion Analysis to Identify Source Code Supply Chain Attacks》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r17", "question_id": "csq021", "rank": 17, "label": "1", "rationale": "《GoSurf: Identifying Software Supply Chain Attack Vectors in Go》涉及软件供应链安全，但主要提供相邻风险、工具或防护证据，未直接回答检测评测全貌。"}
+{"item_id": "csq021-r18", "question_id": "csq021", "rank": 18, "label": "0", "rationale": "《Vulnerability Detection in Ethereum Smart Contracts via Machine Learning: A Qualitative Analysis》研究的是实体供应链、智能合约或其他任务，无法支持软件供应链检测评测。"}
+{"item_id": "csq021-r19", "question_id": "csq021", "rank": 19, "label": "2", "rationale": "《Characterizing Build Compromises Through Vulnerability Disclosure Analysis》核心提供软件供应链漏洞、恶意包检测的数据集、基准、指标或实证评测。"}
+{"item_id": "csq021-r20", "question_id": "csq021", "rank": 20, "label": "0", "rationale": "《SENS: Semantic Synthetic Benchmarking Model for integrated supply chain simulation and analysis》研究的是实体供应链、智能合约或其他任务，无法支持软件供应链检测评测。"}
+{"item_id": "csq022-r01", "question_id": "csq022", "rank": 1, "label": "2", "rationale": "《Hammer and Anvil: Toward a Theory of Backdoors in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r02", "question_id": "csq022", "rank": 2, "label": "2", "rationale": "《Avoid Adversarial Adaption in Federated Learning by Multi-Metric Investigations》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r03", "question_id": "csq022", "rank": 3, "label": "2", "rationale": "《Meta Stackelberg Game: Robust Federated Learning against Adaptive and Mixed Poisoning Attacks》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r04", "question_id": "csq022", "rank": 4, "label": "2", "rationale": "《Learning to Invert: Simple Adaptive Attacks for Gradient Inversion in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r05", "question_id": "csq022", "rank": 5, "label": "2", "rationale": "《Robust Federated Learning Mitigates Client-side Training Data Distribution Inference Attacks》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r06", "question_id": "csq022", "rank": 6, "label": "2", "rationale": "《A First Order Meta Stackelberg Method for Robust Federated Learning (Technical Report)》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r07", "question_id": "csq022", "rank": 7, "label": "2", "rationale": "《FLARE: Adaptive Multi-Dimensional Reputation for Robust Client Reliability in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r08", "question_id": "csq022", "rank": 8, "label": "2", "rationale": "《Defending the Edge: Representative-Attention Defense against Backdoor Attacks in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r09", "question_id": "csq022", "rank": 9, "label": "2", "rationale": "《CrowdGuard: Federated Backdoor Detection in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r10", "question_id": "csq022", "rank": 10, "label": "2", "rationale": "《Integrating Identity-Based Identification against Adaptive Adversaries in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r11", "question_id": "csq022", "rank": 11, "label": "2", "rationale": "《On Evaluating the Poisoning Robustness of Federated Learning under Local Differential Privacy》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r12", "question_id": "csq022", "rank": 12, "label": "2", "rationale": "《Krum Federated Chain (KFC): Using blockchain to defend against adversarial attacks in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r13", "question_id": "csq022", "rank": 13, "label": "2", "rationale": "《Can You Really Backdoor Federated Learning?》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r14", "question_id": "csq022", "rank": 14, "label": "2", "rationale": "《Concealing Sensitive Samples against Gradient Leakage in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r15", "question_id": "csq022", "rank": 15, "label": "2", "rationale": "《RECESS Vaccine for Federated Learning: Proactive Defense Against Model Poisoning Attacks》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r16", "question_id": "csq022", "rank": 16, "label": "2", "rationale": "《RAB$^2$-DEF: Dynamic and explainable defense against adversarial attacks in Federated Learning to fair poor clients》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r17", "question_id": "csq022", "rank": 17, "label": "2", "rationale": "《STDLens: Model Hijacking-Resilient Federated Learning for Object Detection》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r18", "question_id": "csq022", "rank": 18, "label": "2", "rationale": "《Privacy Attack in Federated Learning is Not Easy: An Experimental Study》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r19", "question_id": "csq022", "rank": 19, "label": "2", "rationale": "《BaFFLe: Backdoor detection via Feedback-based Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq022-r20", "question_id": "csq022", "rank": 20, "label": "2", "rationale": "《On the Efficiency of Privacy Attacks in Federated Learning》核心研究联邦学习安全/隐私攻击或防御，并给出直接实证证据。"}
+{"item_id": "csq023-r01", "question_id": "csq023", "rank": 1, "label": "2", "rationale": "《Conversational Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r02", "question_id": "csq023", "rank": 2, "label": "2", "rationale": "《Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r03", "question_id": "csq023", "rank": 3, "label": "2", "rationale": "《Towards Practical and Useful Automated Program Repair for Debugging》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r04", "question_id": "csq023", "rank": 4, "label": "2", "rationale": "《Copiloting the Copilots: Fusing Large Language Models with Completion Engines for Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r05", "question_id": "csq023", "rank": 5, "label": "2", "rationale": "《PSearch: Search-based Patch Generation in the Era of LLM-based Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r06", "question_id": "csq023", "rank": 6, "label": "2", "rationale": "《Assessing the Latent Automated Program Repair Capabilities of Large Language Models using Round-Trip Translation》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r07", "question_id": "csq023", "rank": 7, "label": "2", "rationale": "《Enhancing Automated Program Repair via Faulty Token Localization and Quality-Aware Patch Refinement》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r08", "question_id": "csq023", "rank": 8, "label": "1", "rationale": "《Boosting Redundancy-based Automated Program Repair by Fine-grained Pattern Mining》属于程序修复，但主要是传统非神经路线，可作方法对照。"}
+{"item_id": "csq023-r09", "question_id": "csq023", "rank": 9, "label": "2", "rationale": "《A Survey of Learning-based Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r10", "question_id": "csq023", "rank": 10, "label": "2", "rationale": "《InferFix: End-to-End Program Repair with LLMs》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r11", "question_id": "csq023", "rank": 11, "label": "2", "rationale": "《Abstain and Validate: A Dual-LLM Policy for Reducing Noise in Agentic Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r12", "question_id": "csq023", "rank": 12, "label": "2", "rationale": "《ThinkRepair: Self-Directed Automated Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r13", "question_id": "csq023", "rank": 13, "label": "2", "rationale": "《Neural Program Repair with Execution-based Backpropagation》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r14", "question_id": "csq023", "rank": 14, "label": "2", "rationale": "《REFINE: Enhancing Program Repair Agents through Context-Aware Patch Refinement》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r15", "question_id": "csq023", "rank": 15, "label": "2", "rationale": "《RelRepair: Enhancing Automated Program Repair by Retrieving Relevant Code》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r16", "question_id": "csq023", "rank": 16, "label": "2", "rationale": "《CURE: Code-Aware Neural Machine Translation for Automatic Program Repair》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r17", "question_id": "csq023", "rank": 17, "label": "2", "rationale": "《Understanding Automated Program Repair Agents Through the Lens of Traceability: An Empirical Study》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r18", "question_id": "csq023", "rank": 18, "label": "2", "rationale": "《Agentic Program Repair from Test Failures at Scale: A Neuro-symbolic approach with static analysis and test execution feedback》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r19", "question_id": "csq023", "rank": 19, "label": "2", "rationale": "《A Survey on Automated Program Repair Techniques》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq023-r20", "question_id": "csq023", "rank": 20, "label": "2", "rationale": "《Revisiting Unnaturalness for Automated Program Repair in the Era of Large Language Models》核心提出或分析神经/LLM程序修复的补丁生成与验证方法。"}
+{"item_id": "csq024-r01", "question_id": "csq024", "rank": 1, "label": "2", "rationale": "《Execution-based Evaluation for Data Science Code Generation Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r02", "question_id": "csq024", "rank": 2, "label": "2", "rationale": "《DOCE: Finding the Sweet Spot for Execution-Based Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r03", "question_id": "csq024", "rank": 3, "label": "2", "rationale": "《CodeBenchGen: Creating Scalable Execution-based Code Generation Benchmarks》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r04", "question_id": "csq024", "rank": 4, "label": "2", "rationale": "《Execution-Based Evaluation for Open-Domain Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r05", "question_id": "csq024", "rank": 5, "label": "0", "rationale": "《Code Generation Tools (Almost) for Free? A Study of Few-Shot, Pre-Trained Language Models on Code》研究目标不是代码生成评价方法，无法回答三类评价比较。"}
+{"item_id": "csq024-r06", "question_id": "csq024", "rank": 6, "label": "2", "rationale": "《CodeScore: Evaluating Code Generation by Learning Code Execution》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r07", "question_id": "csq024", "rank": 7, "label": "1", "rationale": "《Execution Guided Line-by-Line Code Generation》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id": "csq024-r08", "question_id": "csq024", "rank": 8, "label": "2", "rationale": "《COFFE: A Code Efficiency Benchmark for Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r09", "question_id": "csq024", "rank": 9, "label": "2", "rationale": "《LEVER: Learning to Verify Language-to-Code Generation with Execution》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r10", "question_id": "csq024", "rank": 10, "label": "2", "rationale": "《HumanEvo: An Evolution-aware Benchmark for More Realistic Evaluation of Repository-level Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r11", "question_id": "csq024", "rank": 11, "label": "2", "rationale": "《COMPASS: A Multi-Dimensional Benchmark for Evaluating Code Generation in Large Language Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r12", "question_id": "csq024", "rank": 12, "label": "2", "rationale": "《BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r13", "question_id": "csq024", "rank": 13, "label": "2", "rationale": "《ReCode: Robustness Evaluation of Code Generation Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r14", "question_id": "csq024", "rank": 14, "label": "1", "rationale": "《Enhancing LLM Code Generation: A Systematic Evaluation of Multi-Agent Collaboration and Runtime Debugging for Improved Accuracy, Reliability, and Latency》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id": "csq024-r15", "question_id": "csq024", "rank": 15, "label": "0", "rationale": "《From Provable Correctness to Probabilistic Generation: A Comparative Review of Program Synthesis Paradigms》研究目标不是代码生成评价方法，无法回答三类评价比较。"}
+{"item_id": "csq024-r16", "question_id": "csq024", "rank": 16, "label": "1", "rationale": "《CodeRL+: Improving Code Generation via Reinforcement with Execution Semantics Alignment》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id": "csq024-r17", "question_id": "csq024", "rank": 17, "label": "2", "rationale": "《CoderEval: A Benchmark of Pragmatic Code Generation with Generative Pre-trained Models》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq024-r18", "question_id": "csq024", "rank": 18, "label": "0", "rationale": "《Code Generation for Machine Learning using Model-Driven Engineering and SysML》研究目标不是代码生成评价方法，无法回答三类评价比较。"}
+{"item_id": "csq024-r19", "question_id": "csq024", "rank": 19, "label": "1", "rationale": "《OpenCodeInterpreter: Integrating Code Generation with Execution and Refinement》涉及执行/测试反馈或代码生成，但主要优化生成过程，未直接比较评价路线。"}
+{"item_id": "csq024-r20", "question_id": "csq024", "rank": 20, "label": "2", "rationale": "《ContractEval: A Benchmark for Evaluating Contract-Satisfying Assertions in Code Generation》核心研究代码生成的执行式、测试式或模型式评价方法与指标。"}
+{"item_id": "csq025-r01", "question_id": "csq025", "rank": 1, "label": "2", "rationale": "《Vulnerability Detection with Code Language Models: How Far Are We?》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r02", "question_id": "csq025", "rank": 2, "label": "2", "rationale": "《Automated Vulnerability Detection in Source Code Using Quantum Natural Language Processing》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r03", "question_id": "csq025", "rank": 3, "label": "2", "rationale": "《Automated Vulnerability Detection in Source Code Using Deep Representation Learning》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r04", "question_id": "csq025", "rank": 4, "label": "2", "rationale": "《VulBERTa: Simplified Source Code Pre-Training for Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r05", "question_id": "csq025", "rank": 5, "label": "2", "rationale": "《Feature Engineering-Based Detection of Buffer Overflow Vulnerability in Source Code Using Neural Networks》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r06", "question_id": "csq025", "rank": 6, "label": "2", "rationale": "《A Survey on Automated Software Vulnerability Detection Using Machine Learning and Deep Learning》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r07", "question_id": "csq025", "rank": 7, "label": "2", "rationale": "《Machine Learning Techniques for Python Source Code Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r08", "question_id": "csq025", "rank": 8, "label": "2", "rationale": "《Leveraging Self-Paced Learning for Software Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r09", "question_id": "csq025", "rank": 9, "label": "2", "rationale": "《Sequential Graph Neural Networks for Source Code Vulnerability Identification》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r10", "question_id": "csq025", "rank": 10, "label": "2", "rationale": "《SoK: Understanding (New) Security Issues Across AI4Code Use Cases》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r11", "question_id": "csq025", "rank": 11, "label": "2", "rationale": "《DiverseVul: A New Vulnerable Source Code Dataset for Deep Learning Based Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r12", "question_id": "csq025", "rank": 12, "label": "2", "rationale": "《SCoPE: Evaluating LLMs for Software Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r13", "question_id": "csq025", "rank": 13, "label": "2", "rationale": "《Revisiting Pre-trained Language Models for Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r14", "question_id": "csq025", "rank": 14, "label": "2", "rationale": "《Reasoning with LLMs for Zero-Shot Vulnerability Detection》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r15", "question_id": "csq025", "rank": 15, "label": "2", "rationale": "《Enhancing Software Vulnerability Detection Using Code Property Graphs and Convolutional Neural Networks》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r16", "question_id": "csq025", "rank": 16, "label": "2", "rationale": "《Llama-based source code vulnerability detection: Prompt engineering vs Fine tuning》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r17", "question_id": "csq025", "rank": 17, "label": "2", "rationale": "《A Qualitative Study on Using ChatGPT for Software Security: Perception vs. Practicality》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r18", "question_id": "csq025", "rank": 18, "label": "2", "rationale": "《Benchmarking Software Vulnerability Detection Techniques: A Survey》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r19", "question_id": "csq025", "rank": 19, "label": "2", "rationale": "《AIBugHunter: A Practical Tool for Predicting, Classifying and Repairing Software Vulnerabilities》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq025-r20", "question_id": "csq025", "rank": 20, "label": "2", "rationale": "《Similar but Patched Code Considered Harmful -- The Impact of Similar but Patched Code on Recurring Vulnerability Detection and How to Remove Them》核心提供ML源代码漏洞检测数据集、评测协议或数据泄漏证据。"}
+{"item_id": "csq026-r01", "question_id": "csq026", "rank": 1, "label": "2", "rationale": "《Unified Software Engineering Agent as AI Software Engineer》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r02", "question_id": "csq026", "rank": 2, "label": "2", "rationale": "《SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r03", "question_id": "csq026", "rank": 3, "label": "2", "rationale": "《ML-Bench: Evaluating Large Language Models and Agents for Machine Learning Tasks on Repository-Level Code》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r04", "question_id": "csq026", "rank": 4, "label": "2", "rationale": "《InfCode-C++: Intent-Guided Semantic Retrieval and AST-Structured Search for C++ Issue Resolution》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r05", "question_id": "csq026", "rank": 5, "label": "2", "rationale": "《SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r06", "question_id": "csq026", "rank": 6, "label": "2", "rationale": "《One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r07", "question_id": "csq026", "rank": 7, "label": "2", "rationale": "《RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r08", "question_id": "csq026", "rank": 8, "label": "2", "rationale": "《TENET: One Step Toward Test-Driven Development for Repository-Level Code Generation》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r09", "question_id": "csq026", "rank": 9, "label": "2", "rationale": "《AInsteinBench: Benchmarking Coding Agents on Scientific Repositories》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r10", "question_id": "csq026", "rank": 10, "label": "1", "rationale": "《PAGENT: Learning to Patch Software Engineering Agents》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id": "csq026-r11", "question_id": "csq026", "rank": 11, "label": "2", "rationale": "《LocAgent: Graph-Guided LLM Agents for Code Localization》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r12", "question_id": "csq026", "rank": 12, "label": "1", "rationale": "《Self-collaboration Code Generation via ChatGPT》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id": "csq026-r13", "question_id": "csq026", "rank": 13, "label": "2", "rationale": "《Meta-RAG on Large Codebases Using Code Summarization》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r14", "question_id": "csq026", "rank": 14, "label": "2", "rationale": "《SWE-Dev: Evaluating and Training Autonomous Feature-Driven Software Development》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r15", "question_id": "csq026", "rank": 15, "label": "1", "rationale": "《L2MAC: Large Language Model Automatic Computer for Extensive Code Generation》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id": "csq026-r16", "question_id": "csq026", "rank": 16, "label": "0", "rationale": "《Open Source Planning & Control System with Language Agents for Autonomous Scientific Discovery》不是仓库级软件工程代理能力或局限研究。"}
+{"item_id": "csq026-r17", "question_id": "csq026", "rank": 17, "label": "1", "rationale": "《Self-Organized Agents: A LLM Multi-Agent Framework toward Ultra Large-Scale Code Generation and Optimization》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id": "csq026-r18", "question_id": "csq026", "rank": 18, "label": "2", "rationale": "《Toward Training Superintelligent Software Agents through Self-Play SWE-RL》核心揭示或评测仓库级LLM代理在定位、上下文、测试或复现方面的局限。"}
+{"item_id": "csq026-r19", "question_id": "csq026", "rank": 19, "label": "1", "rationale": "《Async Control: Stress-testing Asynchronous Control Measures for LLM Agents》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id": "csq026-r20", "question_id": "csq026", "rank": 20, "label": "1", "rationale": "《MANTRA: Enhancing Automated Method-Level Refactoring with Contextual RAG and Multi-Agent LLM Collaboration》涉及LLM软件工程代理，但主要是方法改进或相邻任务，局限分析不够直接。"}
+{"item_id": "csq027-r01", "question_id": "csq027", "rank": 1, "label": "2", "rationale": "《Updatable Learned Indexes Meet Disk-Resident DBMS -- From Evaluations to Design Choices》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r02", "question_id": "csq027", "rank": 2, "label": "2", "rationale": "《Benchmarking Learned Indexes》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r03", "question_id": "csq027", "rank": 3, "label": "2", "rationale": "《Updatable Learned Index with Precise Positions》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r04", "question_id": "csq027", "rank": 4, "label": "2", "rationale": "《Learned Indexes for Dynamic Workloads》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r05", "question_id": "csq027", "rank": 5, "label": "2", "rationale": "《Micro-architectural Analysis of a Learned Index》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r06", "question_id": "csq027", "rank": 6, "label": "2", "rationale": "《SOSD: A Benchmark for Learned Indexes》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r07", "question_id": "csq027", "rank": 7, "label": "2", "rationale": "《A Learned Index for Exact Similarity Search in Metric Spaces》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r08", "question_id": "csq027", "rank": 8, "label": "2", "rationale": "《ALEX: An Updatable Adaptive Learned Index》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r09", "question_id": "csq027", "rank": 9, "label": "2", "rationale": "《DILI: A Distribution-Driven Learned Index (Extended version)》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r10", "question_id": "csq027", "rank": 10, "label": "2", "rationale": "《A Simple Yet High-Performing On-disk Learned Index: Can We Have Our Cake and Eat it Too?》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r11", "question_id": "csq027", "rank": 11, "label": "2", "rationale": "《Shift-Table: A Low-latency Learned Index for Range Queries using Model Correction》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r12", "question_id": "csq027", "rank": 12, "label": "2", "rationale": "《LITS: An Optimized Learned Index for Strings (An Extended Version)》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r13", "question_id": "csq027", "rank": 13, "label": "2", "rationale": "《A Scalable Learned Index Scheme in Storage Systems》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r14", "question_id": "csq027", "rank": 14, "label": "2", "rationale": "《UpLIF: An Updatable Self-Tuning Learned Index Framework》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r15", "question_id": "csq027", "rank": 15, "label": "2", "rationale": "《NFL: Robust Learned Index via Distribution Transformation》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r16", "question_id": "csq027", "rank": 16, "label": "2", "rationale": "《Are Updatable Learned Indexes Ready?》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r17", "question_id": "csq027", "rank": 17, "label": "2", "rationale": "《On Distribution Dependent Sub-Logarithmic Query Time of Learned Indexing》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r18", "question_id": "csq027", "rank": 18, "label": "2", "rationale": "《LMG Index: A Robust and Efficient Learned Index Framework for Multi-Dimensional Performance Balance》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r19", "question_id": "csq027", "rank": 19, "label": "2", "rationale": "《DobLIX: A Dual-Objective Learned Index for Log-Structured Merge Trees》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq027-r20", "question_id": "csq027", "rank": 20, "label": "2", "rationale": "《The Price of Tailoring the Index to Your Data: Poisoning Attacks on Learned Index Structures》核心提出或系统评测学习索引，并分析分布、更新负载与传统索引权衡。"}
+{"item_id": "csq028-r01", "question_id": "csq028", "rank": 1, "label": "1", "rationale": "《Relative NN-Descent: A Fast Index Construction for Graph-Based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r02", "question_id": "csq028", "rank": 2, "label": "1", "rationale": "《Revisiting the Index Construction of Proximity Graph-Based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r03", "question_id": "csq028", "rank": 3, "label": "1", "rationale": "《A Comprehensive Survey and Experimental Comparison of Graph-Based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r04", "question_id": "csq028", "rank": 4, "label": "2", "rationale": "《Routing-Guided Learned Product Quantization for Graph-Based Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r05", "question_id": "csq028", "rank": 5, "label": "1", "rationale": "《VSAG: An Optimized Search Framework for Graph-based Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r06", "question_id": "csq028", "rank": 6, "label": "2", "rationale": "《Lossless Compression of Vector IDs for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r07", "question_id": "csq028", "rank": 7, "label": "2", "rationale": "《SPANN: Highly-efficient Billion-scale Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r08", "question_id": "csq028", "rank": 8, "label": "1", "rationale": "《Fast Approximate Nearest Neighbor Search With The Navigating Spreading-out Graph》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r09", "question_id": "csq028", "rank": 9, "label": "2", "rationale": "《LoRANN: Low-Rank Matrix Factorization for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r10", "question_id": "csq028", "rank": 10, "label": "1", "rationale": "《Scalable Disk-Based Approximate Nearest Neighbor Search with Page-Aligned Graph》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r11", "question_id": "csq028", "rank": 11, "label": "2", "rationale": "《SymphonyQG: Towards Symphonious Integration of Quantization and Graph for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r12", "question_id": "csq028", "rank": 12, "label": "1", "rationale": "《EFANNA : An Extremely Fast Approximate Nearest Neighbor Search Algorithm Based on kNN Graph》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r13", "question_id": "csq028", "rank": 13, "label": "1", "rationale": "《Fast Approximate Nearest Neighbor Search with a Dynamic Exploration Graph using Continuous Refinement》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r14", "question_id": "csq028", "rank": 14, "label": "1", "rationale": "《δ-EMG: A Monotonic Graph Index for Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r15", "question_id": "csq028", "rank": 15, "label": "2", "rationale": "《ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate Nearest Neighbor Search Algorithms》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r16", "question_id": "csq028", "rank": 16, "label": "1", "rationale": "《Experimental comparison of graph-based approximate nearest neighbor search algorithms on edge devices》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r17", "question_id": "csq028", "rank": 17, "label": "2", "rationale": "《Falconn++: A Locality-sensitive Filtering Approach for Approximate Nearest Neighbor Search》直接比较或融合图、量化、倒排/聚类ANN路线，并报告题目所需成本指标。"}
+{"item_id": "csq028-r18", "question_id": "csq028", "rank": 18, "label": "1", "rationale": "《HENN: A Hierarchical Epsilon Net Navigation Graph for Approximate Nearest Neighbor Search》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r19", "question_id": "csq028", "rank": 19, "label": "1", "rationale": "《CAGRA: Highly Parallel Graph Construction and Approximate Nearest Neighbor Search for GPUs》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq028-r20", "question_id": "csq028", "rank": 20, "label": "1", "rationale": "《Approximate Nearest Neighbor Search of Large Scale Vectors on Distributed Storage》聚焦单一ANN路线及其指标，可作局部证据但不能直接完成三类比较。"}
+{"item_id": "csq029-r01", "question_id": "csq029", "rank": 1, "label": "2", "rationale": "《BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r02", "question_id": "csq029", "rank": 2, "label": "2", "rationale": "《Scaling Sparse and Dense Retrieval in Decoder-Only LLMs》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r03", "question_id": "csq029", "rank": 3, "label": "2", "rationale": "《Robust Neural Information Retrieval: An Adversarial and Out-of-distribution Perspective》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r04", "question_id": "csq029", "rank": 4, "label": "2", "rationale": "《Mr. TyDi: A Multi-lingual Benchmark for Dense Retrieval》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r05", "question_id": "csq029", "rank": 5, "label": "1", "rationale": "《On the Robustness of Generative Information Retrieval Models》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r06", "question_id": "csq029", "rank": 6, "label": "2", "rationale": "《A Study on the Efficiency and Generalization of Light Hybrid Retrievers》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r07", "question_id": "csq029", "rank": 7, "label": "2", "rationale": "《Match Your Words! A Study of Lexical Matching in Neural Information Retrieval》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r08", "question_id": "csq029", "rank": 8, "label": "2", "rationale": "《Hybrid Retrieval for Hallucination Mitigation in Large Language Models: A Comparative Analysis》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r09", "question_id": "csq029", "rank": 9, "label": "2", "rationale": "《Predicting Efficiency/Effectiveness Trade-offs for Dense vs. Sparse Retrieval Strategy Selection》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r10", "question_id": "csq029", "rank": 10, "label": "2", "rationale": "《Assessing the Performance Gap Between Lexical and Semantic Models for Information Retrieval With Formulaic Legal Language》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r11", "question_id": "csq029", "rank": 11, "label": "2", "rationale": "《DAT: Dynamic Alpha Tuning for Hybrid Retrieval in Retrieval-Augmented Generation》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r12", "question_id": "csq029", "rank": 12, "label": "2", "rationale": "《DESIRE-ME: Domain-Enhanced Supervised Information REtrieval using Mixture-of-Experts》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r13", "question_id": "csq029", "rank": 13, "label": "1", "rationale": "《Anserini Gets Dense Retrieval: Integration of Lucene's HNSW Indexes》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r14", "question_id": "csq029", "rank": 14, "label": "1", "rationale": "《Improving Biomedical Information Retrieval with Neural Retrievers》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r15", "question_id": "csq029", "rank": 15, "label": "2", "rationale": "《A Thorough Examination on Zero-shot Dense Retrieval》核心评测稀疏、稠密或混合检索，并涉及基准、指标或域外鲁棒性。"}
+{"item_id": "csq029-r16", "question_id": "csq029", "rank": 16, "label": "1", "rationale": "《PairDistill: Pairwise Relevance Distillation for Dense Retrieval》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r17", "question_id": "csq029", "rank": 17, "label": "1", "rationale": "《Open-Source Agentic Hybrid RAG Framework for Scientific Literature Review》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r18", "question_id": "csq029", "rank": 18, "label": "1", "rationale": "《UniIR: Training and Benchmarking Universal Multimodal Information Retrievers》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r19", "question_id": "csq029", "rank": 19, "label": "1", "rationale": "《Augmenting Document Representations for Dense Retrieval with Interpolation and Perturbation》涉及神经检索或鲁棒性，但只覆盖单一架构/相邻设置，不能直接完成三类比较。"}
+{"item_id": "csq029-r20", "question_id": "csq029", "rank": 20, "label": "0", "rationale": "《A Hybrid Retrieval-Generation Neural Conversation Model》研究任务偏离文本神经信息检索的基准与鲁棒性评价。"}
+{"item_id": "csq030-r01", "question_id": "csq030", "rank": 1, "label": "2", "rationale": "《From Natural Language to SQL: Review of LLM-based Text-to-SQL Systems》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r02", "question_id": "csq030", "rank": 2, "label": "2", "rationale": "《Towards Complex Text-to-SQL in Cross-Domain Database with Intermediate Representation》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r03", "question_id": "csq030", "rank": 3, "label": "2", "rationale": "《A Survey of Large Language Model-Based Generative AI for Text-to-SQL: Benchmarks, Applications, Use Cases, and Challenges》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r04", "question_id": "csq030", "rank": 4, "label": "2", "rationale": "《UNITE: A Unified Benchmark for Text-to-SQL Evaluation》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r05", "question_id": "csq030", "rank": 5, "label": "2", "rationale": "《Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r06", "question_id": "csq030", "rank": 6, "label": "2", "rationale": "《A Survey of Text-to-SQL in the Era of LLMs: Where are we, and where are we going?》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r07", "question_id": "csq030", "rank": 7, "label": "2", "rationale": "《Enhancing Text-to-SQL Capabilities of Large Language Models via Domain Database Knowledge Injection》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r08", "question_id": "csq030", "rank": 8, "label": "2", "rationale": "《Confidence Estimation for Text-to-SQL in Large Language Models》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r09", "question_id": "csq030", "rank": 9, "label": "2", "rationale": "《Evaluating Cross-Domain Text-to-SQL Models and Benchmarks》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r10", "question_id": "csq030", "rank": 10, "label": "2", "rationale": "《Abacus-SQL: A Text-to-SQL System Empowering Cross-Domain and Open-Domain Database Retrieval》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r11", "question_id": "csq030", "rank": 11, "label": "2", "rationale": "《Meta-aware Learning in text-to-SQL Large Language Model》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r12", "question_id": "csq030", "rank": 12, "label": "2", "rationale": "《KaggleDBQA: Realistic Evaluation of Text-to-SQL Parsers》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r13", "question_id": "csq030", "rank": 13, "label": "2", "rationale": "《Taming SQL Complexity: LLM-Based Equivalence Evaluation for Text-to-SQL》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r14", "question_id": "csq030", "rank": 14, "label": "2", "rationale": "《Did You Ask a Good Question? A Cross-Domain Question Intention Classification Benchmark for Text-to-SQL》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r15", "question_id": "csq030", "rank": 15, "label": "2", "rationale": "《Exploring Underexplored Limitations of Cross-Domain Text-to-SQL Generalization》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r16", "question_id": "csq030", "rank": 16, "label": "2", "rationale": "《Large Language Model Enhanced Text-to-SQL Generation: A Survey》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r17", "question_id": "csq030", "rank": 17, "label": "2", "rationale": "《FLEX: Expert-level False-Less EXecution Metric for Reliable Text-to-SQL Benchmark》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r18", "question_id": "csq030", "rank": 18, "label": "2", "rationale": "《A Survey on Employing Large Language Models for Text-to-SQL Tasks》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r19", "question_id": "csq030", "rank": 19, "label": "2", "rationale": "《RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}
+{"item_id": "csq030-r20", "question_id": "csq030", "rank": 20, "label": "2", "rationale": "《SQLBench: A Comprehensive Evaluation for Text-to-SQL Capabilities of Large Language Models》核心覆盖Text-to-SQL从神经schema解析到LLM方法及跨域基准挑战。"}

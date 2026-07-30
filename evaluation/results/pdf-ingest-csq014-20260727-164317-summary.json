@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq014-20260727-164317",
+  "created_at": "2026-07-27T16:49:50.583339+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq014",
+  "question": "What limitations of adversarial training as a defense for image classifiers have been established, particularly regarding accuracy, computational cost, and generalization to unseen attacks?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1014,
+  "elapsed_seconds": 392.671199,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq014-20260727-164317",
+  "trace": [
+    "Ingested 10 papers. Indexed 1014 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-0759961bd85dda90",
+      "source_id": "arXiv:2305.15241",
+      "title": "Robust Classification via a Single Diffusion Model",
+      "pdf_path": "data\\pdfs\\arxiv-0759961bd85dda90.pdf",
+      "pdf_bytes": 2947803,
+      "page_count": 23
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-1761ab00203a90c4",
+      "source_id": "arXiv:2404.09349",
+      "title": "Adversarial Robustness Limits via Scaling-Law and Human-Alignment Studies",
+      "pdf_path": "data\\pdfs\\arxiv-1761ab00203a90c4.pdf",
+      "pdf_bytes": 14470602,
+      "page_count": 26
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-a4f760fc37f83c06",
+      "source_id": "arXiv:1909.09552",
+      "title": "Defending Against Physically Realizable Attacks on Image Classification",
+      "pdf_path": "data\\pdfs\\arxiv-a4f760fc37f83c06.pdf",
+      "pdf_bytes": 1624260,
+      "page_count": 26
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-1331b3b62a0df804",
+      "source_id": "arXiv:1909.04779",
+      "title": "Localized Adversarial Training for Increased Accuracy and Robustness in Image Classification",
+      "pdf_path": "data\\pdfs\\arxiv-1331b3b62a0df804.pdf",
+      "pdf_bytes": 1121958,
+      "page_count": 5
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-497d491fd8e9f45d",
+      "source_id": "arXiv:2210.15318",
+      "title": "Efficient and Effective Augmentation Strategy for Adversarial Training",
+      "pdf_path": "data\\pdfs\\arxiv-497d491fd8e9f45d.pdf",
+      "pdf_bytes": 5370560,
+      "page_count": 30
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-441beda71706edad",
+      "source_id": "arXiv:2303.13955",
+      "title": "PIAT: Parameter Interpolation based Adversarial Training for Image Classification",
+      "pdf_path": "data\\pdfs\\arxiv-441beda71706edad.pdf",
+      "pdf_bytes": 1242701,
+      "page_count": 10
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-e4c00858afabeaee",
+      "source_id": "arXiv:1801.09344",
+      "title": "Certified Defenses against Adversarial Examples",
+      "pdf_path": "data\\pdfs\\arxiv-e4c00858afabeaee.pdf",
+      "pdf_bytes": 928157,
+      "page_count": 15
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-ff8dc6d439731911",
+      "source_id": "arXiv:2306.06081",
+      "title": "Blending adversarial training and representation-conditional purification via aggregation improves adversarial robustness",
+      "pdf_path": "data\\pdfs\\arxiv-ff8dc6d439731911.pdf",
+      "pdf_bytes": 1110584,
+      "page_count": 25
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-ea9ce3d903a5001b",
+      "source_id": "arXiv:2003.09461",
+      "title": "Adversarial Robustness on In- and Out-Distribution Improves Explainability",
+      "pdf_path": "data\\pdfs\\arxiv-ea9ce3d903a5001b.pdf",
+      "pdf_bytes": 10173685,
+      "page_count": 67
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-f7cd9cbd34e5d46b",
+      "source_id": "arXiv:2512.15123",
+      "title": "TrajSyn: Privacy-Preserving Dataset Distillation from Federated Model Trajectories for Server-Side Adversarial Training",
+      "pdf_path": "data\\pdfs\\arxiv-f7cd9cbd34e5d46b.pdf",
+      "pdf_bytes": 449358,
+      "page_count": 7
+    }
+  ]
+}

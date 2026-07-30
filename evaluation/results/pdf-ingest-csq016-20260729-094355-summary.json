@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq016-20260729-094355",
+  "created_at": "2026-07-29T09:48:41.814320+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq016",
+  "question": "How do research systems mitigate cold starts in serverless computing, and how do prewarming, snapshotting, and prediction-based approaches compare?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 724,
+  "elapsed_seconds": 286.127257,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq016-20260729-094355",
+  "trace": [
+    "Ingested 10 papers. Indexed 724 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-bc9b43f8dae0851b",
+      "source_id": "arXiv:2105.13894",
+      "title": "Performance Evaluation of Snapshot Methods to Warm the Serverless Cold Start",
+      "pdf_path": "data\\pdfs\\arxiv-bc9b43f8dae0851b.pdf",
+      "pdf_bytes": 714783,
+      "page_count": 7
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-bf3ead4abfacce29",
+      "source_id": "arXiv:2508.07640",
+      "title": "Taming Cold Starts: Proactive Serverless Scheduling with Model Predictive Control",
+      "pdf_path": "data\\pdfs\\arxiv-bf3ead4abfacce29.pdf",
+      "pdf_bytes": 1204676,
+      "page_count": 8
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-c174f5af71c1c672",
+      "source_id": "arXiv:2101.09355",
+      "title": "Benchmarking, Analysis, and Optimization of Serverless Function Snapshots",
+      "pdf_path": "data\\pdfs\\arxiv-c174f5af71c1c672.pdf",
+      "pdf_bytes": 1124405,
+      "page_count": 14
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-1a9b4adcf21001fc",
+      "source_id": "arXiv:2212.10131",
+      "title": "Hydra: Virtualized Multi-Language Runtime for High-Density Serverless Platforms",
+      "pdf_path": "data\\pdfs\\arxiv-1a9b4adcf21001fc.pdf",
+      "pdf_bytes": 1579913,
+      "page_count": 15
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-6004416cf3698cc7",
+      "source_id": "arXiv:2206.15176",
+      "title": "A Time Series Forecasting Approach to Minimize Cold Start Time in Cloud-Serverless Platform",
+      "pdf_path": "data\\pdfs\\arxiv-6004416cf3698cc7.pdf",
+      "pdf_bytes": 322815,
+      "page_count": 20
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-c3d04188a88e5288",
+      "source_id": "arXiv:2509.14292",
+      "title": "Taming Serverless Cold Starts Through OS Co-Design",
+      "pdf_path": "data\\pdfs\\arxiv-c3d04188a88e5288.pdf",
+      "pdf_bytes": 1401930,
+      "page_count": 13
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-7ba843beb1a38433",
+      "source_id": "arXiv:1903.12221",
+      "title": "Mitigating Cold Starts in Serverless Platforms: A Pool-Based Approach",
+      "pdf_path": "data\\pdfs\\arxiv-7ba843beb1a38433.pdf",
+      "pdf_bytes": 726607,
+      "page_count": 5
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-80b764389537c7c9",
+      "source_id": "arXiv:2102.12892",
+      "title": "Restoring Uniqueness in MicroVM Snapshots",
+      "pdf_path": "data\\pdfs\\arxiv-80b764389537c7c9.pdf",
+      "pdf_bytes": 195896,
+      "page_count": 7
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-226a6138bcabddf8",
+      "source_id": "arXiv:2409.09202",
+      "title": "HotSwap: Enabling Live Dependency Sharing in Serverless Computing",
+      "pdf_path": "data\\pdfs\\arxiv-226a6138bcabddf8.pdf",
+      "pdf_bytes": 538631,
+      "page_count": 11
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-1d5de94e01de4a0e",
+      "source_id": "arXiv:2512.16066",
+      "title": "Cold-Start Anti-Patterns and Refactorings in Serverless Systems: An Empirical Study",
+      "pdf_path": "data\\pdfs\\arxiv-1d5de94e01de4a0e.pdf",
+      "pdf_bytes": 1682378,
+      "page_count": 12
+    }
+  ]
+}

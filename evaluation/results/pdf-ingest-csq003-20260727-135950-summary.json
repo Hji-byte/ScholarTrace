@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq003-20260727-135950",
+  "created_at": "2026-07-27T14:24:47.915378+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq003",
+  "question": "Which automatic and human evaluation methods are used to measure hallucination and factual consistency in large language models, and what evidence exists about their reliability?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1120,
+  "elapsed_seconds": 193.709455,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq003-20260727-135950",
+  "trace": [
+    "Ingested 10 papers. Indexed 1120 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-6f90439d5ce865cb",
+      "source_id": "arXiv:2402.10770",
+      "title": "How Reliable Are Automatic Evaluation Methods for Instruction-Tuned LLMs?",
+      "pdf_path": "data\\pdfs\\arxiv-6f90439d5ce865cb.pdf",
+      "pdf_bytes": 610680,
+      "page_count": 16
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-88fd722ec4ad8a6f",
+      "source_id": "arXiv:2506.13639",
+      "title": "An Empirical Study of LLM-as-a-Judge: How Design Choices Impact Evaluation Reliability",
+      "pdf_path": "data\\pdfs\\arxiv-88fd722ec4ad8a6f.pdf",
+      "pdf_bytes": 389853,
+      "page_count": 9
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-65b9ee89a9e96fbb",
+      "source_id": "arXiv:2211.08412",
+      "title": "Evaluating the Factual Consistency of Large Language Models Through News Summarization",
+      "pdf_path": "data\\pdfs\\arxiv-65b9ee89a9e96fbb.pdf",
+      "pdf_bytes": 544540,
+      "page_count": 34
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-9b873468e1095ac4",
+      "source_id": "arXiv:2505.23799",
+      "title": "Estimating LLM Consistency: A User Baseline vs Surrogate Metrics",
+      "pdf_path": "data\\pdfs\\arxiv-9b873468e1095ac4.pdf",
+      "pdf_bytes": 1287182,
+      "page_count": 15
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-b54d8839e55cbb3a",
+      "source_id": "arXiv:2402.13249",
+      "title": "TofuEval: Evaluating Hallucinations of LLMs on Topic-Focused Dialogue Summarization",
+      "pdf_path": "data\\pdfs\\arxiv-b54d8839e55cbb3a.pdf",
+      "pdf_bytes": 3668859,
+      "page_count": 26
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-36f1f643f66e6ff6",
+      "source_id": "arXiv:2404.08008",
+      "title": "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition",
+      "pdf_path": "data\\pdfs\\arxiv-36f1f643f66e6ff6.pdf",
+      "pdf_bytes": 1619743,
+      "page_count": 35
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-284e84fe65a9a04a",
+      "source_id": "arXiv:2311.00681",
+      "title": "Are Large Language Models Reliable Judges? A Study on the Factuality Evaluation Capabilities of LLMs",
+      "pdf_path": "data\\pdfs\\arxiv-284e84fe65a9a04a.pdf",
+      "pdf_bytes": 202200,
+      "page_count": 7
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-59481cc1f6412c55",
+      "source_id": "arXiv:2503.08890",
+      "title": "PlainQAFact: Retrieval-augmented Factual Consistency Evaluation Metric for Biomedical Plain Language Summarization",
+      "pdf_path": "data\\pdfs\\arxiv-59481cc1f6412c55.pdf",
+      "pdf_bytes": 4638693,
+      "page_count": 49
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-de20fb29ceab791d",
+      "source_id": "arXiv:2512.21635",
+      "title": "Heaven-Sent or Hell-Bent? Benchmarking the Intelligence and Defectiveness of LLM Hallucinations",
+      "pdf_path": "data\\pdfs\\arxiv-de20fb29ceab791d.pdf",
+      "pdf_bytes": 1079381,
+      "page_count": 19
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-ce3267a64ac6d779",
+      "source_id": "arXiv:2310.06271",
+      "title": "Towards Mitigating Hallucination in Large Language Models via Self-Reflection",
+      "pdf_path": "data\\pdfs\\arxiv-ce3267a64ac6d779.pdf",
+      "pdf_bytes": 1173879,
+      "page_count": 17
+    }
+  ]
+}

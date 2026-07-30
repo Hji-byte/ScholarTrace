@@ -1,0 +1,13 @@
+.env
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.tmp/
+*.pyc
+data/chroma/
+data/pdfs/
+data/*.db
+data/*.sqlite
+outputs/reports/*.md
+evaluation/results/pytest-*/

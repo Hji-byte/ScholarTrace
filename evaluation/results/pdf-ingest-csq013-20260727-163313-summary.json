@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq013-20260727-163313",
+  "created_at": "2026-07-27T16:41:21.585673+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq013",
+  "question": "Which benchmarks and metrics have been proposed to evaluate hallucination in vision-language models, and what aspects of model behavior does each benchmark test?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 945,
+  "elapsed_seconds": 487.497227,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq013-20260727-163313",
+  "trace": [
+    "Ingested 10 papers. Indexed 945 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-a7d3888bda27a9af",
+      "source_id": "arXiv:2407.13442",
+      "title": "BEAF: Observing BEfore-AFter Changes to Evaluate Hallucination in Vision-language Models",
+      "pdf_path": "data\\pdfs\\arxiv-a7d3888bda27a9af.pdf",
+      "pdf_bytes": 3835476,
+      "page_count": 17
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-efa65275670e5dcb",
+      "source_id": "arXiv:2511.13420",
+      "title": "VOPE: Revisiting Hallucination of Vision-Language Models in Voluntary Imagination Task",
+      "pdf_path": "data\\pdfs\\arxiv-efa65275670e5dcb.pdf",
+      "pdf_bytes": 1578893,
+      "page_count": 12
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-7d6db96489a89c30",
+      "source_id": "arXiv:2410.23114",
+      "title": "Unified Triplet-Level Hallucination Evaluation for Large Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-7d6db96489a89c30.pdf",
+      "pdf_bytes": 9780058,
+      "page_count": 22
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-2ce2ccc30e6a786c",
+      "source_id": "arXiv:2407.06192",
+      "title": "Multi-Object Hallucination in Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-2ce2ccc30e6a786c.pdf",
+      "pdf_bytes": 6276774,
+      "page_count": 21
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-ff7ff1a57f8573c8",
+      "source_id": "arXiv:2511.12693",
+      "title": "HEDGE: Hallucination Estimation via Dense Geometric Entropy for VQA with Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-ff7ff1a57f8573c8.pdf",
+      "pdf_bytes": 1479014,
+      "page_count": 21
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-25ef5b7e9565774a",
+      "source_id": "arXiv:2406.16449",
+      "title": "Evaluating and Analyzing Relationship Hallucinations in Large Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-25ef5b7e9565774a.pdf",
+      "pdf_bytes": 2010143,
+      "page_count": 18
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-acc9fd51ec4f94a4",
+      "source_id": "arXiv:2311.01477",
+      "title": "FaithScore: Fine-grained Evaluations of Hallucinations in Large Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-acc9fd51ec4f94a4.pdf",
+      "pdf_bytes": 8537423,
+      "page_count": 22
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-91fe9962aaabea4b",
+      "source_id": "arXiv:2406.10185",
+      "title": "Detecting and Evaluating Medical Hallucinations in Large Vision Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-91fe9962aaabea4b.pdf",
+      "pdf_bytes": 3530268,
+      "page_count": 25
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-bcf38c8a1f1d0086",
+      "source_id": "arXiv:2505.01958",
+      "title": "A Comprehensive Analysis for Visual Object Hallucination in Large Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-bcf38c8a1f1d0086.pdf",
+      "pdf_bytes": 5940338,
+      "page_count": 14
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-cdf009b5664c25ba",
+      "source_id": "arXiv:2502.20780",
+      "title": "MedHallTune: An Instruction-Tuning Benchmark for Mitigating Medical Hallucination in Vision-Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-cdf009b5664c25ba.pdf",
+      "pdf_bytes": 6354549,
+      "page_count": 11
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq015-20260727-165028",
+  "created_at": "2026-07-27T16:56:07.205199+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq015",
+  "question": "What are the main approaches for reducing communication and latency costs in Byzantine fault-tolerant consensus protocols?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1106,
+  "elapsed_seconds": 338.544756,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq015-20260727-165028",
+  "trace": [
+    "Ingested 10 papers. Indexed 1106 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-2940fa130679e1dc",
+      "source_id": "arXiv:1906.04381",
+      "title": "Window Based BFT Blockchain Consensus",
+      "pdf_path": "data\\pdfs\\arxiv-2940fa130679e1dc.pdf",
+      "pdf_bytes": 343337,
+      "page_count": 9
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-b529571f8f62796e",
+      "source_id": "arXiv:2202.13408",
+      "title": "Scalable Byzantine Fault Tolerance via Partial Decentralization",
+      "pdf_path": "data\\pdfs\\arxiv-b529571f8f62796e.pdf",
+      "pdf_bytes": 1162828,
+      "page_count": 14
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-f0775ade90a5c14b",
+      "source_id": "arXiv:2509.03145",
+      "title": "Efficient and Secure Sleepy Model for BFT Consensus",
+      "pdf_path": "data\\pdfs\\arxiv-f0775ade90a5c14b.pdf",
+      "pdf_bytes": 751151,
+      "page_count": 20
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-d5b026aa7edfffc4",
+      "source_id": "arXiv:2209.00750",
+      "title": "Dumbo-NG: Fast Asynchronous BFT Consensus with Throughput-Oblivious Latency",
+      "pdf_path": "data\\pdfs\\arxiv-d5b026aa7edfffc4.pdf",
+      "pdf_bytes": 1653379,
+      "page_count": 22
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-70142f717a421a9c",
+      "source_id": "arXiv:2405.04606",
+      "title": "Probabilistic Byzantine Fault Tolerance (Extended Version)",
+      "pdf_path": "data\\pdfs\\arxiv-70142f717a421a9c.pdf",
+      "pdf_bytes": 1006420,
+      "page_count": 30
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-aee1d8ec323cf42c",
+      "source_id": "arXiv:2509.01118",
+      "title": "Ocior: Ultra-Fast Asynchronous Leaderless Consensus with Two-Round Finality, Linear Overhead, and Adaptive Security",
+      "pdf_path": "data\\pdfs\\arxiv-aee1d8ec323cf42c.pdf",
+      "pdf_bytes": 1179640,
+      "page_count": 52
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-44a8d14d51298640",
+      "source_id": "arXiv:2109.12664",
+      "title": "BigBFT: A Multileader Byzantine Fault Tolerance Protocol for High Throughput",
+      "pdf_path": "data\\pdfs\\arxiv-44a8d14d51298640.pdf",
+      "pdf_bytes": 960048,
+      "page_count": 10
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-bbeb1ba88721d616",
+      "source_id": "arXiv:2306.03058",
+      "title": "Shoal: Improving DAG-BFT Latency And Robustness",
+      "pdf_path": "data\\pdfs\\arxiv-bbeb1ba88721d616.pdf",
+      "pdf_bytes": 2602459,
+      "page_count": 15
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-4cb5d16f50ebc3b3",
+      "source_id": "arXiv:2507.08281",
+      "title": "Fast and Interactive Byzantine Fault-tolerant Web Services via Session-Based Consensus Decoupling",
+      "pdf_path": "data\\pdfs\\arxiv-4cb5d16f50ebc3b3.pdf",
+      "pdf_bytes": 447269,
+      "page_count": 6
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-992709b7b09110ee",
+      "source_id": "arXiv:2006.04616",
+      "title": "Consensus Beyond Thresholds: Generalized Byzantine Quorums Made Live",
+      "pdf_path": "data\\pdfs\\arxiv-992709b7b09110ee.pdf",
+      "pdf_bytes": 672522,
+      "page_count": 19
+    }
+  ]
+}

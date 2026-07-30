@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq012-20260727-162306",
+  "created_at": "2026-07-27T16:32:40.006635+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq012",
+  "question": "How do diffusion-based and autoregressive image generation models compare in training objectives, sampling cost, controllability, and output quality?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1040,
+  "elapsed_seconds": 572.806846,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq012-20260727-162306",
+  "trace": [
+    "Ingested 10 papers. Indexed 1040 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-eb0ddd8d31a29dc1",
+      "source_id": "arXiv:2410.02705",
+      "title": "ControlAR: Controllable Image Generation with Autoregressive Models",
+      "pdf_path": "data\\pdfs\\arxiv-eb0ddd8d31a29dc1.pdf",
+      "pdf_bytes": 34569809,
+      "page_count": 25
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-a1270e8aad59ac3c",
+      "source_id": "arXiv:2410.04671",
+      "title": "CAR: Controllable Autoregressive Modeling for Visual Generation",
+      "pdf_path": "data\\pdfs\\arxiv-a1270e8aad59ac3c.pdf",
+      "pdf_bytes": 5598955,
+      "page_count": 14
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-7d7edce44889a517",
+      "source_id": "arXiv:2505.20297",
+      "title": "DiSA: Diffusion Step Annealing in Autoregressive Image Generation",
+      "pdf_path": "data\\pdfs\\arxiv-7d7edce44889a517.pdf",
+      "pdf_bytes": 23703105,
+      "page_count": 11
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-5e0ec2f8bcda4ca6",
+      "source_id": "arXiv:2505.23660",
+      "title": "D-AR: Diffusion via Autoregressive Models",
+      "pdf_path": "data\\pdfs\\arxiv-5e0ec2f8bcda4ca6.pdf",
+      "pdf_bytes": 13804366,
+      "page_count": 19
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-0d8acd0d65d76a2d",
+      "source_id": "arXiv:2508.10711",
+      "title": "NextStep-1: Toward Autoregressive Image Generation with Continuous Tokens at Scale",
+      "pdf_path": "data\\pdfs\\arxiv-0d8acd0d65d76a2d.pdf",
+      "pdf_bytes": 8506705,
+      "page_count": 25
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-893d52ded249c798",
+      "source_id": "arXiv:2305.14771",
+      "title": "David helps Goliath: Inference-Time Collaboration Between Small Specialized and Large General Diffusion LMs",
+      "pdf_path": "data\\pdfs\\arxiv-893d52ded249c798.pdf",
+      "pdf_bytes": 767216,
+      "page_count": 15
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-16082f0aa16e3bf3",
+      "source_id": "arXiv:2310.16834",
+      "title": "Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution",
+      "pdf_path": "data\\pdfs\\arxiv-16082f0aa16e3bf3.pdf",
+      "pdf_bytes": 1069705,
+      "page_count": 30
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-c521d14108b8b773",
+      "source_id": "arXiv:2412.10193",
+      "title": "Simple Guidance Mechanisms for Discrete Diffusion Models",
+      "pdf_path": "data\\pdfs\\arxiv-c521d14108b8b773.pdf",
+      "pdf_bytes": 2194594,
+      "page_count": 46
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-71de329c5b9c6ed4",
+      "source_id": "arXiv:2503.09573",
+      "title": "Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models",
+      "pdf_path": "data\\pdfs\\arxiv-71de329c5b9c6ed4.pdf",
+      "pdf_bytes": 862037,
+      "page_count": 28
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-32c6a57ab304c242",
+      "source_id": "arXiv:2411.00776",
+      "title": "Randomized Autoregressive Visual Generation",
+      "pdf_path": "data\\pdfs\\arxiv-32c6a57ab304c242.pdf",
+      "pdf_bytes": 6842214,
+      "page_count": 14
+    }
+  ]
+}

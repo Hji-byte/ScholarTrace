@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq020-20260729-102132",
+  "created_at": "2026-07-29T10:29:22.466504+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq020",
+  "question": "How do black-box and white-box membership inference attacks against machine learning models compare in their assumptions, methods, and evaluations?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1106,
+  "elapsed_seconds": 470.107605,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq020-20260729-102132",
+  "trace": [
+    "Ingested 10 papers. Indexed 1106 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-901098542bca9109",
+      "source_id": "arXiv:1908.11229",
+      "title": "White-box vs Black-box: Bayes Optimal Strategies for Membership Inference",
+      "pdf_path": "data\\pdfs\\arxiv-901098542bca9109.pdf",
+      "pdf_bytes": 430503,
+      "page_count": 11
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-7e52b3269ccf9a74",
+      "source_id": "arXiv:2510.10625",
+      "title": "ImpMIA: Leveraging Implicit Bias for Membership Inference Attack",
+      "pdf_path": "data\\pdfs\\arxiv-7e52b3269ccf9a74.pdf",
+      "pdf_bytes": 1014894,
+      "page_count": 22
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-e4333bee52cf76ea",
+      "source_id": "arXiv:2406.11544",
+      "title": "Do Parameters Reveal More than Loss for Membership Inference?",
+      "pdf_path": "data\\pdfs\\arxiv-e4333bee52cf76ea.pdf",
+      "pdf_bytes": 919995,
+      "page_count": 23
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-d28382014bcd6b2f",
+      "source_id": "arXiv:2306.05093",
+      "title": "Investigating the Effect of Misalignment on Membership Privacy in the White-box Setting",
+      "pdf_path": "data\\pdfs\\arxiv-d28382014bcd6b2f.pdf",
+      "pdf_bytes": 5781428,
+      "page_count": 25
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-5e30a8c56c68fcc1",
+      "source_id": "arXiv:1906.11798",
+      "title": "Stolen Memories: Leveraging Model Memorization for Calibrated White-Box Membership Inference",
+      "pdf_path": "data\\pdfs\\arxiv-5e30a8c56c68fcc1.pdf",
+      "pdf_bytes": 686062,
+      "page_count": 18
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-67ba19865fc74fa9",
+      "source_id": "arXiv:1812.00910",
+      "title": "Comprehensive Privacy Analysis of Deep Learning: Passive and Active White-box Inference Attacks against Centralized and Federated Learning",
+      "pdf_path": "data\\pdfs\\arxiv-67ba19865fc74fa9.pdf",
+      "pdf_bytes": 347372,
+      "page_count": 15
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-23abb9ff009e5214",
+      "source_id": "arXiv:2502.03692",
+      "title": "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+      "pdf_path": "data\\pdfs\\arxiv-23abb9ff009e5214.pdf",
+      "pdf_bytes": 3047954,
+      "page_count": 24
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-4bcc5e9172358ead",
+      "source_id": "arXiv:2508.06244",
+      "title": "Membership Inference Attack with Partial Features",
+      "pdf_path": "data\\pdfs\\arxiv-4bcc5e9172358ead.pdf",
+      "pdf_bytes": 1045092,
+      "page_count": 13
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-a41bf6423c642217",
+      "source_id": "arXiv:2508.09603",
+      "title": "The Surprising Effectiveness of Membership Inference with Simple N-Gram Coverage",
+      "pdf_path": "data\\pdfs\\arxiv-a41bf6423c642217.pdf",
+      "pdf_bytes": 687535,
+      "page_count": 21
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-073fefef9ba6367b",
+      "source_id": "arXiv:2511.01952",
+      "title": "Black-Box Membership Inference Attack for LVLMs via Prior Knowledge-Calibrated Memory Probing",
+      "pdf_path": "data\\pdfs\\arxiv-073fefef9ba6367b.pdf",
+      "pdf_bytes": 1249410,
+      "page_count": 18
+    }
+  ]
+}

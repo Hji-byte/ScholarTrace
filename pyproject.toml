@@ -1,0 +1,40 @@
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Agentic RAG assistant for CS literature reviews."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bm25s>=0.2.0,<0.3.0",
+    "chromadb>=0.5.23",
+    "dashscope>=1.24.0",
+    "langchain>=0.3.15",
+    "langchain-chroma>=0.2.0",
+    "langchain-community>=0.3.15",
+    "langchain-core>=0.3.31",
+    "langchain-openai>=0.3.2",
+    "langgraph>=0.2.67",
+    "langgraph-checkpoint-sqlite>=3.1.0",
+    "pydantic>=2.10.5",
+    "pydantic-settings>=2.7.1",
+    "pypdf>=5.1.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[project.scripts]
+research-agent = "research_agent.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

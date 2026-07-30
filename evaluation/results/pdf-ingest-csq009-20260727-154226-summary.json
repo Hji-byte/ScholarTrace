@@ -1,0 +1,116 @@
+{
+  "experiment_id": "pdf-ingest-csq009-20260727-154226",
+  "created_at": "2026-07-27T15:48:31.172115+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq009",
+  "question": "What causes over-smoothing and over-squashing in graph neural networks, and which mitigation methods are supported by empirical and theoretical research?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1052,
+  "elapsed_seconds": 364.128266,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq009-20260727-154226",
+  "trace": [
+    "Ingested 10 papers. Indexed 1052 chunks in Chroma."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-fb45c7a1457b4c4e",
+      "source_id": "arXiv:2309.09384",
+      "title": "Mitigating Over-Smoothing and Over-Squashing using Augmentations of Forman-Ricci Curvature",
+      "pdf_path": "data\\pdfs\\arxiv-fb45c7a1457b4c4e.pdf",
+      "pdf_bytes": 1726289,
+      "page_count": 33
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-5c7be055739d3cbc",
+      "source_id": "arXiv:2502.10818",
+      "title": "On Vanishing Gradients, Over-Smoothing, and Over-Squashing in GNNs: Bridging Recurrent and Graph Learning",
+      "pdf_path": "data\\pdfs\\arxiv-5c7be055739d3cbc.pdf",
+      "pdf_bytes": 1413606,
+      "page_count": 32
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-d9cf246c820920e3",
+      "source_id": "arXiv:2212.02374",
+      "title": "On the Trade-off between Over-smoothing and Over-squashing in Deep Graph Neural Networks",
+      "pdf_path": "data\\pdfs\\arxiv-d9cf246c820920e3.pdf",
+      "pdf_bytes": 1008637,
+      "page_count": 11
+    },
+    {
+      "rank": 4,
+      "paper_id": "arxiv-b82af1121e64e65c",
+      "source_id": "arXiv:2211.15779",
+      "title": "Revisiting Over-smoothing and Over-squashing Using Ollivier-Ricci Curvature",
+      "pdf_path": "data\\pdfs\\arxiv-b82af1121e64e65c.pdf",
+      "pdf_bytes": 1076098,
+      "page_count": 24
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-df57d8f9ff108a71",
+      "source_id": "arXiv:2506.16110",
+      "title": "Mitigating Over-Squashing in Graph Neural Networks by Spectrum-Preserving Sparsification",
+      "pdf_path": "data\\pdfs\\arxiv-df57d8f9ff108a71.pdf",
+      "pdf_bytes": 7034137,
+      "page_count": 20
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-09b788100d44f56d",
+      "source_id": "arXiv:2311.15945",
+      "title": "Over-Squashing in Riemannian Graph Neural Networks",
+      "pdf_path": "data\\pdfs\\arxiv-09b788100d44f56d.pdf",
+      "pdf_bytes": 311801,
+      "page_count": 9
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-abad955a99a3c2ca",
+      "source_id": "arXiv:2501.00762",
+      "title": "Residual connections provably mitigate oversmoothing in graph neural networks",
+      "pdf_path": "data\\pdfs\\arxiv-abad955a99a3c2ca.pdf",
+      "pdf_bytes": 2069011,
+      "page_count": 30
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-5ed555181829b4a2",
+      "source_id": "arXiv:2511.06443",
+      "title": "How Wide and How Deep? Mitigating Over-Squashing of GNNs via Channel Capacity Constrained Estimation",
+      "pdf_path": "data\\pdfs\\arxiv-5ed555181829b4a2.pdf",
+      "pdf_bytes": 899820,
+      "page_count": 29
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-af2a02af4467b861",
+      "source_id": "arXiv:2502.11394",
+      "title": "A Signed Graph Approach to Understanding and Mitigating Oversmoothing in GNNs",
+      "pdf_path": "data\\pdfs\\arxiv-af2a02af4467b861.pdf",
+      "pdf_bytes": 1549720,
+      "page_count": 30
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-d8e72b621c39fa5e",
+      "source_id": "arXiv:2212.10701",
+      "title": "A Non-Asymptotic Analysis of Oversmoothing in Graph Neural Networks",
+      "pdf_path": "data\\pdfs\\arxiv-d8e72b621c39fa5e.pdf",
+      "pdf_bytes": 4446777,
+      "page_count": 23
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "experiment_id": "qwen3-rerank-no-instruct-20260727-125006",
+  "created_at": "2026-07-27T12:52:10.942819+00:00",
+  "source_raw_search_path": "evaluation\\results\\arxiv-paper-eval-20260727-105551-raw-search.jsonl",
+  "question_count": 30,
+  "successful_count": 30,
+  "error_count": 0,
+  "top_k": 20,
+  "model": "qwen3-rerank",
+  "instruct_mode": "no-instruct",
+  "request_contains_instruct": false,
+  "total_reranker_tokens": 458919,
+  "macro_metrics": {
+    "strict_recall@5": 0.02222222222222222,
+    "broad_recall@5": 0.03333333333333333,
+    "strict_recall@10": 0.07777777777777777,
+    "broad_recall@10": 0.075,
+    "strict_recall@20": 0.12222222222222222,
+    "broad_recall@20": 0.125,
+    "mrr": 0.100481707834649,
+    "mean_latency_seconds": 4.1440201666666665
+  },
+  "errors": []
+}

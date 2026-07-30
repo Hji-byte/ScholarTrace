@@ -1,0 +1,36 @@
+{
+  "experiment_id": "arxiv-paper-eval-20260727-095426",
+  "created_at": "2026-07-27T09:55:49.050793+00:00",
+  "questions_path": "evaluation\\datasets\\cs_questions_v2.jsonl",
+  "gold_path": "evaluation\\datasets\\key_papers_v2.jsonl",
+  "raw_search_path": "evaluation\\results\\arxiv-paper-eval-20260727-095426-raw-search.jsonl",
+  "retrieval_source": "arxiv",
+  "top_k": 20,
+  "question_count": 1,
+  "successful_count": 1,
+  "error_count": 0,
+  "configuration": {
+    "model": "qwen3.7-plus",
+    "search_results_per_query": 15,
+    "paper_candidate_limit": 20,
+    "rrf_k": 60,
+    "arxiv_sort_by": "relevance",
+    "arxiv_sort_order": "descending",
+    "arxiv_timeout_seconds": 20,
+    "arxiv_max_retries": 3,
+    "year_filter": "arxiv_submitted_date_query_with_local_audit",
+    "year_semantics": "arxiv_first_submission_year",
+    "use_pdf": false
+  },
+  "macro_metrics": {
+    "strict_recall@5": 0.3333333333333333,
+    "broad_recall@5": 0.25,
+    "strict_recall@10": 0.3333333333333333,
+    "broad_recall@10": 0.25,
+    "strict_recall@20": 0.3333333333333333,
+    "broad_recall@20": 0.25,
+    "mrr": 0.5,
+    "mean_latency_seconds": 81.090307
+  },
+  "errors": []
+}

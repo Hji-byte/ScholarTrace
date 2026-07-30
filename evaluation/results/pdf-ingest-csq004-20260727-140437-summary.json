@@ -1,0 +1,117 @@
+{
+  "experiment_id": "pdf-ingest-csq004-20260727-140437",
+  "created_at": "2026-07-27T14:15:10.468102+00:00",
+  "source_results": "evaluation\\results\\qwen3-rerank-no-instruct-20260727-125006-results.jsonl",
+  "question_id": "csq004",
+  "question": "What limitations and biases have been identified in LLM-as-a-judge evaluation, and which mitigation strategies have been proposed?",
+  "configuration": {
+    "pdf_candidate_limit": 20,
+    "max_papers": 10,
+    "use_pdf": true,
+    "pdf_failure_policy": "skip",
+    "min_pdf_papers": 6,
+    "embedding_model": "qwen3.7-text-embedding"
+  },
+  "candidate_count": 20,
+  "ingested_paper_count": 10,
+  "minimum_pdf_target_met": true,
+  "chunks_indexed": 1355,
+  "elapsed_seconds": 633.204773,
+  "chroma_persist_dir": "data\\chroma\\pdf-ingest-csq004-20260727-140437",
+  "trace": [
+    "Ingested 10 papers. Indexed 1355 chunks in Chroma.",
+    "Skipped 1 papers without usable PDF evidence."
+  ],
+  "ingested_papers": [
+    {
+      "rank": 1,
+      "paper_id": "arxiv-d1d997f888fe1aca",
+      "source_id": "arXiv:2509.21117",
+      "title": "TrustJudge: Inconsistencies of LLM-as-a-Judge and How to Alleviate Them",
+      "pdf_path": "data\\pdfs\\arxiv-d1d997f888fe1aca.pdf",
+      "pdf_bytes": 731358,
+      "page_count": 22
+    },
+    {
+      "rank": 2,
+      "paper_id": "arxiv-4b511443ff26f9ce",
+      "source_id": "arXiv:2506.10403",
+      "title": "Time To Impeach LLM-as-a-Judge: Programs are the Future of Evaluation",
+      "pdf_path": "data\\pdfs\\arxiv-4b511443ff26f9ce.pdf",
+      "pdf_bytes": 1124664,
+      "page_count": 11
+    },
+    {
+      "rank": 3,
+      "paper_id": "arxiv-91f7205b347f0c6d",
+      "source_id": "arXiv:2410.02736",
+      "title": "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "pdf_path": "data\\pdfs\\arxiv-91f7205b347f0c6d.pdf",
+      "pdf_bytes": 6196891,
+      "page_count": 35
+    },
+    {
+      "rank": 5,
+      "paper_id": "arxiv-033a3ff5ed915113",
+      "source_id": "arXiv:2510.12462",
+      "title": "Evaluating and Mitigating LLM-as-a-judge Bias in Communication Systems",
+      "pdf_path": "data\\pdfs\\arxiv-033a3ff5ed915113.pdf",
+      "pdf_bytes": 809519,
+      "page_count": 7
+    },
+    {
+      "rank": 6,
+      "paper_id": "arxiv-50547216fb6f6fd7",
+      "source_id": "arXiv:2505.19176",
+      "title": "Assistant-Guided Mitigation of Teacher Preference Bias in LLM-as-a-Judge",
+      "pdf_path": "data\\pdfs\\arxiv-50547216fb6f6fd7.pdf",
+      "pdf_bytes": 594792,
+      "page_count": 22
+    },
+    {
+      "rank": 7,
+      "paper_id": "arxiv-c909e99732a1b324",
+      "source_id": "arXiv:2408.13006",
+      "title": "Systematic Evaluation of LLM-as-a-Judge in LLM Alignment Tasks: Explainable Metrics and Diverse Prompt Templates",
+      "pdf_path": "data\\pdfs\\arxiv-c909e99732a1b324.pdf",
+      "pdf_bytes": 1399751,
+      "page_count": 25
+    },
+    {
+      "rank": 8,
+      "paper_id": "arxiv-14f8acc117f12eb6",
+      "source_id": "arXiv:2306.05685",
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "pdf_path": "data\\pdfs\\arxiv-14f8acc117f12eb6.pdf",
+      "pdf_bytes": 1580141,
+      "page_count": 29
+    },
+    {
+      "rank": 9,
+      "paper_id": "arxiv-c388783e10cff35c",
+      "source_id": "arXiv:2402.10669",
+      "title": "Humans or LLMs as the Judge? A Study on Judgement Biases",
+      "pdf_path": "data\\pdfs\\arxiv-c388783e10cff35c.pdf",
+      "pdf_bytes": 4795556,
+      "page_count": 27
+    },
+    {
+      "rank": 10,
+      "paper_id": "arxiv-aeff430352e55626",
+      "source_id": "arXiv:2504.07887",
+      "title": "Benchmarking Adversarial Robustness to Bias Elicitation in Large Language Models: Scalable Automated Assessment with LLM-as-a-Judge",
+      "pdf_path": "data\\pdfs\\arxiv-aeff430352e55626.pdf",
+      "pdf_bytes": 3056531,
+      "page_count": 38
+    },
+    {
+      "rank": 11,
+      "paper_id": "arxiv-c2b661cf25039894",
+      "source_id": "arXiv:2503.05965",
+      "title": "Validating LLM-as-a-Judge Systems under Rating Indeterminacy",
+      "pdf_path": "data\\pdfs\\arxiv-c2b661cf25039894.pdf",
+      "pdf_bytes": 4937789,
+      "page_count": 69
+    }
+  ]
+}
