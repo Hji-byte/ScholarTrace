@@ -3,9 +3,11 @@ import re
 import uuid
 from datetime import datetime
 from pathlib import Path
+from typing import Any, Callable
 
 from rich.console import Console
 from rich.panel import Panel
+from rich.progress import Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
 from langgraph.checkpoint.sqlite import SqliteSaver
 
 from scholar_trace.agent.graph import build_graph
@@ -18,6 +20,186 @@ from scholar_trace.llm import build_chat_model, build_embeddings
 
 
 console = Console()
+
+NODE_LABELS = {
+    "planner": "Planner",
+    "search": "Search",
+    "ingest": "Ingest",
+    "retrieve": "Retrieve",
+    "reader": "Reader",
+    "verifier": "Verifier",
+    "writer": "Writer",
+}
+
+NODE_DESCRIPTIONS = {
+    "planner": "Planning the research question...",
+    "search": "Searching and reranking papers...",
+    "ingest": "Downloading and indexing PDFs...",
+    "retrieve": "Retrieving and reranking evidence...",
+    "reader": "Extracting and consolidating claims...",
+    "verifier": "Verifying claims against evidence...",
+    "writer": "Writing the literature review...",
+}
+
+
+def count_label(count: int, singular: str, plural: str | None = None) -> str:
+    noun = singular if count == 1 else (plural or f"{singular}s")
+    return f"{count} {noun}"
+
+
+def node_summary(node_name: str, update: dict[str, Any]) -> str:
+    if node_name == "planner":
+        plan = update.get("plan")
+        if plan is not None:
+            return ", ".join(
+                [
+                    count_label(len(plan.subquestions), "subquestion"),
+                    count_label(len(plan.search_intents), "search intent"),
+                ]
+            )
+    elif node_name == "search":
+        failures = update.get("search_failure_count", 0)
+        return ", ".join(
+            [
+                count_label(len(update.get("papers", [])), "paper candidate"),
+                count_label(failures, "search failure"),
+            ]
+        )
+    elif node_name == "ingest":
+        return ", ".join(
+            [
+                count_label(len(update.get("papers", [])), "paper"),
+                f"{count_label(update.get('chunks_indexed', 0), 'chunk')} indexed",
+            ]
+        )
+    elif node_name == "retrieve":
+        return f"{count_label(len(update.get('evidence_chunks', [])), 'evidence chunk')} selected"
+    elif node_name == "reader":
+        claims = update.get("claims", [])
+        coverage = update.get("claim_coverage", {})
+        covered = (
+            coverage.get("all_subquestions_covered")
+            if isinstance(coverage, dict)
+            else None
+        )
+        suffix = ", all subquestions covered" if covered else ""
+        return f"{count_label(len(claims), 'claim')}{suffix}"
+    elif node_name == "verifier":
+        accepted = update.get("supported_claim_count", len(update.get("verified_claims", [])))
+        rejected = update.get("rejected_claim_count", 0)
+        return f"{accepted} accepted, {rejected} rejected"
+    elif node_name == "writer":
+        markdown = update.get("report_markdown", "")
+        references = len(re.findall(r"(?m)^\[\d+\]", markdown))
+        return count_label(references, "cited paper")
+    return "completed"
+
+
+def progress_display() -> Progress:
+    return Progress(
+        SpinnerColumn(spinner_name="line"),
+        TextColumn("{task.description}"),
+        TimeElapsedColumn(),
+        console=console,
+    )
+
+
+def run_graph_with_progress(
+    app,
+    initial_state: dict[str, Any],
+    config: dict[str, Any],
+    node_order: list[str],
+) -> dict[str, Any]:
+    state = dict(initial_state)
+    active_index = 0
+    with progress_display() as progress:
+        task_id = progress.add_task(
+            f"[cyan]{NODE_LABELS[node_order[0]]}[/cyan]  "
+            f"{NODE_DESCRIPTIONS[node_order[0]]}",
+            total=None,
+        )
+        try:
+            for event in app.stream(initial_state, config, stream_mode="updates"):
+                for node_name, update in event.items():
+                    if node_name == "__interrupt__" or not isinstance(update, dict):
+                        continue
+                    state.update(update)
+                    label = NODE_LABELS.get(node_name, node_name)
+                    progress.update(
+                        task_id,
+                        description=(
+                            f"[green]OK {label}[/green]  {node_summary(node_name, update)}"
+                        ),
+                    )
+                    progress.stop_task(task_id)
+                    if node_name in node_order:
+                        active_index = node_order.index(node_name) + 1
+                    if active_index < len(node_order):
+                        next_node = node_order[active_index]
+                        task_id = progress.add_task(
+                            f"[cyan]{NODE_LABELS[next_node]}[/cyan]  "
+                            f"{NODE_DESCRIPTIONS[next_node]}",
+                            total=None,
+                        )
+        except Exception:
+            failed_node = node_order[min(active_index, len(node_order) - 1)]
+            progress.update(
+                task_id,
+                description=f"[red]FAILED {NODE_LABELS[failed_node]}[/red]",
+            )
+            progress.stop_task(task_id)
+            console.print(
+                f"[red]Run {initial_state.get('run_id', '(unknown)')} failed in "
+                f"{NODE_LABELS[failed_node]}.[/red]"
+            )
+            raise
+    return state
+
+
+def run_steps_with_progress(
+    state: dict[str, Any],
+    steps: list[tuple[str, Callable[[dict[str, Any]], dict[str, Any]]]],
+) -> dict[str, Any]:
+    with progress_display() as progress:
+        for node_name, execute in steps:
+            task_id = progress.add_task(
+                f"[cyan]{NODE_LABELS[node_name]}[/cyan]  {NODE_DESCRIPTIONS[node_name]}",
+                total=None,
+            )
+            try:
+                update = execute(state)
+            except Exception:
+                progress.update(
+                    task_id,
+                    description=f"[red]FAILED {NODE_LABELS[node_name]}[/red]",
+                )
+                progress.stop_task(task_id)
+                console.print(
+                    f"[red]Run {state.get('run_id', '(unknown)')} failed in "
+                    f"{NODE_LABELS[node_name]}.[/red]"
+                )
+                raise
+            state.update(update)
+            progress.update(
+                task_id,
+                description=(
+                    f"[green]OK {NODE_LABELS[node_name]}[/green]  "
+                    f"{node_summary(node_name, update)}"
+                ),
+            )
+            progress.stop_task(task_id)
+    return state
+
+
+def print_run_summary(state: dict[str, Any], report_path: Path) -> None:
+    console.print("\n[bold green]Research complete[/bold green]")
+    console.print(
+        f"Papers: {len(state.get('papers', []))}  |  "
+        f"Evidence chunks: {len(state.get('evidence_chunks', []))}  |  "
+        f"Claims: {len(state.get('claims', []))}  |  "
+        f"Verified claims: {len(state.get('verified_claims', []))}"
+    )
+    console.print(f"[green]Report saved:[/green] {report_path}")
 
 
 def slugify(text: str) -> str:
@@ -93,9 +275,12 @@ def run(
             initial_state["year_from"] = year_from
         if year_to is not None:
             initial_state["year_to"] = year_to
-        state = app.invoke(
+        graph_config = {"configurable": {"thread_id": run_id}}
+        state = run_graph_with_progress(
+            app,
             initial_state,
-            {"configurable": {"thread_id": run_id}},
+            graph_config,
+            ["planner", "search", "ingest", "retrieve", "reader", "verifier", "writer"],
         )
 
     report_path = save_report(settings.output_dir, question, state["report_markdown"])
@@ -105,10 +290,7 @@ def run(
     if state.get("verified_claims"):
         db.save_claims(run_id, state["verified_claims"], stage="verified")
 
-    console.print("\n[bold]Trace[/bold]")
-    for item in state.get("trace", []):
-        console.print(f"- {item}")
-    console.print(f"\n[green]Report saved:[/green] {report_path}")
+    print_run_summary(state, report_path)
     return report_path
 
 
@@ -136,34 +318,42 @@ def resume_from_chunks(run_id: str) -> Path:
     }
 
     console.print(Panel.fit(question, title=f"Resume Run {run_id}"))
-    state.update(
-        read_evidence(
-            llm,
-            batch_size=settings.reader_batch_size,
-            min_claims_per_subquestion=settings.reader_min_claims_per_subquestion,
-        )(state)
+    read = read_evidence(
+        llm,
+        batch_size=settings.reader_batch_size,
+        min_claims_per_subquestion=settings.reader_min_claims_per_subquestion,
     )
-    if state.get("claims"):
-        db.save_claims(run_id, state["claims"], stage="raw")
-
-    state.update(
-        verify_claims(
-            llm,
-            batch_size=settings.verifier_batch_size,
-            min_claims_per_subquestion=settings.reader_min_claims_per_subquestion,
-        )(state)
+    verify = verify_claims(
+        llm,
+        batch_size=settings.verifier_batch_size,
+        min_claims_per_subquestion=settings.reader_min_claims_per_subquestion,
     )
-    if state.get("verified_claims"):
-        db.save_claims(run_id, state["verified_claims"], stage="verified")
+    write = write_report(llm)
 
-    state.update(write_report(llm)(state))
+    def read_and_save(current_state: dict[str, Any]) -> dict[str, Any]:
+        update = read(current_state)
+        if update.get("claims"):
+            db.save_claims(run_id, update["claims"], stage="raw")
+        return update
+
+    def verify_and_save(current_state: dict[str, Any]) -> dict[str, Any]:
+        update = verify(current_state)
+        if update.get("verified_claims"):
+            db.save_claims(run_id, update["verified_claims"], stage="verified")
+        return update
+
+    state = run_steps_with_progress(
+        state,
+        [
+            ("reader", read_and_save),
+            ("verifier", verify_and_save),
+            ("writer", write),
+        ],
+    )
 
     report_path = save_report(settings.output_dir, question, state["report_markdown"])
     db.set_report_path(run_id, str(report_path))
-    console.print("\n[bold]Trace[/bold]")
-    for item in state.get("trace", []):
-        console.print(f"- {item}")
-    console.print(f"\n[green]Report saved:[/green] {report_path}")
+    print_run_summary(state, report_path)
     return report_path
 
 
@@ -195,24 +385,27 @@ def resume_from_claims(run_id: str) -> Path:
     }
 
     console.print(Panel.fit(question, title=f"Verify Run {run_id}"))
-    state.update(
-        verify_claims(
-            llm,
-            batch_size=settings.verifier_batch_size,
-            min_claims_per_subquestion=settings.reader_min_claims_per_subquestion,
-        )(state)
+    verify = verify_claims(
+        llm,
+        batch_size=settings.verifier_batch_size,
+        min_claims_per_subquestion=settings.reader_min_claims_per_subquestion,
     )
-    if state.get("verified_claims"):
-        db.save_claims(run_id, state["verified_claims"], stage="verified")
+    write = write_report(llm)
 
-    state.update(write_report(llm)(state))
+    def verify_and_save(current_state: dict[str, Any]) -> dict[str, Any]:
+        update = verify(current_state)
+        if update.get("verified_claims"):
+            db.save_claims(run_id, update["verified_claims"], stage="verified")
+        return update
+
+    state = run_steps_with_progress(
+        state,
+        [("verifier", verify_and_save), ("writer", write)],
+    )
     report_path = save_report(settings.output_dir, question, state["report_markdown"])
     db.set_report_path(run_id, str(report_path))
 
-    console.print("\n[bold]Trace[/bold]")
-    for item in state.get("trace", []):
-        console.print(f"- {item}")
-    console.print(f"\n[green]Report saved:[/green] {report_path}")
+    print_run_summary(state, report_path)
     return report_path
 
 

@@ -58,6 +58,8 @@ uv run python -m scholar_trace "What are the main methods for evaluating retriev
 
 该命令会依次完成论文搜索、PDF 下载、证据检索、观点提取、验证以及报告生成。
 
+运行过程中，终端会实时显示当前节点、已用时间和各阶段的结果摘要。
+
 文献综述保存在 `outputs/reports/`，各阶段的中间结果会写入 SQLite，便于断点续跑。
 
 默认仅从 arXiv 检索论文，如需使用自己的 PDF 论文库，请参阅 [补充用法](#补充用法)。

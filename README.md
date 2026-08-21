@@ -58,6 +58,8 @@ uv run python -m scholar_trace "What are the main methods for evaluating retriev
 
 ScholarTrace will search for papers, download and parse PDFs, retrieve evidence, extract and verify claims, and generate the final report.
 
+While the workflow runs, the terminal shows the active node, elapsed time, and a concise summary for each completed stage.
+
 Literature reviews are saved under `outputs/reports/`. Intermediate state is stored in SQLite so interrupted runs can be resumed.
 
 By default, papers come from arXiv. To use your own PDF library, see [Additional Usage](#additional-usage).
