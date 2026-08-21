@@ -3,11 +3,11 @@
 node_modules/
 __pycache__/
 .pytest_cache/
+.pytest-run-*/
 .tmp/
 *.pyc
-data/chroma/
-data/pdfs/
-data/*.db
-data/*.sqlite
-outputs/reports/*.md
-evaluation/results/pytest-*/
+data/
+outputs/
+draft/
+evaluation/results/
+tests/

@@ -1,7 +1,7 @@
 [project]
-name = "research-agent"
+name = "scholar-trace"
 version = "0.1.0"
-description = "Agentic RAG assistant for CS literature reviews."
+description = "ScholarTrace: an evidence-grounded agent for CS literature reviews."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -29,7 +29,7 @@ dev = [
 ]
 
 [project.scripts]
-research-agent = "research_agent.cli:main"
+scholar-trace = "scholar_trace.cli:main"
 
 [build-system]
 requires = ["hatchling"]

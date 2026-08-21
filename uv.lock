@@ -2821,7 +2821,7 @@ wheels = [
 ]
 
 [[package]]
-name = "research-agent"
+name = "scholar-trace"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

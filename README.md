@@ -1,131 +1,266 @@
-# Research Agent for CS Literature Review
+# ScholarTrace
 
-An MVP Agentic RAG assistant that plans a CS literature review, searches arXiv, indexes paper evidence in Chroma, verifies cited claims, and writes a Markdown report.
+An Evidence-Grounded Research Agent for Computer Science Literature Reviews
 
-## Architecture
+English | [简体中文](README.zh-CN.md)
 
-```text
-Question
-  -> LangGraph planner
-  -> structured search intents
-  -> arXiv query adapter and search
-  -> title deduplication and paper reranking
-  -> paper ingestion and chunking
-  -> Chroma retrieval
-  -> claim reader
-  -> claim verifier
-  -> report writer
-  -> Markdown report + SQLite trace + LangGraph checkpoints
-```
+**Want to get up to speed on a computer science topic without getting lost in a sea of papers?**
 
-## Setup
+Give `ScholarTrace` a research question. It finds and filters relevant papers, retrieves and distills their key evidence, and produces a traceable literature review with citations.
+
+![ScholarTrace in action](./images/scholartrace_entry.png)
+
+![ScholarTrace workflow](./images/scholartrace_workflow.png)
+
+## Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Pipeline](#pipeline)
+- [Tech Stack](#tech-stack)
+- [Evaluation](#evaluation)
+- [Additional Usage](#additional-usage)
+- [Outputs](#outputs)
+
+
+
+## Overview
+
+ScholarTrace is a research agent for computer science literature. Given a natural-language research question, it produces a cited literature review in Markdown.
+
+The workflow has three broad phases. First, it plans the question, searches for papers, reranks the results, downloads PDFs, and converts their text into embeddings. Next, it retrieves and reranks evidence passages around the original question and its subquestions. Finally, it extracts evidence-backed claims, verifies their support, and turns the verified findings into a literature review with IEEE-style references.
+
+The project also includes a 30-question computer science benchmark. Paper search, evidence retrieval, claim generation, verification, and final report quality were evaluated separately; see [Evaluation](#evaluation) for the results.
+
+
+
+## Installation
 
 ```powershell
 uv sync --extra dev
 Copy-Item .env.example .env
 ```
 
-Fill in `.env`:
+ScholarTrace uses Qwen models by default. Add your `DASHSCOPE_API_KEY` and `DASHSCOPE_WORKSPACE_ID` to `.env`; the remaining settings can be left at their defaults or adjusted as needed.
 
-```env
-DASHSCOPE_API_KEY=your_key_here
-DASHSCOPE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
-QWEN_CHAT_MODEL=qwen3.7-plus
-QWEN_EMBEDDING_MODEL=qwen3.7-text-embedding
-PAPER_RANKING_STRATEGY=qwen3_rerank
-DASHSCOPE_WORKSPACE_ID=your_workspace_id
-QWEN_RERANK_MODEL=qwen3-rerank
-SEARCH_RESULTS_PER_QUERY=15
-ARXIV_DELAY_SECONDS=3.0
-MAX_PAPERS=8
-PDF_CANDIDATE_LIMIT=0
-MAX_CHUNKS_PER_QUERY=12
-MAX_EVIDENCE_CHUNKS=30
-READER_BATCH_SIZE=10
-VERIFIER_BATCH_SIZE=8
-USE_PDF=false
-PDF_FAILURE_POLICY=fallback_abstract
-MIN_PDF_PAPERS=0
-EXPERIMENT_ID=
-```
+To use different models, update the corresponding model and endpoint settings in `.env`.
 
-## Run
+
+
+## Quick Start
+
+Start the full research workflow by passing a question:
 
 ```powershell
-uv run python -m research_agent "What are the main methods for LLM inference acceleration from 2023 to 2025?"
+uv run python -m scholar_trace "What are the main methods for evaluating retrieval-augmented generation systems?"
 ```
 
-Reports are saved to `outputs/reports/`. Runtime metadata is saved in `data/research_agent.db`, and vector chunks are stored under `data/chroma/<experiment-or-run-id>/`.
-LangGraph state snapshots are saved in `data/checkpoints.sqlite` using the run ID as the `thread_id`.
+ScholarTrace will search for papers, download and parse PDFs, retrieve evidence, extract and verify claims, and generate the final report.
 
-## What v1 Does
+Literature reviews are saved under `outputs/reports/`. Intermediate state is stored in SQLite so interrupted runs can be resumed.
 
-- Plans the research question into subquestions and structured search intents made of required synonym groups.
-- Compiles those intents into complete arXiv queries using quoted all-field Boolean syntax and the selected upload-year range.
-- Searches arXiv and saves both each structured intent and the exact query sent to the API.
-- Combines all intent results and deduplicates papers by normalized title.
-- Can send the entire deduplicated candidate pool to Qwen3-Rerank in one request,
-  using the original research question and each paper's title and abstract. RRF remains
-  available as a baseline through `PAPER_RANKING_STRATEGY=rrf`.
-- Ingests paper abstracts by default, with optional PDF ingestion. For stricter PDF experiments, set `PDF_FAILURE_POLICY=skip` so papers without usable PDF evidence are skipped.
-- Chunks documents and persists vectors in Chroma.
-- Retrieves evidence chunks for the original question and subquestions.
-- Extracts evidence-backed claims.
-- Verifies claim support against cited chunks.
-- Writes a structured Markdown literature review.
-- Persists LangGraph checkpoints for each run, so the graph state can be inspected or resumed later.
+By default, papers come from arXiv. To use your own PDF library, see [Additional Usage](#additional-usage).
 
-## Tests
+You can also restrict results by the year in which each paper was first uploaded to arXiv:
 
 ```powershell
-uv run --extra dev pytest
+uv run python -m scholar_trace `
+  "What are the main methods for evaluating retrieval-augmented generation systems?" `
+  --year-from 2020 `
+  --year-to 2025
 ```
 
-The tests mock external model behavior where possible and focus on schema parsing, metadata preservation, Chroma retrieval, and verifier behavior.
 
-## Formal PDF Experiment Example
+
+## Pipeline
+
+ScholarTrace is implemented as a seven-node graph:
+
+```text
+Planner → Search → Ingest → Retrieve → Reader → Verifier → Writer
+```
+
+| Node | Input | What it does | Main output |
+| --- | --- | --- | --- |
+| **Planner** | Research question | Breaks the question into 3–5 focused subquestions for retrieval and writing, and creates 3–5 complementary search directions. | A research plan containing subquestions and search intents |
+| **Search** | Research question, search intents, optional paper source, and year range | Converts each search intent into an arXiv-compatible query and retrieves 15 papers per query. It then uses Qwen3-Rerank to compare paper titles and abstracts against the original question, keeping the Top 20. See [Additional Usage](#additional-usage) for local-library modes. | Top 20 paper candidates |
+| **Ingest** | Top 20 paper candidates | Processes candidates in ranked order until 10 papers have been downloaded and parsed successfully. Each PDF is split into chunks and embedded in Chroma; failed candidates are skipped. | Paper chunks and their embeddings |
+| **Retrieve** | Original question, subquestions, and paper chunks | Runs Dense retrieval for semantic matches and BM25 for lexical matches over the original question and every subquestion. RRF fuses the result lists, and Qwen3-Rerank selects the Top 30 passages most relevant to the original question. | Top 30 evidence chunks |
+| **Reader** | Original question, subquestions, and Top 30 evidence chunks | Extracts claims from the evidence and records both their source chunks and matching subquestions. If a subquestion has fewer than two claims, the Reader performs an additional targeted extraction pass. | Claims, cited evidence chunks, and subquestion mappings |
+| **Verifier** | Reader claims and their cited chunks | Checks whether each claim is supported by its cited evidence, retaining only supported claims and the chunks that genuinely provide that support. | Verified claims and validated evidence chunks |
+| **Writer** | Original question, subquestions, verified claims, validated evidence, and paper metadata | Synthesizes the verified findings into a literature review and formats the bibliography in IEEE style. | Markdown literature review |
+
+
+
+## Tech Stack
+
+- **Agent orchestration:** LangGraph, LangChain, SQLite Checkpointer
+- **Models:** Qwen Chat, Qwen Embedding, Qwen3-Rerank
+- **Paper acquisition and parsing:** arXiv API, PyPDF
+- **Hybrid retrieval:** Chroma, Dense retrieval, BM25, RRF
+- **Data and persistence:** Pydantic, SQLite
+
+
+
+## Evaluation
+
+### 30-Question Computer Science Benchmark
+
+All experiments below use the same benchmark. Relevance and quality judgments were completed jointly by Codex and the project author.
+
+- 30 research questions written in English;
+- 7 areas: NLP, machine learning, computer vision, systems and networking, security and privacy, software engineering, and data management and information retrieval;
+- Multiple question types, including surveys, comparisons, evaluations, limitations, and trends;
+- Year constraints stored separately and interpreted as the first arXiv upload year;
+- Questions available at [`evaluation/datasets/cs_questions.jsonl`](evaluation/datasets/cs_questions.jsonl), with the 30 generated reports under [`evaluation/reports`](evaluation/reports).
+
+
+
+### 1. Planner: Subquestion Quality
+
+We evaluated the 119 subquestions generated for the 30 benchmark questions, checking whether each subquestion was clear and useful and whether the complete set covered the original question.
+
+| Metric | Description | Result |
+| --- | --- | ---: |
+| Valid Subquestions | Clear, distinct subquestions that are suitable for retrieval | 94.96% |
+| Acceptable Subquestions | Useful for answering the original question, allowing minor redundancy or overly broad scope | 100.00% |
+| Question Coverage | The complete subquestion set covers the main aspects required by the original question | 100.00% |
+
+
+
+### 2. Search: Paper Relevance
+
+This evaluation asks whether the papers returned by Search are worth downloading and reading. Judgments use only the research question, paper title, and abstract—not the full text.
+
+Papers are labeled as:
+
+- **Directly relevant:** the paper's main contribution directly helps answer the question;
+- **Partially relevant:** the paper has a substantive connection and can provide background or supporting evidence;
+- **Irrelevant:** the paper only shares keywords and does not meaningfully help answer the question.
+
+Precision@K counts both directly and partially relevant papers.
+
+| Paper ranking method | Direct | Partial | Irrelevant | Precision@5 | Precision@10 | Precision@20 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| RRF | 441 | 122 | 37 | 96.0% | 95.3% | 93.8% |
+| **Qwen3-Rerank** | **497** | **85** | **18** | **99.3%** | **98.3%** | **97.0%** |
+
+ScholarTrace uses Qwen3-Rerank for paper ranking in the final pipeline.
+
+
+
+### 3. Retrieve: Evidence Retrieval Comparison
+
+The Top 30 evidence chunks are labeled as directly relevant, partially relevant, or irrelevant. Precision@K counts both directly and partially relevant chunks, while Direct@K counts only directly relevant chunks.
+
+| Method | Precision@5 | Precision@10 | Precision@20 | Direct@5 | Direct@10 | Direct@20 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Dense + RRF | 84.0% | 80.3% | 82.0% | 78.0% | 75.0% | 76.7% |
+| BM25 + RRF | 95.3% | 94.0% | 93.5% | 80.0% | 78.3% | 76.0% |
+| Hybrid + RRF | 92.7% | 90.7% | 88.5% | 84.7% | 81.0% | 78.2% |
+| **Hybrid + RRF + Qwen3-Rerank** | **96.7%** | **96.3%** | **94.5%** | **90.0%** | **90.0%** | **86.2%** |
+
+The final pipeline uses Hybrid + RRF + Qwen3-Rerank.
+
+
+
+### 4. Reader and Verifier
+
+We annotated 661 claims generated across the 30 benchmark questions.
+
+| Reader metric | Description | Result |
+| --- | --- | ---: |
+| Full Support | Every part of the claim is supported by its cited evidence | 91.5% |
+| Partial Support | At least part of the claim is supported by its cited evidence | 99.5% |
+| Direct Relevance | The claim directly helps answer the research question | 95.5% |
+| Partial Relevance | The claim is at least partially relevant to the research question | 99.7% |
+| Exact Mapping | The claim's subquestion labels are fully correct, with no missing or extra labels | 89.6% |
+| Acceptable Mapping | The claim matches at least one assigned subquestion, allowing a small number of missing or extra labels | 97.1% |
+
+| Verifier metric | Description | Result |
+| --- | --- | ---: |
+| Verified Full Support | Every part of a retained claim is supported by evidence | 91.8% |
+| Verified Partial Support | At least part of a retained claim is supported by evidence | 99.5% |
+| Exact Evidence Selection | Every retained evidence chunk is necessary and valid, with no omissions or redundancy | 86.2% |
+| Acceptable Evidence Selection | The retained chunks support the claim, allowing minor redundancy | 99.4% |
+
+
+
+### 5. Final Reports
+
+We evaluated support, citations, and writing quality for 1,035 statements across the 30 generated reports.
+
+| Metric | Result |
+| --- | ---: |
+| Fully Supported Statement Rate | 90.58% |
+| Partially Supported Statement Rate | 8.93% |
+| Unsupported Statement Rate | 0.49% |
+| Citation Precision | 95.84% |
+| Citation Completeness | 85.63% |
+
+Writing quality was scored by Codex on a 1–5 scale:
+
+| Dimension | Score |
+| --- | ---: |
+| Relevance | 4.53 |
+| Organization | 5.00 |
+| Synthesis | 3.93 |
+| Non-redundancy | 3.97 |
+| Caution and calibration | 4.30 |
+| Readability | 4.97 |
+| **Overall** | **4.45** |
+
+
+
+## Additional Usage
+
+**1. Choose a paper source**
+
+ScholarTrace supports three source modes:
+
+| Mode | Arguments | Description |
+| --- | --- | --- |
+| arXiv only | No additional arguments | Default mode. Searches for and downloads papers from arXiv. |
+| Local library only | `--source library --library-path <path>` | Reads papers from a local PDF file or directory without searching arXiv. |
+| Local library + arXiv | `--source hybrid --library-path <path>` | Loads local PDFs and supplements them with papers found on arXiv. |
+
+`--library-path` may point to a single PDF or a directory. Directories are searched recursively for PDF files.
 
 ```powershell
-$env:QWEN_CHAT_MODEL='qwen3.7-plus'
-$env:SEARCH_RESULTS_PER_QUERY='15'
-$env:MAX_PAPERS='10'
-$env:PDF_CANDIDATE_LIMIT='15'
-$env:MAX_CHUNKS_PER_QUERY='10'
-$env:MAX_EVIDENCE_CHUNKS='0'
-$env:READER_BATCH_SIZE='10'
-$env:USE_PDF='true'
-$env:PDF_FAILURE_POLICY='skip'
-$env:MIN_PDF_PAPERS='6'
-$env:EXPERIMENT_ID='rag-evaluation-methods-pdf-formal-001'
-uv run python -m research_agent "What are the main methods for evaluating retrieval-augmented generation systems?"
+# Local library only
+uv run python -m scholar_trace "Research question" --source library --library-path "D:\papers"
+
+# Local library and arXiv
+uv run python -m scholar_trace "Research question" --source hybrid --library-path "D:\papers"
 ```
 
-## Resume From Saved Evidence Chunks
+**2. Resume an interrupted run**
 
-If a run has already finished retrieval but fails during `reader`, `verifier`, or `writer`,
-reuse its saved chunks without rerunning search, PDF ingest, Chroma indexing, or embedding:
+Every new run prints its `Run ID` in the terminal. Keep this ID if you may need to resume the run later.
+
+**1) Resume from Evidence Chunks**
 
 ```powershell
-$env:QWEN_CHAT_MODEL='qwen3.7-plus'
-$env:MAX_EVIDENCE_CHUNKS='0'
-$env:READER_BATCH_SIZE='10'
-$env:VERIFIER_BATCH_SIZE='8'
-uv run python -m research_agent --from-run <run_id>
+uv run python -m scholar_trace --from-run <run_id>
 ```
 
-Set `READER_BATCH_SIZE` lower if the chat API disconnects during reader.
-
-If raw reader claims were already saved and only verification/report writing needs to be retried:
+**2) Resume from Raw Claims**
 
 ```powershell
-$env:QWEN_CHAT_MODEL='deepseek-v4-flash'
-$env:VERIFIER_BATCH_SIZE='8'
-uv run python -m research_agent --verify-from-run <run_id>
+uv run python -m scholar_trace --verify-from-run <run_id>
 ```
 
-## Future Work
 
-- Enable PDF ingestion by default with page-level citation metadata.
-- Add BM25 + Chroma hybrid retrieval.
-- Add benchmark evaluation with LitSearch and BEIR/SciFact.
-- Add a small Web UI after the CLI workflow is stable.
+
+## Outputs
+
+| Content | Default location |
+| --- | --- |
+| Literature review reports | `outputs/reports/` |
+| Downloaded PDFs | `data/pdfs/` |
+| Chroma collections | `data/chroma/<run-id>/` |
+| Metadata, papers, chunks, and claims | `data/scholar_trace.db` |
+| LangGraph checkpoints | `data/checkpoints.sqlite` |
+| Public benchmark | `evaluation/datasets/cs_questions.jsonl` |
+| 30 benchmark reports | `evaluation/reports/` |
